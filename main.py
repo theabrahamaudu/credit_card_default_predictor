@@ -1,3 +1,8 @@
+"""
+This module contains the API service for predicting credit card default based on data supplied by user on web UI
+"""
+from typing import Any
+
 import joblib
 from fastapi import FastAPI
 import uvicorn
@@ -22,7 +27,7 @@ class Data(BaseModel):
 @app.get('/home')
 def read_home():
     """
-    Home endpoint which can be used to test the availability of the    application.
+    Home endpoint which can be used to test the availability of the application.
     """
     return {'message': 'System is healthy'}
 
@@ -30,6 +35,15 @@ def read_home():
 # Prediction endpoint
 @app.post("/predict")
 def predict(data: dict):
+    """
+    Takes dictionary containing specification of desired prediction model and user credit card data as input and
+    returns prediction result as output.
+    Args:
+        data(dict): data from web UI
+
+    Returns:
+        result(float): float value of percentage default probability
+    """
     model_str = data['model']
 
     if model_str == 'Logistic Regression':
@@ -44,9 +58,9 @@ def predict(data: dict):
     data = pd.DataFrame(data["customer_data"])
     data = preprocess_website_input(data)
     if model_str == 'Support Vector Machine':
-        result = float(model.predict(data)[0])
+        result: float = float(model.predict(data)[0])
     else:
-        result = model.predict_proba(data)[0][1] * 100
+        result: float = float(model.predict_proba(data)[0][1] * 100)
     return result
 
 

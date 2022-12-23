@@ -1,3 +1,12 @@
+"""
+This module houses the Streamlit frontend for the app.
+
+It allows the user to upload sample credit card data as .csv file and choose which prediction model to use
+from a range of pretrained models.
+
+The result is presented as percentage probability to default on credit card payment
+"""
+
 import pandas as pd
 import streamlit as st
 import requests
@@ -5,6 +14,13 @@ from models import models_dict
 
 
 def run():
+    """
+    Streamlit configuration for Credit Card Default Prediction web user interface
+
+    - Allows user to upload sample credit card data
+    - Allows user to select prediction model to be used
+    - Sends request to backend API for prediction and then displays result
+    """
     st.image("https://www.canstar.com.au/wp-content/uploads/2017/09/Credit-card-default-1.jpg")
     st.title(" Customer Credit Card Default Predictor")
     st.subheader("Predict the probability of a customer defaulting on Credit Card payment\n")

@@ -1,3 +1,10 @@
+"""
+This module is used to train and test the ML models used on the dataset
+
+It saves trained models to local storage. Thus, as the dataset expands (for real life situations), the models can be
+retrained by running this script to account for data drift.
+"""
+
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
@@ -17,7 +24,19 @@ models_dict = {
 
 
 def train_models(models: dict, X_train, y_train):
-    # Train models
+    """
+    Takes dictionary of initialized models, training features and outcomes as input and saves the trained models.
+
+    Within a for loop, each model is fitted to X-train and y_train, with the resulting model being saved to memory
+    Args:
+        models:
+        X_train:
+        y_train:
+
+    Returns:
+
+    """
+
     for model in models.keys():
         model.fit(X_train, y_train)
         joblib_file = f"{model}.pkl"
@@ -27,6 +46,20 @@ def train_models(models: dict, X_train, y_train):
 
 
 def test_models(models: dict, X_test, y_test):
+    """
+    Takes dictionary of initialized models, test features and outcomes as input and prints prediction scores to console.
+
+    - Loads saved models using models dictionary for reference purpose
+    - Prints test score for each model to console
+
+    Args:
+        models:
+        X_test:
+        y_test:
+
+    Returns:
+
+    """
     # Test models
     for model, name in models.items():
         saved_model = joblib.load(f"{model}.pkl")
