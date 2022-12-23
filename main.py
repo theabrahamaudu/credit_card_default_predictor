@@ -2,17 +2,15 @@ import joblib
 from fastapi import FastAPI
 import uvicorn
 import pandas as pd
-import numpy as np
 from pydantic import BaseModel
-from pandas import DataFrame
 from preprocess import preprocess_website_input
-from models import models_dict
 
 # Initialize FastAPI
 app = FastAPI(title='Credit Card Default Predictor',
               version='1.0',
               description='Multiple models are used for prediction'
               )
+
 
 # Data Validation
 class Data(BaseModel):
