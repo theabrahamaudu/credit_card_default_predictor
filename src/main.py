@@ -7,7 +7,8 @@ from fastapi import FastAPI
 import uvicorn
 import pandas as pd
 from pydantic import BaseModel
-from utils.preprocess import preprocess_website_input
+import time
+from preprocess import preprocess_website_input
 
 # Initialize FastAPI
 app = FastAPI(title='Credit Card Default Predictor',
@@ -57,10 +58,17 @@ def predict(data: dict):
     data = pd.DataFrame(data["customer_data"])
     data = preprocess_website_input(data)
     if model_str == 'Support Vector Machine':
+        start_time = time.time()
         result: float = float(model.predict(data)[0])
+        elapsed_time = time.time()-start_time
+        packet = {"result": result, "time": elapsed_time}
     else:
+        start_time = time.time()
         result: float = float(model.predict_proba(data)[0][1] * 100)
-    return result
+        elapsed_time = time.time() - start_time
+        packet = {"result": result, "time": elapsed_time}
+
+    return packet
 
 
 if __name__ == '__main__':

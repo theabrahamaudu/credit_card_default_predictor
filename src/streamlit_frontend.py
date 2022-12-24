@@ -10,7 +10,7 @@ The result is presented as percentage probability to default on credit card paym
 import pandas as pd
 import streamlit as st
 import requests
-from models.models import models_dict
+from models import models_dict
 
 
 def run():
@@ -43,12 +43,19 @@ def run():
             }
 
         if st.button("Predict default probability"):
-            response = requests.post("http://127.0.0.1:8000/predict", json=data)
+            import time
+            start_time = time.time()
 
-            prediction = response.text.strip()
+            response = requests.post("http://127.0.0.1:8000/predict", json=data).json()
 
-            st.success(f"Probability of Credit Card default:\n"
-                       f"{float(prediction):.2f}%")
+            prediction = response["result"]
+            pred_time = response["time"]
+
+            elapsed_time = time.time() - start_time
+
+            st.success(f"Probability of Credit Card default: {float(prediction):.2f}%")
+            st.success(f"Model prediction time: {pred_time:.3f}s\n")
+            st.success(f"Overall run time: {elapsed_time:.3f}s")
 
 
 if __name__=="__main__":
