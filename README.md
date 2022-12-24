@@ -28,7 +28,7 @@ The app has a prediction API built with FastAPI and a frontend built with Stream
   - Setup API service
   - Design frontend
 
-# API Structure
+## API Structure
 The API service has two endpoints:
 * Home: Used to test that the API is running
 
@@ -39,7 +39,7 @@ The API service has two endpoints:
   - Make prediction based on credit card data
   - Return predicted outcome as float
 
-# Frontend Structure
+## Frontend Structure
 The frontend is built with Streamlit.
 It works by:
   - Promting the user to upload customer credit card data as .csv file
