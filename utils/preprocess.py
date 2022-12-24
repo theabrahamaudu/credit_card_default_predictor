@@ -36,7 +36,7 @@ def preprocess_input(df: DataFrame):
     onehotencoder = OneHotEncoder(sparse=False)
 
     transformed_data = onehotencoder.fit_transform(df[categorical_cols])
-    joblib_file = f"encoder.pkl"
+    joblib_file = f"../models/encoder.pkl"
     joblib.dump(onehotencoder, joblib_file)
     print("Encoder saved successfully")
     # the above transformed_data is an array so convert it to dataframe
@@ -53,7 +53,7 @@ def preprocess_input(df: DataFrame):
     # Scale X with a standard scaler
     scaler = StandardScaler()
     X: DataFrame = pd.DataFrame(scaler.fit_transform(X), columns=X.columns)
-    joblib_file = f"scaler.pkl"
+    joblib_file = f"../models/scaler.pkl"
     joblib.dump(scaler, joblib_file)
     print("Scaler saved successfully")
 
@@ -82,7 +82,7 @@ def preprocess_website_input(df: DataFrame):
     # Perform one-hot encoding
     categorical_cols = ['EDUCATION', 'MARRIAGE']
 
-    onehotencoder = joblib.load('encoder.pkl')
+    onehotencoder = joblib.load('../models/encoder.pkl')
 
     transformed_data = onehotencoder.transform(df[categorical_cols])
 
@@ -94,7 +94,7 @@ def preprocess_website_input(df: DataFrame):
     df = concatenated_data.drop(columns=categorical_cols)
 
     # Scale X with a standard scaler
-    scaler = joblib.load(f"scaler.pkl")
+    scaler = joblib.load(f"../models/scaler.pkl")
     df: DataFrame = pd.DataFrame(scaler.transform(df), columns=df.columns)
 
     return df

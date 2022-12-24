@@ -10,7 +10,7 @@ The result is presented as percentage probability to default on credit card paym
 import pandas as pd
 import streamlit as st
 import requests
-from models import models_dict
+from models.models import models_dict
 
 
 def run():

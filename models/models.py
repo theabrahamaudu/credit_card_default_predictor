@@ -12,7 +12,7 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.ensemble import RandomForestClassifier
 import joblib
 import pandas as pd
-from preprocess import preprocess_input
+from utils.preprocess import preprocess_input
 
 # models dictionary
 models_dict = {
@@ -68,7 +68,7 @@ def test_models(models: dict, X_test, y_test):
 
 if __name__=="__main__":
     # Preprocess the data
-    X, y = preprocess_input(df=pd.read_csv(r"UCI_Credit_Card.csv"))
+    X, y = preprocess_input(df=pd.read_csv(r"../data/UCI_Credit_Card.csv"))
 
     # Train-Test Split
     X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.7, random_state=123)

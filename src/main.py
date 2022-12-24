@@ -1,14 +1,13 @@
 """
 This module contains the API service for predicting credit card default based on data supplied by user on web UI
 """
-from typing import Any
 
 import joblib
 from fastapi import FastAPI
 import uvicorn
 import pandas as pd
 from pydantic import BaseModel
-from preprocess import preprocess_website_input
+from utils.preprocess import preprocess_website_input
 
 # Initialize FastAPI
 app = FastAPI(title='Credit Card Default Predictor',
@@ -47,13 +46,13 @@ def predict(data: dict):
     model_str = data['model']
 
     if model_str == 'Logistic Regression':
-        model = joblib.load('LogisticRegression().pkl')
+        model = joblib.load('../models/LogisticRegression().pkl')
     elif model_str == 'Support Vector Machine':
-        model = joblib.load('SVC().pkl')
+        model = joblib.load('../models/SVC().pkl')
     elif model_str == 'Neural Network':
-        model = joblib.load('MLPClassifier().pkl')
+        model = joblib.load('../models/MLPClassifier().pkl')
     elif model_str == 'Random Forest':
-        model = joblib.load('RandomForestClassifier().pkl')
+        model = joblib.load('../models/RandomForestClassifier().pkl')
 
     data = pd.DataFrame(data["customer_data"])
     data = preprocess_website_input(data)
