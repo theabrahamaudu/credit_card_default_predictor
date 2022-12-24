@@ -1,6 +1,6 @@
 # Credit Card Default Predictor
 
-This app is able to take user credit card data and make a preiction on whether the user will default
+This app is able to take user credit card data and make a prediction on whether the user will default
 on their next credit card payment or not. 
 It can be used by interacting with the web UI.
 
