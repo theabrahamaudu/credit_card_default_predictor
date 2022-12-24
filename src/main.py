@@ -58,14 +58,14 @@ def predict(data: dict):
     data = pd.DataFrame(data["customer_data"])
     data = preprocess_website_input(data)
     if model_str == 'Support Vector Machine':
-        start_time = time.time()
+        start_time = time.perf_counter()
         result: float = float(model.predict(data)[0])
-        elapsed_time = time.time()-start_time
+        elapsed_time = time.perf_counter()-start_time
         packet = {"result": result, "time": elapsed_time}
     else:
-        start_time = time.time()
+        start_time = time.perf_counter()
         result: float = float(model.predict_proba(data)[0][1] * 100)
-        elapsed_time = time.time() - start_time
+        elapsed_time = time.perf_counter() - start_time
         packet = {"result": result, "time": elapsed_time}
 
     return packet

@@ -44,14 +44,14 @@ def run():
 
         if st.button("Predict default probability"):
             import time
-            start_time = time.time()
+            start_time = time.perf_counter()
 
             response = requests.post("http://127.0.0.1:8000/predict", json=data).json()
 
             prediction = response["result"]
             pred_time = response["time"]
 
-            elapsed_time = time.time() - start_time
+            elapsed_time = time.perf_counter() - start_time
 
             st.success(f"Probability of Credit Card default: {float(prediction):.2f}%")
             st.success(f"Model prediction time: {pred_time:.3f}s\n")
