@@ -6,6 +6,9 @@ import pandas as pd
 from pandas import DataFrame
 import joblib
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from log_config import pipeline
+
+logger = pipeline()
 
 
 def preprocess_input(df: DataFrame):
@@ -38,7 +41,7 @@ def preprocess_input(df: DataFrame):
     transformed_data = onehotencoder.fit_transform(df[categorical_cols])
     joblib_file = f"../models/encoder.pkl"
     joblib.dump(onehotencoder, joblib_file)
-    print("Encoder saved successfully")
+    logger.info("Encoder saved successfully")
     # the above transformed_data is an array so convert it to dataframe
     encoded_data = pd.DataFrame(transformed_data, index=df.index, columns=onehotencoder.get_feature_names_out())
 
@@ -55,7 +58,7 @@ def preprocess_input(df: DataFrame):
     X: DataFrame = pd.DataFrame(scaler.fit_transform(X), columns=X.columns)
     joblib_file = f"../models/scaler.pkl"
     joblib.dump(scaler, joblib_file)
-    print("Scaler saved successfully")
+    logger.info("Scaler saved successfully")
 
     return X, y
 
@@ -96,5 +99,6 @@ def preprocess_website_input(df: DataFrame):
     # Scale X with a standard scaler
     scaler = joblib.load(f"../models/scaler.pkl")
     df: DataFrame = pd.DataFrame(scaler.transform(df), columns=df.columns)
+    logger.info("Web user data processed successfully")
 
     return df

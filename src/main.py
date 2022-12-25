@@ -9,6 +9,10 @@ import pandas as pd
 from pydantic import BaseModel
 import time
 from preprocess import preprocess_website_input
+from log_config import backend
+
+logger = backend()
+logger.info("API service running")
 
 # Initialize FastAPI
 app = FastAPI(title='Credit Card Default Predictor',
@@ -29,6 +33,7 @@ def read_home():
     """
     Home endpoint which can be used to test the availability of the application.
     """
+    logger.info("API service tested")
     return {'message': 'System is healthy'}
 
 
@@ -44,8 +49,11 @@ def predict(data: dict):
     Returns:
         result(float): float value of percentage default probability
     """
+    logger.info("prediction request received")
+    logger.info("detecting selected model")
     model_str = data['model']
 
+    logger.info("loading selected model")
     if model_str == 'Logistic Regression':
         model = joblib.load('../models/LogisticRegression().pkl')
     elif model_str == 'Support Vector Machine':
@@ -54,7 +62,9 @@ def predict(data: dict):
         model = joblib.load('../models/MLPClassifier().pkl')
     elif model_str == 'Random Forest':
         model = joblib.load('../models/RandomForestClassifier().pkl')
+    logger.info("model loaded successfully")
 
+    logger.info("loading and preprocessing web UI data")
     data = pd.DataFrame(data["customer_data"])
     data = preprocess_website_input(data)
     if model_str == 'Support Vector Machine':
@@ -68,6 +78,7 @@ def predict(data: dict):
         elapsed_time = time.perf_counter() - start_time
         packet = {"result": result, "time": elapsed_time}
 
+    logger.info("sending result to frontend")
     return packet
 
 

@@ -13,6 +13,11 @@ from sklearn.ensemble import RandomForestClassifier
 import joblib
 import pandas as pd
 from preprocess import preprocess_input
+from log_config import pipeline
+
+
+
+logger = pipeline()
 
 # models dictionary
 models_dict = {
@@ -41,8 +46,8 @@ def train_models(models: dict, X_train, y_train):
         model.fit(X_train, y_train)
         joblib_file = f"../models/{model}.pkl"
         joblib.dump(model, joblib_file)
-        print(f"{model} trained and saved")
-    print("All models trained and saved successfully")
+        logger.info(f"{model} trained and saved")
+    logger.info("All models trained and saved successfully")
 
 
 def test_models(models: dict, X_test, y_test):
@@ -63,7 +68,8 @@ def test_models(models: dict, X_test, y_test):
     # Test models
     for model, name in models.items():
         saved_model = joblib.load(f"../models/{model}.pkl")
-        print(name, ": {:.4f}%".format(saved_model.score(X_test, y_test) * 100))
+        score = saved_model.score(X_test, y_test) * 100
+        logger.info(f"{name}: {score:.4f}% test accuracy")
 
 
 if __name__=="__main__":
