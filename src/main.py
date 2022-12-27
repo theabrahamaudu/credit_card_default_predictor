@@ -9,7 +9,7 @@ import pandas as pd
 from pydantic import BaseModel
 import time
 from utils.preprocess import preprocess_website_input
-from logs.backend_log_config import backend as logger
+from utils.backend_log_config import backend as logger
 
 
 logger.info("API service running")

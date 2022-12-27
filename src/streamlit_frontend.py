@@ -13,7 +13,7 @@ import pandas as pd
 import streamlit as st
 import requests
 from models import models_dict
-from logs.frontend_log_config import frontend as logger
+from utils.frontend_log_config import frontend as logger
 from utils.upload_validator import validate
 
 

@@ -96,3 +96,16 @@ Traceback (most recent call last):
   File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\requests\models.py", line 975, in json
     raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
 requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2022-12-27 18:05:21,427:streamlit_frontend.py:run:INFO:Session started:
+2022-12-27 18:06:16,497:streamlit_frontend.py:run:INFO:Session started:
+2022-12-27 18:06:30,156:streamlit_frontend.py:run:INFO:Session started:
+2022-12-27 18:06:30,176:streamlit_frontend.py:run:INFO:User data uploaded:
+2022-12-27 18:06:30,517:upload_validator.py:validate:ERROR:Column 'default.payment.next.month' not expected in uploaded data:
+2022-12-27 18:06:44,337:streamlit_frontend.py:run:INFO:Session started:
+2022-12-27 18:06:44,643:streamlit_frontend.py:run:INFO:Session started:
+2022-12-27 18:06:44,662:streamlit_frontend.py:run:INFO:User data uploaded:
+2022-12-27 18:06:44,690:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2022-12-27 18:06:57,793:streamlit_frontend.py:run:INFO:Session started:
+2022-12-27 18:06:58,150:streamlit_frontend.py:run:INFO:Session started:
+2022-12-27 18:06:58,169:streamlit_frontend.py:run:INFO:User data uploaded:
+2022-12-27 18:06:58,580:upload_validator.py:validate:ERROR:Column 'default.payment.next.month' not expected in uploaded data:

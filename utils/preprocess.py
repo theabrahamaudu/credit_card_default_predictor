@@ -6,7 +6,7 @@ import pandas as pd
 from pandas import DataFrame
 import joblib
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
-from logs.pipeline_log_config import pipeline as logger
+from utils.pipeline_log_config import pipeline as logger
 
 
 def preprocess_input(df: DataFrame):

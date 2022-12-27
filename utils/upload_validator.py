@@ -2,7 +2,7 @@
 This module is used to validate customer credit card data uploaded on the web UI
 """
 from pandas import DataFrame
-from logs.frontend_log_config import frontend as logger
+from utils.frontend_log_config import frontend as logger
 
 
 def validate(df: DataFrame):
