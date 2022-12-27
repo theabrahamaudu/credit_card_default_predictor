@@ -69,3 +69,66 @@ Feature names seen at fit time, yet now missing:
 - EDUCATION_4
 - ...
 
+2022-12-27 17:53:39,994:main.py:<module>:INFO:API service running:
+2022-12-27 17:53:48,338:main.py:<module>:INFO:API service running:
+2022-12-27 17:53:48,764:main.py:<module>:INFO:API service running:
+2022-12-27 17:55:50,764:main.py:<module>:INFO:API service running:
+2022-12-27 17:55:50,976:main.py:<module>:INFO:API service running:
+2022-12-27 17:58:45,141:main.py:<module>:INFO:API service running:
+2022-12-27 17:58:45,386:main.py:<module>:INFO:API service running:
+2022-12-27 18:02:11,244:main.py:predict:INFO:prediction request received:
+2022-12-27 18:02:11,244:main.py:predict:INFO:detecting selected model:
+2022-12-27 18:02:11,245:main.py:predict:INFO:loading selected model:
+2022-12-27 18:02:11,645:main.py:predict:INFO:model loaded successfully:
+2022-12-27 18:02:11,646:main.py:predict:INFO:loading and preprocessing web UI data:
+2022-12-27 18:02:12,575:main.py:predict:ERROR:Error preprocessing data:
+Traceback (most recent call last):
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 71, in predict
+    data = preprocess_website_input(data)
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 99, in preprocess_website_input
+    df: DataFrame = pd.DataFrame(scaler.transform(df), columns=df.columns)
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\_set_output.py", line 142, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\preprocessing\_data.py", line 992, in transform
+    X = self._validate_data(
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 518, in _validate_data
+    self._check_feature_names(X, reset=reset)
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 451, in _check_feature_names
+    raise ValueError(message)
+ValueError: The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- default.payment.next.month
+
+2022-12-27 18:02:12,891:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 83, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_logistic.py", line 1372, in predict_proba
+    return super()._predict_proba_lr(X)
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 435, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 401, in decision_function
+    X = self._validate_data(X, accept_sparse="csr", reset=False)
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 518, in _validate_data
+    self._check_feature_names(X, reset=reset)
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 451, in _check_feature_names
+    raise ValueError(message)
+ValueError: The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- EDUCATION
+- ID
+- MARRIAGE
+- default.payment.next.month
+Feature names seen at fit time, yet now missing:
+- EDUCATION_0
+- EDUCATION_1
+- EDUCATION_2
+- EDUCATION_3
+- EDUCATION_4
+- ...
+
+2022-12-27 18:05:20,086:main.py:<module>:INFO:API service running:
+2022-12-27 18:05:20,322:main.py:<module>:INFO:API service running:
+2022-12-27 18:06:21,045:main.py:<module>:INFO:API service running:
+2022-12-27 18:06:21,273:main.py:<module>:INFO:API service running:
+2022-12-27 18:16:55,658:main.py:<module>:INFO:API service running:

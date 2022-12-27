@@ -8,7 +8,7 @@ import uvicorn
 import pandas as pd
 from pydantic import BaseModel
 import time
-from preprocess import preprocess_website_input
+from utils.preprocess import preprocess_website_input
 from logs.backend_log_config import backend as logger
 
 

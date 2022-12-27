@@ -14,6 +14,7 @@ import streamlit as st
 import requests
 from models import models_dict
 from logs.frontend_log_config import frontend as logger
+from utils.upload_validator import validate
 
 
 def run():
@@ -35,10 +36,20 @@ def run():
                     "3. Get prediction")
 
     file = st.file_uploader("Upload customer data (CSV)", type=['csv'])
+    valid = False
 
     if file is not None:
         logger.info("User data uploaded")
         customer_data = pd.read_csv(file)
+
+        try:
+            validate(customer_data)
+            logger.info("Uploaded data validated")
+            valid = True
+        except Exception as e:
+            st.error(f"Invalid data: {e}")
+
+    if valid:
         customer_data = customer_data.to_dict()
         model = st.selectbox("Choose Prediction Model", sorted(models_dict.values()))
 

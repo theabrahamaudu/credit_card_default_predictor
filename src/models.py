@@ -12,7 +12,7 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.ensemble import RandomForestClassifier
 import joblib
 import pandas as pd
-from preprocess import preprocess_input
+from utils.preprocess import preprocess_input
 from logs.pipeline_log_config import pipeline as logger
 
 

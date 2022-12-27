@@ -100,3 +100,5 @@ def preprocess_website_input(df: DataFrame):
     logger.info("Web user data processed successfully")
 
     return df
+
+
