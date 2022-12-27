@@ -13,11 +13,8 @@ from sklearn.ensemble import RandomForestClassifier
 import joblib
 import pandas as pd
 from preprocess import preprocess_input
-from log_config import pipeline
+from logs.pipeline_log_config import pipeline as logger
 
-
-
-logger = pipeline()
 
 # models dictionary
 models_dict = {

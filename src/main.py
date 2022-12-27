@@ -9,9 +9,9 @@ import pandas as pd
 from pydantic import BaseModel
 import time
 from preprocess import preprocess_website_input
-from log_config import backend
+from logs.backend_log_config import backend as logger
 
-logger = backend()
+
 logger.info("API service running")
 
 # Initialize FastAPI
@@ -65,20 +65,28 @@ def predict(data: dict):
     logger.info("model loaded successfully")
 
     logger.info("loading and preprocessing web UI data")
-    data = pd.DataFrame(data["customer_data"])
-    data = preprocess_website_input(data)
-    if model_str == 'Support Vector Machine':
-        start_time = time.perf_counter()
-        result: float = float(model.predict(data)[0])
-        elapsed_time = time.perf_counter()-start_time
-        packet = {"result": result, "time": elapsed_time}
-    else:
-        start_time = time.perf_counter()
-        result: float = float(model.predict_proba(data)[0][1] * 100)
-        elapsed_time = time.perf_counter() - start_time
-        packet = {"result": result, "time": elapsed_time}
 
-    logger.info("sending result to frontend")
+    try:
+        data = pd.DataFrame(data["customer_data"])
+        data = preprocess_website_input(data)
+    except:
+        logger.exception("Error preprocessing data")
+
+    try:
+        if model_str == 'Support Vector Machine':
+            start_time = time.perf_counter()
+            result: float = float(model.predict(data)[0])
+            elapsed_time = time.perf_counter()-start_time
+            packet = {"result": result, "time": elapsed_time}
+        else:
+            start_time = time.perf_counter()
+            result: float = float(model.predict_proba(data)[0][1] * 100)
+            elapsed_time = time.perf_counter() - start_time
+            packet = {"result": result, "time": elapsed_time}
+
+        logger.info("sending result to frontend")
+    except:
+        logger.exception("Error generating prediction")
     return packet
 
 

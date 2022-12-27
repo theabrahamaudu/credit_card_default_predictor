@@ -7,13 +7,13 @@ from a range of pretrained models.
 The result is presented as percentage probability to default on credit card payment
 """
 
+import sys
+sys.path.insert(1,r"C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction")
 import pandas as pd
 import streamlit as st
 import requests
 from models import models_dict
-from log_config import frontend
-
-logger = frontend()
+from logs.frontend_log_config import frontend as logger
 
 
 def run():
@@ -70,6 +70,7 @@ def run():
                             f"Model pred time: {pred_time}, \n"
                             f"total run time: {elapsed_time}")
             except:
+                st.error("Error: Please check the file or your network connection")
                 logger.exception("An error occurred whilst attempting to call API")
 
 
