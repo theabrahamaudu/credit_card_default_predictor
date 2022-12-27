@@ -95,7 +95,6 @@ streamlit run streamlit_frontend.py
 Feel free to reach out to me if you have any issues using the platform
 
 ## Improvements in the Works
-- [ ] Data validation checks for uploaded data
 - [ ] Use a better model performance metric (AUCPRC, F1 Score, Matthew's Coefficient, etc)
 - [ ] Better feature engineering
 - [ ] Create class to hold info about all models so prediction function simply calls as necessary
