@@ -79,6 +79,9 @@ python -m pip install -r requirements.txt
 
 * Start the API service by running:  
 ```
+cd src
+```
+```
 python -m main
 ```
 * Run the Streamlit frontend:
@@ -92,8 +95,10 @@ streamlit run streamlit_frontend.py
 Feel free to reach out to me if you have any issues using the platform
 
 ## Improvements in the Works
-- [ ] Latency measurement
-- [ ] Project-wide logging
+- [ ] Data validation checks for uploaded data
+- [ ] Use a better model performance metric (AUCPRC, F1 Score, Matthew's Coefficient, etc)
+- [ ] Better feature engineering
+- [ ] Create class to hold info about all models so prediction function simply calls as necessary
 - [ ] Unit tests
 - [ ] Deployment to cloud
 - [ ] Full documentation
