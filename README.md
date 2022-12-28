@@ -14,7 +14,29 @@ Four models were trained on the dataset:
 * Decision Tree
 * Support Vector Machine
 
-All models achieved >80% accuracy score.
+## Model Performance
+- [ ] Update: After implementing Matthews Correlation Coefficient and F1 Score:  
+Date: 28/12/2022
+  
+        Logistic Regression: 
+        accuracy --> 0.8143333333333334 
+        MCC --> 0.33866741348679213 
+        f1_score --> 0.36584440227703985
+
+        Support Vector Machine: 
+        accuracy --> 0.8203333333333334 
+        MCC --> 0.38425724231122166 
+        f1_score --> 0.44831115660184234
+
+        Neural Network: 
+        accuracy --> 0.811 
+        MCC --> 0.3760558065179947 
+        f1_score --> 0.4735376044568246
+
+        Random Forest: 
+        accuracy --> 0.8146666666666667 
+        MCC --> 0.3784767312418483 
+        f1_score --> 0.4650416933932008
 
 All the models as well as the ecoder and scaler were saved to memory so as to enable the transformation of new data from end users before prediction on the data.
 
@@ -40,10 +62,11 @@ The API service has two endpoints:
   - Return predicted outcome as float
 
 ## Frontend Structure
-The frontend is built with Streamlit.
-It works by:
-  - Promting the user to upload customer credit card data as .csv file
-  - Allowing the user to select a preferred prediction model only if file has been uploaded
+The frontend is built with Streamlit.  
+How it works:
+  - Promts the user to upload customer credit card data as .csv file
+  - Validates data and displays error message if uploaded data does not match model requirements
+  - Allows the user to select a preferred prediction model only if the right file type has been uploaded
   - Makes a post request to the prediction endpoint with data provided by user
   - Displays a formatted version of the request response
 
@@ -95,8 +118,9 @@ streamlit run streamlit_frontend.py
 Feel free to reach out to me if you have any issues using the platform
 
 ## Improvements in the Works
-- [ ] Use a better model performance metric (AUCPRC, F1 Score, Matthew's Coefficient, etc)
-- [ ] Better feature engineering
+- [ ] Hyperparameter tuning
+- [ ] Better feature selection/engineering
+- [ ] Try out over-sampling/under-sampling techniques on the dataset
 - [ ] Create class to hold info about all models so prediction function simply calls as necessary
 - [ ] Unit tests
 - [ ] Deployment to cloud
