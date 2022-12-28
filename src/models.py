@@ -6,6 +6,7 @@ retrained by running this script to account for data drift.
 """
 
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import matthews_corrcoef, f1_score
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from sklearn.neural_network import MLPClassifier
@@ -19,8 +20,8 @@ from utils.pipeline_log_config import pipeline as logger
 # models dictionary
 models_dict = {
     LogisticRegression(): 'Logistic Regression',
-    SVC(): 'Support Vector Machine',
-    MLPClassifier(): 'Neural Network',
+    SVC(): 'C-Support Vector Classification',
+    MLPClassifier(): 'Neural Network (Multi-layer Perceptron classifier)',
     RandomForestClassifier(): 'Random Forest'
     }
 
@@ -64,9 +65,12 @@ def test_models(models: dict, X_test, y_test):
     """
     # Test models
     for model, name in models.items():
-        saved_model = joblib.load(f"../models/{model}.pkl")
-        score = saved_model.score(X_test, y_test) * 100
-        logger.info(f"{name}: {score:.4f}% test accuracy")
+        y_true = y_test.copy()
+        y_pred = model.predict(X_test)
+        MCC = matthews_corrcoef(y_true, y_pred)
+        F1_SCORE = f1_score(y_true, y_pred, labels=None, pos_label=1, average='binary', sample_weight=None,
+                            zero_division='warn')
+        logger.info(f"{name}: \nMCC: {MCC} \nf1_score: {F1_SCORE}\n")
 
 
 if __name__=="__main__":
