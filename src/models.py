@@ -67,10 +67,12 @@ def test_models(models: dict, X_test, y_test):
     for model, name in models.items():
         y_true = y_test.copy()
         y_pred = model.predict(X_test)
+
+        accuracy = model.score(X_test, y_test)
         MCC = matthews_corrcoef(y_true, y_pred)
         F1_SCORE = f1_score(y_true, y_pred, labels=None, pos_label=1, average='binary', sample_weight=None,
                             zero_division='warn')
-        logger.info(f"{name}: \nMCC: {MCC} \nf1_score: {F1_SCORE}\n")
+        logger.info(f"{name}: \naccuracy --> {accuracy} \nMCC --> {MCC} \nf1_score --> {F1_SCORE}\n")
 
 
 if __name__=="__main__":
