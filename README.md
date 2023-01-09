@@ -7,7 +7,7 @@ It can be used by interacting with the web UI.
 ## Description
 
 The prediction infrastructure of this project was built using a [credit card dataset](https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset) from kaggle.
-The dataset was then preprocessed to deal with categorical variables, as well as scaling, to bring all the features within a narrow range for better performance.
+The dataset was then preprocessed to deal with categorical variables, over-sampled to deal with data imbalance, as well as scaling, to bring all the features within a narrow range for better performance.
 Four models were trained on the dataset:
 * Logistic Regression
 * Neural Network
