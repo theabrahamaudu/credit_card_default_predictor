@@ -1,0 +1,116 @@
+Original without sampling methods (stock sk-learn train_test_split):
+
+Logistic Regression: 
+accuracy --> 0.8143333333333334 
+MCC --> 0.33866741348679213 
+f1_score --> 0.36584440227703985
+
+C-Support Vector Classification: 
+accuracy --> 0.8203333333333334 
+MCC --> 0.38425724231122166 
+f1_score --> 0.44831115660184234
+
+Neural Network (Multi-layer Perceptron classifier): 
+accuracy --> 0.808 
+MCC --> 0.3589612191259719 
+f1_score --> 0.4538558786346397
+
+Random Forest: 
+accuracy --> 0.8161111111111111 
+MCC --> 0.38430827536849405 
+f1_score --> 0.47039999999999993
+=======================================================
+Everything from here uses the custom train_test_split which splits the data before preprocessing 
+and then uses the saved ecoder and scaler when processing test data
+
+========================================================================================
+Benchmark without sampling methods (custom train_test_split):
+
+Logistic Regression: 
+accuracy --> 0.7766666666666666 
+MCC --> -0.009782586331446628 
+f1_score --> 0.0
+
+C-Support Vector Classification: 
+accuracy --> 0.777 
+MCC --> 0.0 
+f1_score --> 0.0
+
+Neural Network (Multi-layer Perceptron classifier): 
+accuracy --> 0.7348888888888889 
+MCC --> 0.08013576425195747 
+f1_score --> 0.21409749670619235
+
+Random Forest: 
+accuracy --> 0.7777777777777778 
+MCC --> 0.2732721041984683 
+f1_score --> 0.3909866017052375
+
+========================================================
+Under-Sampling results:
+
+Logistic Regression: 
+accuracy --> 0.7761111111111111 
+MCC --> 0.01131911821057516 
+f1_score --> 0.006899950714637753
+
+C-Support Vector Classification: 
+accuracy --> 0.777 
+MCC --> 0.0 
+f1_score --> 0.0
+
+Neural Network (Multi-layer Perceptron classifier): 
+accuracy --> 0.7121111111111111 
+MCC --> 0.08810631270846023 
+f1_score --> 0.2607703281027104
+
+Random Forest: 
+accuracy --> 0.7724444444444445 
+MCC --> 0.3361093761802899 
+f1_score --> 0.4817813765182186
+
+==========================================================================
+Over-Sampling results:
+
+Logistic Regression: 
+accuracy --> 0.7768888888888889 
+MCC --> -0.005647351194014132 
+f1_score --> 0.0
+
+C-Support Vector Classification: 
+accuracy --> 0.777 
+MCC --> 0.0 
+f1_score --> 0.0
+
+Neural Network (Multi-layer Perceptron classifier): 
+accuracy --> 0.7253333333333334 
+MCC --> 0.05537176554405071 
+f1_score --> 0.19999999999999998
+
+Random Forest: 
+accuracy --> 0.7754444444444445 
+MCC --> 0.06638147914842742 
+f1_score --> 0.0560485754320411
+
+===========================================================================
+SMOTE results:
+
+Logistic Regression: 
+accuracy --> 0.7763333333333333 
+MCC --> -0.01383697338856642 
+f1_score --> 0.0
+
+C-Support Vector Classification: 
+accuracy --> 0.777 
+MCC --> 0.0 
+f1_score --> 0.0
+
+Neural Network (Multi-layer Perceptron classifier): 
+accuracy --> 0.7136666666666667 
+MCC --> 0.10610318424324847 
+f1_score --> 0.2803686121195197
+
+Random Forest: 
+accuracy --> 0.7893333333333333 
+MCC --> 0.32092560988710556 
+f1_score --> 0.43504171632896305

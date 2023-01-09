@@ -55,13 +55,13 @@ def predict(data: dict):
 
     logger.info("loading selected model")
     if model_str == 'Logistic Regression':
-        model = joblib.load('../models/LogisticRegression().pkl')
+        model = joblib.load('../models/Logistic_Regression.pkl')
     elif model_str == 'Support Vector Machine':
-        model = joblib.load('../models/SVC().pkl')
+        model = joblib.load('../models/C_Support_Vector_Classification.pkl')
     elif model_str == 'Neural Network':
-        model = joblib.load('../models/MLPClassifier().pkl')
+        model = joblib.load('../models/Neural_Network_(Multi_layer_Perceptron_classifier).pkl')
     elif model_str == 'Random Forest':
-        model = joblib.load('../models/RandomForestClassifier().pkl')
+        model = joblib.load('../models/Random_Forest.pkl')
     logger.info("model loaded successfully")
 
     logger.info("loading and preprocessing web UI data")

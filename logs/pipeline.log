@@ -1,1 +1,303 @@
 2022-12-27 01:08:32,032:preprocess.py:preprocess_website_input:INFO:Web user data processed successfully:
+2023-01-09 19:43:33,664:preprocess.py:preprocess_input:INFO:Encoder saved successfully:
+2023-01-09 19:43:33,731:preprocess.py:preprocess_input:INFO:Scaler saved successfully:
+2023-01-09 19:43:34,076:models.py:train_models:INFO:LogisticRegression() trained and saved:
+2023-01-09 19:44:10,349:models.py:train_models:INFO:SVC() trained and saved:
+2023-01-09 19:45:02,775:models.py:train_models:INFO:MLPClassifier() trained and saved:
+2023-01-09 19:45:16,840:models.py:train_models:INFO:RandomForestClassifier() trained and saved:
+2023-01-09 19:45:16,840:models.py:train_models:INFO:All models trained and saved successfully:
+2023-01-09 19:45:16,909:models.py:test_models:INFO:Logistic Regression: 
+accuracy --> 0.8143333333333334 
+MCC --> 0.33866741348679213 
+f1_score --> 0.36584440227703985
+:
+2023-01-09 19:45:51,901:models.py:test_models:INFO:Support Vector Machine: 
+accuracy --> 0.8203333333333334 
+MCC --> 0.38425724231122166 
+f1_score --> 0.44831115660184234
+:
+2023-01-09 19:45:51,938:models.py:test_models:INFO:Neural Network: 
+accuracy --> 0.8084444444444444 
+MCC --> 0.36907397942184045 
+f1_score --> 0.46953846153846157
+:
+2023-01-09 19:45:52,707:models.py:test_models:INFO:Random Forest: 
+accuracy --> 0.8155555555555556 
+MCC --> 0.38186334100596586 
+f1_score --> 0.46794871794871795
+:
+2023-01-09 19:50:46,155:preprocess.py:preprocess_input:INFO:Encoder saved successfully:
+2023-01-09 19:50:46,221:preprocess.py:preprocess_input:INFO:Scaler saved successfully:
+2023-01-09 19:50:46,447:models.py:train_models:INFO:LogisticRegression() trained and saved:
+2023-01-09 19:51:22,693:models.py:train_models:INFO:SVC() trained and saved:
+2023-01-09 19:52:13,994:models.py:train_models:INFO:MLPClassifier() trained and saved:
+2023-01-09 19:52:28,457:models.py:train_models:INFO:RandomForestClassifier() trained and saved:
+2023-01-09 19:52:28,457:models.py:train_models:INFO:All models trained and saved successfully:
+2023-01-09 19:52:28,477:models.py:test_models:INFO:Logistic Regression: 
+accuracy --> 0.8143333333333334 
+MCC --> 0.33866741348679213 
+f1_score --> 0.36584440227703985
+:
+2023-01-09 19:53:03,509:models.py:test_models:INFO:Support Vector Machine: 
+accuracy --> 0.8203333333333334 
+MCC --> 0.38425724231122166 
+f1_score --> 0.44831115660184234
+:
+2023-01-09 19:53:03,546:models.py:test_models:INFO:Neural Network: 
+accuracy --> 0.8104444444444444 
+MCC --> 0.3575410933965151 
+f1_score --> 0.4421190320470896
+:
+2023-01-09 19:53:04,321:models.py:test_models:INFO:Random Forest: 
+accuracy --> 0.8127777777777778 
+MCC --> 0.3706425401264969 
+f1_score --> 0.45767621499839073
+:
+2023-01-09 20:12:51,401:preprocess.py:preprocess_input:INFO:Encoder saved successfully:
+2023-01-09 20:12:51,460:preprocess.py:preprocess_input:INFO:Scaler saved successfully:
+2023-01-09 20:15:45,769:preprocess.py:preprocess_input:INFO:Encoder saved successfully:
+2023-01-09 20:15:45,825:preprocess.py:preprocess_input:INFO:Scaler saved successfully:
+2023-01-09 20:15:46,147:models.py:train_models:INFO:LogisticRegression() trained and saved:
+2023-01-09 20:17:14,263:models.py:train_models:INFO:SVC() trained and saved:
+2023-01-09 20:18:10,967:models.py:train_models:INFO:MLPClassifier() trained and saved:
+2023-01-09 20:18:23,422:models.py:train_models:INFO:RandomForestClassifier() trained and saved:
+2023-01-09 20:18:23,422:models.py:train_models:INFO:All models trained and saved successfully:
+2023-01-09 20:18:23,436:models.py:test_models:INFO:Logistic Regression: 
+accuracy --> 0.6992222222222222 
+MCC --> 0.29831296922282063 
+f1_score --> 0.4795231686214189
+:
+2023-01-09 20:19:21,143:models.py:test_models:INFO:Support Vector Machine: 
+accuracy --> 0.7768888888888889 
+MCC --> 0.3849156935678977 
+f1_score --> 0.5293014533520862
+:
+2023-01-09 20:19:21,172:models.py:test_models:INFO:Neural Network: 
+accuracy --> 0.7383333333333333 
+MCC --> 0.33000312680680294 
+f1_score --> 0.4960410870960839
+:
+2023-01-09 20:19:21,754:models.py:test_models:INFO:Random Forest: 
+accuracy --> 0.8095555555555556 
+MCC --> 0.3900353217409414 
+f1_score --> 0.4910926365795725
+:
+2023-01-09 20:30:56,054:preprocess.py:preprocess_input:INFO:Encoder saved successfully:
+2023-01-09 20:30:56,114:preprocess.py:preprocess_input:INFO:Scaler saved successfully:
+2023-01-09 20:30:56,430:models.py:train_models:INFO:LogisticRegression(C=1, solver='liblinear') trained and saved:
+2023-01-09 20:32:39,005:models.py:train_models:INFO:SVC(C=51, gamma='auto') trained and saved:
+2023-01-09 20:44:25,855:models.py:train_models:INFO:MLPClassifier(activation='tanh', hidden_layer_sizes=900, max_iter=950) trained and saved:
+2023-01-09 20:44:36,025:models.py:train_models:INFO:RandomForestClassifier(max_features='log2') trained and saved:
+2023-01-09 20:44:36,025:models.py:train_models:INFO:All models trained and saved successfully:
+2023-01-09 20:44:36,039:models.py:test_models:INFO:Logistic Regression: 
+accuracy --> 0.8142222222222222 
+MCC --> 0.3382217745840778 
+f1_score --> 0.3657056145675266
+:
+2023-01-09 20:45:01,496:models.py:test_models:INFO:C-Support Vector Classification: 
+accuracy --> 0.8128888888888889 
+MCC --> 0.36948483443181507 
+f1_score --> 0.45501618122977344
+:
+2023-01-09 20:45:01,956:models.py:test_models:INFO:Neural Network (Multi-layer Perceptron classifier): 
+accuracy --> 0.7776666666666666 
+MCC --> 0.29550905666440574 
+f1_score --> 0.4284490145672665
+:
+2023-01-09 20:45:02,520:models.py:test_models:INFO:Random Forest: 
+accuracy --> 0.8127777777777778 
+MCC --> 0.3730458528752927 
+f1_score --> 0.46217682732205556
+:
+2023-01-09 20:46:20,049:preprocess.py:preprocess_input:INFO:Encoder saved successfully:
+2023-01-09 20:46:20,111:preprocess.py:preprocess_input:INFO:Scaler saved successfully:
+2023-01-09 20:46:20,583:models.py:train_models:INFO:LogisticRegression(C=1, solver='liblinear') trained and saved:
+2023-01-09 20:50:44,241:models.py:train_models:INFO:SVC(C=51, gamma='auto') trained and saved:
+2023-01-09 21:17:09,645:models.py:train_models:INFO:MLPClassifier(activation='tanh', hidden_layer_sizes=900, max_iter=950) trained and saved:
+2023-01-09 21:17:22,216:models.py:train_models:INFO:RandomForestClassifier(max_features='log2') trained and saved:
+2023-01-09 21:17:22,216:models.py:train_models:INFO:All models trained and saved successfully:
+2023-01-09 21:17:22,231:models.py:test_models:INFO:Logistic Regression: 
+accuracy --> 0.6992222222222222 
+MCC --> 0.29831296922282063 
+f1_score --> 0.4795231686214189
+:
+2023-01-09 21:18:16,583:models.py:test_models:INFO:C-Support Vector Classification: 
+accuracy --> 0.758 
+MCC --> 0.3481024366704809 
+f1_score --> 0.5043240782885753
+:
+2023-01-09 21:18:17,037:models.py:test_models:INFO:Neural Network (Multi-layer Perceptron classifier): 
+accuracy --> 0.7137777777777777 
+MCC --> 0.20812115832301437 
+f1_score --> 0.3941674506114769
+:
+2023-01-09 21:18:17,627:models.py:test_models:INFO:Random Forest: 
+accuracy --> 0.8121111111111111 
+MCC --> 0.39955121340765953 
+f1_score --> 0.4995560816809707
+:
+2023-01-09 21:31:13,691:preprocess.py:preprocess_input:INFO:Encoder saved successfully:
+2023-01-09 21:31:13,747:preprocess.py:preprocess_input:INFO:Scaler saved successfully:
+2023-01-09 21:31:14,203:models.py:train_models:INFO:Logistic Regression trained and saved:
+2023-01-09 21:36:01,655:preprocess.py:preprocess_input:INFO:Encoder saved successfully:
+2023-01-09 21:36:01,740:preprocess.py:preprocess_input:INFO:Scaler saved successfully:
+2023-01-09 21:36:02,316:models.py:train_models:INFO:Logistic_Regression trained and saved:
+2023-01-09 21:41:33,638:models.py:train_models:INFO:C_Support_Vector_Classification trained and saved:
+2023-01-09 22:15:54,559:models.py:train_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier) trained and saved:
+2023-01-09 22:16:12,490:models.py:train_models:INFO:Random_Forest trained and saved:
+2023-01-09 22:16:12,490:models.py:train_models:INFO:All models trained and saved successfully:
+2023-01-09 22:16:12,513:models.py:test_models:INFO:Logistic_Regression: 
+accuracy --> 0.6992222222222222 
+MCC --> 0.29831296922282063 
+f1_score --> 0.4795231686214189
+:
+2023-01-09 22:17:30,109:models.py:test_models:INFO:C_Support_Vector_Classification: 
+accuracy --> 0.758 
+MCC --> 0.3481024366704809 
+f1_score --> 0.5043240782885753
+:
+2023-01-09 22:17:30,753:models.py:test_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier): 
+accuracy --> 0.7124444444444444 
+MCC --> 0.2164176244620289 
+f1_score --> 0.40341171046565233
+:
+2023-01-09 22:17:31,783:models.py:test_models:INFO:Random_Forest: 
+accuracy --> 0.8101111111111111 
+MCC --> 0.39357467739638863 
+f1_score --> 0.49542367877177435
+:
+2023-01-09 22:28:25,969:preprocess.py:preprocess_input:INFO:Encoder saved successfully:
+2023-01-09 22:28:26,020:preprocess.py:preprocess_input:INFO:Scaler saved successfully:
+2023-01-09 22:28:26,313:models.py:train_models:INFO:Logistic_Regression trained and saved:
+2023-01-09 22:30:04,866:models.py:train_models:INFO:C_Support_Vector_Classification trained and saved:
+2023-01-09 22:48:30,779:models.py:train_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier) trained and saved:
+2023-01-09 22:48:45,032:models.py:train_models:INFO:Random_Forest trained and saved:
+2023-01-09 22:48:45,033:models.py:train_models:INFO:All models trained and saved successfully:
+2023-01-09 22:48:45,065:models.py:test_models:INFO:Logistic_Regression: 
+accuracy --> 0.8142222222222222 
+MCC --> 0.3382217745840778 
+f1_score --> 0.3657056145675266
+:
+2023-01-09 22:49:20,994:models.py:test_models:INFO:C_Support_Vector_Classification: 
+accuracy --> 0.8128888888888889 
+MCC --> 0.36948483443181507 
+f1_score --> 0.45501618122977344
+:
+2023-01-09 22:49:21,661:models.py:test_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier): 
+accuracy --> 0.7582222222222222 
+MCC --> 0.26411589275735453 
+f1_score --> 0.4156820622986036
+:
+2023-01-09 22:49:22,635:models.py:test_models:INFO:Random_Forest: 
+accuracy --> 0.8158888888888889 
+MCC --> 0.38510555464793844 
+f1_score --> 0.47279669105949734
+:
+2023-01-09 22:57:35,032:preprocess.py:preprocess_input:INFO:Encoder saved successfully:
+2023-01-09 22:57:35,088:preprocess.py:preprocess_input:INFO:Scaler saved successfully:
+2023-01-09 22:57:35,521:models.py:train_models:INFO:Logistic_Regression trained and saved:
+2023-01-09 23:01:15,871:models.py:train_models:INFO:C_Support_Vector_Classification trained and saved:
+2023-01-09 23:20:48,119:models.py:train_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier) trained and saved:
+2023-01-09 23:21:03,292:models.py:train_models:INFO:Random_Forest trained and saved:
+2023-01-09 23:21:03,292:models.py:train_models:INFO:All models trained and saved successfully:
+2023-01-09 23:21:03,309:models.py:test_models:INFO:Logistic_Regression: 
+accuracy --> 0.6976666666666667 
+MCC --> 0.2764574968774028 
+f1_score --> 0.46299585553582007
+:
+2023-01-09 23:21:50,341:models.py:test_models:INFO:C_Support_Vector_Classification: 
+accuracy --> 0.7337777777777778 
+MCC --> 0.30102097381260934 
+f1_score --> 0.47224669603524233
+:
+2023-01-09 23:21:50,814:models.py:test_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier): 
+accuracy --> 0.7182222222222222 
+MCC --> 0.2517205411681904 
+f1_score --> 0.43418116912092813
+:
+2023-01-09 23:21:51,614:models.py:test_models:INFO:Random_Forest: 
+accuracy --> 0.7786666666666666 
+MCC --> 0.3522212473950828 
+f1_score --> 0.49364514489069644
+:
+2023-01-09 23:39:03,508:preprocess.py:preprocess_input:INFO:Encoder saved successfully:
+2023-01-09 23:39:03,563:preprocess.py:preprocess_input:INFO:Scaler saved successfully:
+2023-01-09 23:39:03,888:models.py:train_models:INFO:Logistic_Regression trained and saved:
+2023-01-09 23:40:32,680:models.py:train_models:INFO:C_Support_Vector_Classification trained and saved:
+2023-01-09 23:41:29,429:models.py:train_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier) trained and saved:
+2023-01-09 23:41:41,802:models.py:train_models:INFO:Random_Forest trained and saved:
+2023-01-09 23:41:41,802:models.py:train_models:INFO:All models trained and saved successfully:
+2023-01-09 23:41:41,824:models.py:test_models:INFO:Logistic_Regression: 
+accuracy --> 0.6992222222222222 
+MCC --> 0.29831296922282063 
+f1_score --> 0.4795231686214189
+:
+2023-01-09 23:42:40,433:models.py:test_models:INFO:C_Support_Vector_Classification: 
+accuracy --> 0.7768888888888889 
+MCC --> 0.3849156935678977 
+f1_score --> 0.5293014533520862
+:
+2023-01-09 23:42:40,478:models.py:test_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier): 
+accuracy --> 0.7245555555555555 
+MCC --> 0.3320191812052597 
+f1_score --> 0.5011068625477964
+:
+2023-01-09 23:42:41,244:models.py:test_models:INFO:Random_Forest: 
+accuracy --> 0.8127777777777778 
+MCC --> 0.40195028799952115 
+f1_score --> 0.5016267376515824
+:
+2023-01-09 23:43:52,322:preprocess.py:preprocess_input:INFO:Encoder saved successfully:
+2023-01-09 23:43:52,377:preprocess.py:preprocess_input:INFO:Scaler saved successfully:
+2023-01-09 23:43:52,638:models.py:train_models:INFO:Logistic_Regression trained and saved:
+2023-01-09 23:45:02,172:models.py:train_models:INFO:C_Support_Vector_Classification trained and saved:
+2023-01-09 23:45:58,722:models.py:train_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier) trained and saved:
+2023-01-09 23:46:13,807:models.py:train_models:INFO:Random_Forest trained and saved:
+2023-01-09 23:46:13,807:models.py:train_models:INFO:All models trained and saved successfully:
+2023-01-09 23:46:13,829:models.py:test_models:INFO:Logistic_Regression: 
+accuracy --> 0.6972222222222222 
+MCC --> 0.2750619701842506 
+f1_score --> 0.46199407699901285
+:
+2023-01-09 23:47:07,483:models.py:test_models:INFO:C_Support_Vector_Classification: 
+accuracy --> 0.7441111111111111 
+MCC --> 0.3307452623629872 
+f1_score --> 0.4946236559139785
+:
+2023-01-09 23:47:07,526:models.py:test_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier): 
+accuracy --> 0.7302222222222222 
+MCC --> 0.3008195489516065 
+f1_score --> 0.47354726799653074
+:
+2023-01-09 23:47:08,308:models.py:test_models:INFO:Random_Forest: 
+accuracy --> 0.7826666666666666 
+MCC --> 0.3657186513690304 
+f1_score --> 0.5048101265822785
+:
+2023-01-09 23:48:18,027:preprocess.py:preprocess_input:INFO:Encoder saved successfully:
+2023-01-09 23:48:18,083:preprocess.py:preprocess_input:INFO:Scaler saved successfully:
+2023-01-09 23:48:18,412:models.py:train_models:INFO:Logistic_Regression trained and saved:
+2023-01-09 23:49:46,400:models.py:train_models:INFO:C_Support_Vector_Classification trained and saved:
+2023-01-09 23:50:43,119:models.py:train_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier) trained and saved:
+2023-01-09 23:50:55,664:models.py:train_models:INFO:Random_Forest trained and saved:
+2023-01-09 23:50:55,664:models.py:train_models:INFO:All models trained and saved successfully:
+2023-01-09 23:50:55,687:models.py:test_models:INFO:Logistic_Regression: 
+accuracy --> 0.6992222222222222 
+MCC --> 0.29831296922282063 
+f1_score --> 0.4795231686214189
+:
+2023-01-09 23:51:54,163:models.py:test_models:INFO:C_Support_Vector_Classification: 
+accuracy --> 0.7768888888888889 
+MCC --> 0.3849156935678977 
+f1_score --> 0.5293014533520862
+:
+2023-01-09 23:51:54,211:models.py:test_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier): 
+accuracy --> 0.732 
+MCC --> 0.3252159123373819 
+f1_score --> 0.49391523289970624
+:
+2023-01-09 23:51:55,024:models.py:test_models:INFO:Random_Forest: 
+accuracy --> 0.8132222222222222 
+MCC --> 0.40309391623575275 
+f1_score --> 0.5022209061297009
+:

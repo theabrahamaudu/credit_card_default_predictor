@@ -1,0 +1,141 @@
+2022-12-30 23:56:53,311:exp.py:<module>:INFO:model: Logistic Regression,
+best_score: 0.3694996936874785,
+best_params: {'C': 11, 'solver': 'liblinear'}:
+2022-12-31 11:41:50,242:exp.py:<module>:INFO:RandomizedSearchCV
+==================:
+2022-12-31 11:42:03,246:exp.py:<module>:INFO:model: Logistic Regression,
+best_score: 0.3694996936874785,
+best_params: {'solver': 'liblinear', 'C': 11}
+:
+2022-12-31 13:05:33,387:exp.py:<module>:INFO:RandomizedSearchCV
+==================:
+2022-12-31 13:05:45,423:exp.py:<module>:INFO:model: Logistic Regression,
+best_score: 0.3694996936874785,
+best_params: {'solver': 'newton-cg', 'C': 21}
+:
+2022-12-31 13:20:55,932:exp.py:<module>:INFO:model: C-Support Vector Classification,
+best_score: 0.45956608114671865,
+best_params: {'kernel': 'rbf', 'gamma': 'scale', 'C': 11}
+:
+2022-12-31 13:45:44,008:exp.py:<module>:INFO:model: Neural Network (Multi-layer Perceptron classifier),
+best_score: 0.4676416253678483,
+best_params: {'solver': 'adam', 'max_iter': 450, 'hidden_layer_sizes': 150, 'activation': 'logistic'}
+:
+2022-12-31 13:52:49,413:exp.py:<module>:INFO:model: Random Forest,
+best_score: 0.4783247892779022,
+best_params: {'max_features': None, 'criterion': 'entropy'}
+:
+2022-12-31 14:15:18,956:exp.py:<module>:INFO:RandomizedSearchCV
+==================:
+2022-12-31 14:15:32,055:exp.py:<module>:INFO:model: Logistic Regression,
+best_score: 0.3680277430540147,
+best_params: {'solver': 'newton-cg', 'C': 11}
+:
+2022-12-31 14:17:55,771:exp.py:<module>:INFO:RandomizedSearchCV --> Under-Sampled Dataset
+==================:
+2022-12-31 14:18:08,590:exp.py:<module>:INFO:model: Logistic Regression, --> Under-Sampled Dataset
+best_score: 0.3680277430540147,
+best_params: {'solver': 'liblinear', 'C': 16}
+:
+2022-12-31 14:36:25,718:exp.py:<module>:INFO:model: C-Support Vector Classification, --> Under-Sampled Dataset
+best_score: 0.4468166657256944,
+best_params: {'kernel': 'rbf', 'gamma': 'auto', 'C': 6}
+:
+2022-12-31 15:10:01,231:exp.py:<module>:INFO:model: Neural Network (Multi-layer Perceptron classifier), --> Under-Sampled Dataset
+best_score: 0.4586356426294017,
+best_params: {'solver': 'sgd', 'max_iter': 650, 'hidden_layer_sizes': 900, 'activation': 'relu'}
+:
+2022-12-31 15:16:39,064:exp.py:<module>:INFO:model: Random Forest, --> Under-Sampled Dataset
+best_score: 0.47220640931786295,
+best_params: {'max_features': None, 'criterion': 'log_loss'}
+:
+2022-12-31 15:58:59,416:exp.py:<module>:INFO:RandomizedSearchCV --> Under-Sampled Dataset REAL
+==================:
+2022-12-31 15:59:07,236:exp.py:<module>:INFO:model: Logistic Regression, --> Under-Sampled Dataset REAL
+best_score: 0.6650727261701611,
+best_params: {'solver': 'newton-cg', 'C': 1}
+:
+2022-12-31 16:01:17,050:exp.py:<module>:INFO:model: C-Support Vector Classification, --> Under-Sampled Dataset REAL
+best_score: 0.662661828879675,
+best_params: {'kernel': 'rbf', 'gamma': 'auto', 'C': 11}
+:
+2022-12-31 16:23:54,605:exp.py:<module>:INFO:model: Neural Network (Multi-layer Perceptron classifier), --> Under-Sampled Dataset REAL
+best_score: 0.6803202175496534,
+best_params: {'solver': 'sgd', 'max_iter': 900, 'hidden_layer_sizes': 800, 'activation': 'relu'}
+:
+2022-12-31 16:26:06,398:exp.py:<module>:INFO:model: Random Forest, --> Under-Sampled Dataset REAL
+best_score: 0.6750960947961346,
+best_params: {'max_features': 'sqrt', 'criterion': 'gini'}
+:
+2022-12-31 16:37:44,412:exp.py:<module>:INFO:RandomizedSearchCV --> Under-Sampled Dataset REAL
+==================:
+2022-12-31 16:37:52,421:exp.py:<module>:INFO:model: Logistic Regression, --> Under-Sampled Dataset REAL
+best_score: 0.6624366903208203,
+best_params: {'solver': 'liblinear', 'C': 51}
+:
+2022-12-31 16:40:08,376:exp.py:<module>:INFO:model: C-Support Vector Classification, --> Under-Sampled Dataset REAL
+best_score: 0.6539093166187319,
+best_params: {'kernel': 'rbf', 'gamma': 'scale', 'C': 46}
+:
+2022-12-31 17:00:45,435:exp.py:<module>:INFO:model: Neural Network (Multi-layer Perceptron classifier), --> Under-Sampled Dataset REAL
+best_score: 0.686400802039395,
+best_params: {'solver': 'adam', 'max_iter': 300, 'hidden_layer_sizes': 250, 'activation': 'logistic'}
+:
+2022-12-31 17:02:55,472:exp.py:<module>:INFO:model: Random Forest, --> Under-Sampled Dataset REAL
+best_score: 0.6851511708190687,
+best_params: {'max_features': 'log2', 'criterion': 'entropy'}
+:
+2023-01-09 11:36:51,306:exp.py:<module>:INFO:RandomizedSearchCV --> Under-Sampled REAL
+==================:
+2023-01-09 11:36:59,249:exp.py:<module>:INFO:model: Logistic Regression, --> Under-Sampled Dataset REAL
+best_score: 0.6617916482472084,
+best_params: {'solver': 'liblinear', 'C': 1}
+:
+2023-01-09 11:39:27,411:exp.py:<module>:INFO:model: C-Support Vector Classification, --> Under-Sampled Dataset REAL
+best_score: 0.6604205323466064,
+best_params: {'kernel': 'rbf', 'gamma': 'scale', 'C': 31}
+:
+2023-01-09 11:58:20,552:exp.py:<module>:INFO:model: Neural Network (Multi-layer Perceptron classifier), --> Under-Sampled Dataset REAL
+best_score: 0.6685847588097412,
+best_params: {'solver': 'adam', 'max_iter': 900, 'hidden_layer_sizes': 800, 'activation': 'logistic'}
+:
+2023-01-09 12:00:37,099:exp.py:<module>:INFO:model: Random Forest, --> Under-Sampled Dataset REAL
+best_score: 0.6837543487367721,
+best_params: {'max_features': 'sqrt', 'criterion': 'log_loss'}
+:
+2023-01-09 12:03:14,238:exp.py:<module>:INFO:RandomizedSearchCV --> Over-Sampled REAL
+==================:
+2023-01-09 12:03:32,001:exp.py:<module>:INFO:model: Logistic Regression, --> Over-Sampled REAL
+best_score: 0.6596616055072909,
+best_params: {'solver': 'liblinear', 'C': 1}
+:
+2023-01-09 13:09:48,739:exp.py:<module>:INFO:model: C-Support Vector Classification, --> Over-Sampled REAL
+best_score: 0.7542479839813352,
+best_params: {'kernel': 'rbf', 'gamma': 'auto', 'C': 51}
+:
+2023-01-09 15:50:04,374:exp.py:<module>:INFO:model: Neural Network (Multi-layer Perceptron classifier), --> Over-Sampled REAL
+best_score: 0.8529988304311109,
+best_params: {'solver': 'adam', 'max_iter': 950, 'hidden_layer_sizes': 900, 'activation': 'tanh'}
+:
+2023-01-09 15:57:21,916:exp.py:<module>:INFO:model: Random Forest, --> Over-Sampled REAL
+best_score: 0.9378282903039248,
+best_params: {'max_features': 'log2', 'criterion': 'gini'}
+:
+2023-01-09 16:15:24,817:exp.py:<module>:INFO:RandomizedSearchCV --> SMOTE Over-Sampled REAL
+==================:
+2023-01-09 16:15:41,463:exp.py:<module>:INFO:model: Logistic Regression, --> SMOTE Over-Sampled REAL
+best_score: 0.7147909870984653,
+best_params: {'solver': 'newton-cg', 'C': 1}
+:
+2023-01-09 16:52:13,254:exp.py:<module>:INFO:model: C-Support Vector Classification, --> SMOTE Over-Sampled REAL
+best_score: 0.7640690276281442,
+best_params: {'kernel': 'rbf', 'gamma': 'auto', 'C': 51}
+:
+2023-01-09 19:14:41,882:exp.py:<module>:INFO:model: Neural Network (Multi-layer Perceptron classifier), --> SMOTE Over-Sampled REAL
+best_score: 0.7645533775708667,
+best_params: {'solver': 'lbfgs', 'max_iter': 850, 'hidden_layer_sizes': 550, 'activation': 'relu'}
+:
+2023-01-09 19:26:24,380:exp.py:<module>:INFO:model: Random Forest, --> SMOTE Over-Sampled REAL
+best_score: 0.8251779768090568,
+best_params: {'max_features': 'sqrt', 'criterion': 'gini'}
+:
