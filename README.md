@@ -16,27 +16,28 @@ Four models were trained on the dataset:
 
 ## Model Performance
 - [ ] Update: After implementing Matthews Correlation Coefficient and F1 Score:  
-Date: 28/12/2022
+Date: 09/01/2023
   
-        Logistic Regression: 
-        accuracy --> 0.8143333333333334 
-        MCC --> 0.33866741348679213 
-        f1_score --> 0.36584440227703985
+        2023-01-09 23:50:55,687:models.py:test_models:INFO:Logistic_Regression: 
+        accuracy --> 0.6992222222222222 
+        MCC --> 0.29831296922282063 
+        f1_score --> 0.4795231686214189
+        :
+        2023-01-09 23:51:54,163:models.py:test_models:INFO:C_Support_Vector_Classification: 
+        accuracy --> 0.7768888888888889 
+        MCC --> 0.3849156935678977 
+        f1_score --> 0.5293014533520862
+        :
+        2023-01-09 23:51:54,211:models.py:test_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier): 
+        accuracy --> 0.732 
+        MCC --> 0.3252159123373819 
+        f1_score --> 0.49391523289970624
+        :
+        2023-01-09 23:51:55,024:models.py:test_models:INFO:Random_Forest: 
+        accuracy --> 0.8132222222222222 
+        MCC --> 0.40309391623575275 
+        f1_score --> 0.5022209061297009
 
-        Support Vector Machine: 
-        accuracy --> 0.8203333333333334 
-        MCC --> 0.38425724231122166 
-        f1_score --> 0.44831115660184234
-
-        Neural Network: 
-        accuracy --> 0.811 
-        MCC --> 0.3760558065179947 
-        f1_score --> 0.4735376044568246
-
-        Random Forest: 
-        accuracy --> 0.8146666666666667 
-        MCC --> 0.3784767312418483 
-        f1_score --> 0.4650416933932008
 
 All the models as well as the ecoder and scaler were saved to memory so as to enable the transformation of new data from end users before prediction on the data.
 
@@ -118,10 +119,7 @@ streamlit run streamlit_frontend.py
 Feel free to reach out to me if you have any issues using the platform
 
 ## Improvements in the Works
-- [ ] Hyperparameter tuning
-- [ ] Better feature selection/engineering
-- [ ] Try out over-sampling/under-sampling techniques on the dataset
-- [ ] Create class to hold info about all models so prediction function simply calls as necessary
+- [ ] Better feature engineering/selection
 - [ ] Unit tests
 - [ ] Deployment to cloud
 - [ ] Full documentation
