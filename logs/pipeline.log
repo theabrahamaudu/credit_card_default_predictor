@@ -301,3 +301,124 @@ accuracy --> 0.8132222222222222
 MCC --> 0.40309391623575275 
 f1_score --> 0.5022209061297009
 :
+2023-02-01 12:11:32,530:preprocess.py:preprocess_website_input:INFO:Web user data processed successfully:
+2023-07-13 00:08:48,763:preprocess.py:preprocess_train_input:INFO:Encoder saved successfully:
+2023-07-13 00:08:49,493:preprocess.py:preprocess_train_input:INFO:Scaler saved successfully:
+2023-07-13 00:08:50,156:models.py:train_models:INFO:Logistic_Regression trained and saved:
+2023-07-13 00:09:32,231:models.py:train_models:INFO:C_Support_Vector_Classification trained and saved:
+2023-07-13 00:15:52,440:models.py:train_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier) trained and saved:
+2023-07-13 00:16:36,142:preprocess.py:preprocess_train_input:INFO:Encoder saved successfully:
+2023-07-13 00:16:37,746:preprocess.py:preprocess_train_input:INFO:Scaler saved successfully:
+2023-07-13 00:16:38,499:models.py:train_models:INFO:Logistic_Regression trained and saved:
+2023-07-13 00:17:16,790:models.py:train_models:INFO:C_Support_Vector_Classification trained and saved:
+2023-07-13 00:25:05,457:models.py:train_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier) trained and saved:
+2023-07-13 00:29:59,208:preprocess.py:preprocess_train_input:INFO:Encoder saved successfully:
+2023-07-13 00:30:00,125:preprocess.py:preprocess_train_input:INFO:Scaler saved successfully:
+2023-07-13 00:30:09,387:models.py:train_models:INFO:Logistic_Regression trained and saved:
+2023-07-13 00:30:56,921:models.py:train_models:INFO:C_Support_Vector_Classification trained and saved:
+2023-07-13 00:40:50,458:models.py:train_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier) trained and saved:
+2023-07-13 16:29:02,002:preprocess.py:preprocess_train_input:INFO:Encoder saved successfully:
+2023-07-13 16:29:02,270:preprocess.py:preprocess_train_input:INFO:Scaler saved successfully:
+2023-07-13 16:29:04,232:models.py:train_models:INFO:Logistic_Regression trained and saved:
+2023-07-13 16:29:20,153:models.py:train_models:INFO:C_Support_Vector_Classification trained and saved:
+2023-07-13 16:29:50,287:models.py:train_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier) trained and saved:
+2023-07-13 16:29:55,969:models.py:train_models:INFO:Random_Forest trained and saved:
+2023-07-13 16:29:55,970:models.py:train_models:INFO:All models trained and saved successfully:
+2023-07-13 16:29:55,990:models.py:test_models:INFO:Logistic_Regression: 
+accuracy --> 0.6923076923076923 
+MCC --> 0.40260152462276916 
+f1_score --> 0.6745762711864408
+:
+2023-07-13 16:30:05,557:models.py:test_models:INFO:C_Support_Vector_Classification: 
+accuracy --> 0.6963141025641025 
+MCC --> 0.41053255003272965 
+f1_score --> 0.6790855207451312
+:
+2023-07-13 16:30:05,589:models.py:test_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier): 
+accuracy --> 0.6798878205128205 
+MCC --> 0.3663223606674141 
+f1_score --> 0.6782118405155054
+:
+2023-07-13 16:30:06,025:models.py:test_models:INFO:Random_Forest: 
+accuracy --> 0.6983173076923077 
+MCC --> 0.4029101500422631 
+f1_score --> 0.6974688629971877
+:
+2023-07-13 17:13:31,544:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
+2023-07-13 17:13:33,566:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
+2023-07-13 17:14:03,291:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
+2023-07-13 17:14:09,862:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
+2023-07-13 17:17:13,878:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
+2023-07-13 17:22:32,795:preprocess.py:preprocess_train_input:INFO:Encoder saved successfully:
+2023-07-13 17:22:33,077:preprocess.py:preprocess_train_input:INFO:Scaler saved successfully:
+2023-07-13 17:22:35,442:models.py:train_models:INFO:Logistic_Regression trained and saved:
+2023-07-13 17:22:53,285:models.py:train_models:INFO:C_Support_Vector_Classification trained and saved:
+2023-07-13 17:23:21,438:models.py:train_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier) trained and saved:
+2023-07-13 17:23:27,235:models.py:train_models:INFO:Random_Forest trained and saved:
+2023-07-13 17:23:27,235:models.py:train_models:INFO:All models trained and saved successfully:
+2023-07-13 17:23:27,250:models.py:test_models:INFO:Logistic_Regression: 
+accuracy --> 0.6923076923076923 
+MCC --> 0.40260152462276916 
+f1_score --> 0.6745762711864408
+:
+2023-07-13 17:23:37,076:models.py:test_models:INFO:C_Support_Vector_Classification: 
+accuracy --> 0.6963141025641025 
+MCC --> 0.41053255003272965 
+f1_score --> 0.6790855207451312
+:
+2023-07-13 17:23:37,110:models.py:test_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier): 
+accuracy --> 0.672676282051282 
+MCC --> 0.3511136932566148 
+f1_score --> 0.6722823906939431
+:
+2023-07-13 17:23:37,525:models.py:test_models:INFO:Random_Forest: 
+accuracy --> 0.7007211538461539 
+MCC --> 0.40880909225963197 
+f1_score --> 0.6981818181818181
+:
+2023-07-13 17:23:41,717:preprocess.py:preprocess_train_input:INFO:Encoder saved successfully:
+2023-07-13 17:23:41,952:preprocess.py:preprocess_train_input:INFO:Scaler saved successfully:
+2023-07-13 17:23:43,808:models.py:train_models:INFO:Logistic_Regression trained and saved:
+2023-07-13 17:23:59,426:models.py:train_models:INFO:C_Support_Vector_Classification trained and saved:
+2023-07-13 17:24:28,000:models.py:train_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier) trained and saved:
+2023-07-13 17:24:33,592:models.py:train_models:INFO:Random_Forest trained and saved:
+2023-07-13 17:24:33,593:models.py:train_models:INFO:All models trained and saved successfully:
+2023-07-13 17:24:33,606:models.py:test_models:INFO:Logistic_Regression: 
+accuracy --> 0.6923076923076923 
+MCC --> 0.40260152462276916 
+f1_score --> 0.6745762711864408
+:
+2023-07-13 17:24:44,284:models.py:test_models:INFO:C_Support_Vector_Classification: 
+accuracy --> 0.6963141025641025 
+MCC --> 0.41053255003272965 
+f1_score --> 0.6790855207451312
+:
+2023-07-13 17:24:44,332:models.py:test_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier): 
+accuracy --> 0.6782852564102564 
+MCC --> 0.3543679248291287 
+f1_score --> 0.6961785849413544
+:
+2023-07-13 17:24:44,988:models.py:test_models:INFO:Random_Forest: 
+accuracy --> 0.702323717948718 
+MCC --> 0.4112599202179095 
+f1_score --> 0.7010060362173037
+:
+2023-07-13 17:27:10,337:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
+2023-07-13 17:27:13,608:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
+2023-07-13 17:29:57,715:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
+2023-07-13 17:30:21,727:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
+2023-07-13 17:42:12,416:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
+2023-07-13 17:42:38,969:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
+2023-07-13 17:50:26,640:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
+2023-07-13 17:51:47,942:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
+2023-07-13 17:58:56,367:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
+2023-07-13 17:59:04,052:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
+2023-07-13 18:00:52,981:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
+2023-07-13 18:01:42,346:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
+2023-07-13 18:03:13,730:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
+2023-07-13 18:06:48,721:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
+2023-07-13 18:15:35,518:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
+2023-07-13 18:15:58,772:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
+2023-07-13 18:16:37,874:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
+2023-07-13 18:16:52,851:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
+2023-07-13 18:17:04,255:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:

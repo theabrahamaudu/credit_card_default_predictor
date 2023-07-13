@@ -6,62 +6,32 @@ import pandas as pd
 from pandas import DataFrame
 import joblib
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
-from imblearn.over_sampling import SMOTE
+from sklearn.model_selection import train_test_split
 from utils.pipeline_log_config import pipeline as logger
 
 
-def class_split(df: DataFrame):
-    """
-    Used to split credit card dataset based on the target column as 0 or 1
-    Args:
-        df (DataFrame):
+def undersample_by_value_counts(data, label_column):
+    value_counts = data[label_column].value_counts()
+    mean_count = value_counts.mean()
 
-    Returns:
-        data_default (DataFrame):
-        data_non_default (DataFrame):
-    """
-    data_default: DataFrame = df[df['default.payment.next.month'] == 1]
-    data_non_default: DataFrame = df[df['default.payment.next.month'] == 0]
+    undersampled_data = pd.DataFrame(columns=data.columns)
 
-    return data_default, data_non_default
+    for value, count in value_counts.items():
+        if count > mean_count:
+            undersampled_count = int((count / value_counts.sum()) * (mean_count/2))
+            subset = data[data[label_column] == value].sample(n=undersampled_count, random_state=42)
+            undersampled_data = pd.concat([undersampled_data, subset], ignore_index=True)
+        else:
+            subset = data[data[label_column] == value]
+            undersampled_data = pd.concat([undersampled_data, subset], ignore_index=True)
 
+    # Randomize the undersampled data
+    randomized_data = undersampled_data.sample(frac=1, random_state=42)
 
-def over_sample_dataset(df: DataFrame):
-    """
-    Used to over-sample credit card dataset with defaulters (1) as minority
-    Args:
-        df (DataFrame):
-
-    Returns:
-        df_train_over (DataFrame):
-    """
-    data_1, data_0 = class_split(df)
-    data_1_over = data_1.sample(len(data_0), replace=True, random_state=234)
-    df_train_over = pd.concat([data_1_over, data_0], axis=0)
-    df_train_over = df_train_over.sample(frac=1, random_state=234)
-
-    return df_train_over
+    return randomized_data.astype('int64')
 
 
-def SMOTE_oversample_dataset(df: DataFrame):
-    """
-    Used to over-sample credit card dataset using SMOTE with minority strategy
-    Args:
-        df (DataFrame):
-
-    Returns:
-        df_train_smote_over (DataFrame):
-    """
-    smote_x = df.drop('default.payment.next.month', axis=1)
-    smote_y = df['default.payment.next.month']
-    smote = SMOTE(sampling_strategy='minority')
-    X_sm, y_sm = smote.fit_resample(smote_x, smote_y)
-    df_train_smote_over = pd.concat([X_sm, y_sm], axis='columns')
-
-    return df_train_smote_over
-
-
-def preprocess_input(df: DataFrame):
+def preprocess_train_input(raw_data: DataFrame):
     """
     Takes raw dataset in Pandas dataframe format as input and returns preprocessed features and expected outcomes
     as X and y respectively.
@@ -78,42 +48,68 @@ def preprocess_input(df: DataFrame):
         X (DataFrame): DataFrame
         y (DataFrame): DataFrame
     """
-    df = df.copy()
+    data = raw_data.copy()
 
     # Drop ID
-    df = df.drop('ID', axis=1)
+    data = data.drop('ID', axis=1)
+
+    # Get categorical features
+    categorical_features = [feature for feature in data.columns if data[feature].nunique() < 20\
+                             and feature != 'default.payment.next.month']
+    # Save categorical features
+    cat_featutes_path = "./models/cat_features.pkl"
+    joblib.dump(categorical_features, cat_featutes_path)
 
     # Perform one-hot encoding
-    categorical_cols = ['EDUCATION', 'MARRIAGE']
+    data_temp = data.copy()
+    data_to_encode = data_temp[categorical_features]
 
-    onehotencoder = OneHotEncoder(sparse=False)
+    # Initialize and fit encoder 
+    encoder = OneHotEncoder(sparse_output=False, drop='first')
+    encoder.fit(data_to_encode)
 
-    transformed_data = onehotencoder.fit_transform(df[categorical_cols])
-    joblib_file = f"../models/encoder.pkl"
-    joblib.dump(onehotencoder, joblib_file)
+    # Save encoder
+    encoder_path = "./models/encoder.pkl"
+    joblib.dump(encoder, encoder_path)
     logger.info("Encoder saved successfully")
-    # the above transformed_data is an array so convert it to dataframe
-    encoded_data = pd.DataFrame(transformed_data, index=df.index, columns=onehotencoder.get_feature_names_out())
 
-    # now concatenate the original data and the encoded data using pandas
-    concatenated_data = pd.concat([df, encoded_data], axis=1)
-    df = concatenated_data.drop(columns=categorical_cols)
+    # Transform data
+    encoder = joblib.load(encoder_path)
+    encoded_columns = encoder.transform(data_to_encode)
+    encoded_df = pd.DataFrame(encoded_columns, 
+                              columns=encoder.get_feature_names_out(categorical_features))
+
+    data_temp.drop(categorical_features, axis=1, inplace=True)
+    data_encoded = pd.concat([data_temp, encoded_df], axis=1)
+
+    # Undersample the data
+    undersampled_data_encoded = undersample_by_value_counts(data_encoded,
+                                                            'default.payment.next.month')
 
     # split df into x,y
-    y: DataFrame = df['default.payment.next.month'].copy()
-    X = df.drop('default.payment.next.month', axis=1).copy()
+    X = undersampled_data_encoded.drop('default.payment.next.month', axis=1) # Inputs
+    y = undersampled_data_encoded['default.payment.next.month'] # Target
 
-    # Scale X with a standard scaler
-    scaler = StandardScaler()
-    X: DataFrame = pd.DataFrame(scaler.fit_transform(X), columns=X.columns)
-    joblib_file = f"../models/scaler.pkl"
-    joblib.dump(scaler, joblib_file)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, 
+                                                        random_state=42, 
+                                                        stratify=y,
+                                                        shuffle=True)
+
+    # Fit StandardScaler
+    scaler = StandardScaler().fit(X_train)
+    scaler_path = f"./models/scaler.pkl"
+    joblib.dump(scaler, scaler_path)
     logger.info("Scaler saved successfully")
 
-    return X, y
+    # Scale input data
+    scaler = joblib.load(scaler_path)
+    X_train_scaled = scaler.transform(X_train)
+    X_test_scaled = scaler.transform(X_test)
+
+    return X_train_scaled, X_test_scaled, y_train, y_test
 
 
-def preprocess_test_input(df: DataFrame):
+def preprocess_inference_input(raw_data: DataFrame):
     """
     Takes raw single user credit card data in Pandas dataframe format as input and returns preprocessed features as X.
 
@@ -127,97 +123,35 @@ def preprocess_test_input(df: DataFrame):
     Returns:
         df (DataFrame): Preprocessed data
     """
-    df = df.copy()
+    data = raw_data.copy()
 
     # Drop ID
-    df = df.drop('ID', axis=1)
+    data = data.drop('ID', axis=1)
 
+    # Load categorical features
+    cat_featutes_path = "./models/cat_features.pkl"
+    categorical_features = joblib.load(cat_featutes_path)
+    
     # Perform one-hot encoding
-    categorical_cols = ['EDUCATION', 'MARRIAGE']
+    data_temp = data.copy()
+    data_to_encode = data_temp[categorical_features]
 
-    onehotencoder = joblib.load('../models/encoder.pkl')
+    # Transform data
+    encoder_path = "./models/encoder.pkl"
+    encoder = joblib.load(encoder_path)
+    encoded_columns = encoder.transform(data_to_encode)
+    encoded_df = pd.DataFrame(encoded_columns, 
+                              columns=encoder.get_feature_names_out(categorical_features))
 
-    transformed_data = onehotencoder.transform(df[categorical_cols])
-
-    # the above transformed_data is an array so convert it to dataframe
-    encoded_data = pd.DataFrame(transformed_data, index=df.index, columns=onehotencoder.get_feature_names_out())
-
-    # now concatenate the original data and the encoded data using pandas
-    concatenated_data = pd.concat([df, encoded_data], axis=1)
-    df = concatenated_data.drop(columns=categorical_cols)
-
-    # split df into x,y
-    y: DataFrame = df['default.payment.next.month'].copy()
-    X = df.drop('default.payment.next.month', axis=1).copy()
-
-    # Scale X with a standard scaler
-    scaler = joblib.load(f"../models/scaler.pkl")
-    X: DataFrame = pd.DataFrame(scaler.transform(X), columns=X.columns)
-    #     logger.info("Web user data processed successfully")
-
-    return X, y
-
-
-def train_test_preprocess(train_df: DataFrame, test_df: DataFrame):
-    """
-    Custom function for preprocessing train and test dataset without leakage
-
-    Takes split raw datasets and preprocesses them saparately using uniform parameters
-    Args:
-        train_df (DataFrame):
-        test_df (DataFrame):
-
-    Returns:
-        X_train (DataFrame):
-        y_train (DataFrame):
-        X_test (DataFrame):
-        y_test (DataFrame):
-    """
-
-    X_train, y_train = preprocess_input(train_df)
-    X_test, y_test = preprocess_test_input(test_df)
-
-    return X_train, y_train, X_test, y_test
-
-
-def preprocess_website_input(df: DataFrame):
-    """
-    Takes raw single user credit card data in Pandas dataframe format as input and returns preprocessed features as X.
-
-    - The ID column is dropped for simplicity
-    - 'EDUCATION' and 'MARRIAGE' columns are one-hot encoded using previously saved encoder
-    - The dataset is scaled using previously saved scaler
-    - Preprocessed dataframe is returned
-    Args:
-        df (DataFrame): Single user credit card data
-
-    Returns:
-        df (DataFrame): Preprocessed data
-    """
-    df = df.copy()
-
-    # Drop ID
-    df = df.drop('ID', axis=1)
-
-    # Perform one-hot encoding
-    categorical_cols = ['EDUCATION', 'MARRIAGE']
-
-    onehotencoder = joblib.load('../models/encoder.pkl')
-
-    transformed_data = onehotencoder.transform(df[categorical_cols])
-
-    # the above transformed_data is an array so convert it to dataframe
-    encoded_data = pd.DataFrame(transformed_data, index=df.index, columns=onehotencoder.get_feature_names_out())
-
-    # now concatenate the original data and the encoded data using pandas
-    concatenated_data = pd.concat([df, encoded_data], axis=1)
-    df = concatenated_data.drop(columns=categorical_cols)
-
-    # Scale X with a standard scaler
-    scaler = joblib.load(f"../models/scaler.pkl")
-    df: DataFrame = pd.DataFrame(scaler.transform(df), columns=df.columns)
+    data_temp.drop(categorical_features, axis=1, inplace=True)
+    data_encoded = pd.concat([data_temp.reset_index(drop=True), encoded_df], axis=1)
+  
+    # Scale inpputs with a StandardScaler
+    scaler_path = f"./models/scaler.pkl"
+    scaler = joblib.load(scaler_path)
+    scaled_data = scaler.transform(data_encoded)
     logger.info("Web user data processed successfully")
 
-    return df
+    return scaled_data
 
 

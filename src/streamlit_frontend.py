@@ -8,7 +8,8 @@ The result is presented as percentage probability to default on credit card paym
 """
 
 import sys
-sys.path.insert(1,r"C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction")
+import os
+sys.path.append(f"{os.getcwd()}")
 import pandas as pd
 import streamlit as st
 import requests

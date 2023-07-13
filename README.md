@@ -7,36 +7,36 @@ It can be used by interacting with the web UI.
 ## Description
 
 The prediction infrastructure of this project was built using a [credit card dataset](https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset) from kaggle.
-The dataset was then preprocessed to deal with categorical variables, over-sampled to deal with data imbalance, as well as scaling, to bring all the features within a narrow range for better performance.
+The dataset was then preprocessed to deal with categorical variables, under-sampled to deal with data imbalance, as well as scaling, to bring all the features within a narrow range for better performance.
 Four models were trained on the dataset:
 * Logistic Regression
 * Neural Network
-* Decision Tree
+* Random Forest
 * Support Vector Machine
 
 ## Model Performance
-- [ ] Update: After implementing Matthews Correlation Coefficient and F1 Score:  
-Date: 09/01/2023
+- [ ] Update: After refining preprocessing pipeline:  
+Date: 13/07/2023
   
-        2023-01-09 23:50:55,687:models.py:test_models:INFO:Logistic_Regression: 
-        accuracy --> 0.6992222222222222 
-        MCC --> 0.29831296922282063 
-        f1_score --> 0.4795231686214189
+        2023-07-13 17:24:33,606:models.py:test_models:INFO:Logistic_Regression:
+        accuracy --> 0.6923076923076923 
+        MCC --> 0.40260152462276916 
+        f1_score --> 0.6745762711864408
         :
-        2023-01-09 23:51:54,163:models.py:test_models:INFO:C_Support_Vector_Classification: 
-        accuracy --> 0.7768888888888889 
-        MCC --> 0.3849156935678977 
-        f1_score --> 0.5293014533520862
+        2023-07-13 17:24:44,284:models.py:test_models:INFO:C_Support_Vector_Classification:
+        accuracy --> 0.6963141025641025 
+        MCC --> 0.41053255003272965 
+        f1_score --> 0.6790855207451312
         :
-        2023-01-09 23:51:54,211:models.py:test_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier): 
-        accuracy --> 0.732 
-        MCC --> 0.3252159123373819 
-        f1_score --> 0.49391523289970624
+        2023-07-13 17:24:44,332:models.py:test_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier):
+        accuracy --> 0.6782852564102564 
+        MCC --> 0.3543679248291287 
+        f1_score --> 0.6961785849413544
         :
-        2023-01-09 23:51:55,024:models.py:test_models:INFO:Random_Forest: 
-        accuracy --> 0.8132222222222222 
-        MCC --> 0.40309391623575275 
-        f1_score --> 0.5022209061297009
+        2023-07-13 17:24:44,988:models.py:test_models:INFO:Random_Forest:
+        accuracy --> 0.702323717948718 
+        MCC --> 0.4112599202179095 
+        f1_score --> 0.7010060362173037
 
 
 All the models as well as the ecoder and scaler were saved to memory so as to enable the transformation of new data from end users before prediction on the data.
@@ -119,9 +119,8 @@ streamlit run streamlit_frontend.py
 Feel free to reach out to me if you have any issues using the platform
 
 ## Improvements in the Works
-- [ ] Better feature engineering/selection
 - [ ] Unit tests
-- [ ] Deployment to cloud
+- [ ] Deployment to cloud (Blocked)
 - [ ] Full documentation
 
 ## Authors

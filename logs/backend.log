@@ -135,3 +135,1219 @@ Feature names seen at fit time, yet now missing:
 2022-12-27 18:16:55,870:main.py:<module>:INFO:API service running:
 2022-12-27 18:25:13,677:main.py:<module>:INFO:API service running:
 2022-12-27 18:25:13,899:main.py:<module>:INFO:API service running:
+2023-02-01 12:07:11,435:main.py:<module>:INFO:API service running:
+2023-02-01 12:07:14,435:main.py:<module>:INFO:API service running:
+2023-02-01 12:07:15,327:main.py:<module>:INFO:API service running:
+2023-02-01 12:09:49,301:main.py:<module>:INFO:API service running:
+2023-02-01 12:09:49,393:main.py:<module>:INFO:API service running:
+2023-02-01 12:11:32,434:main.py:predict:INFO:prediction request received:
+2023-02-01 12:11:32,434:main.py:predict:INFO:detecting selected model:
+2023-02-01 12:11:32,434:main.py:predict:INFO:loading selected model:
+2023-02-01 12:11:32,435:main.py:predict:INFO:model loaded successfully:
+2023-02-01 12:11:32,435:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-02-01 12:11:32,548:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 83, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+UnboundLocalError: local variable 'model' referenced before assignment
+2023-07-13 16:46:58,509:main.py:<module>:INFO:API service running:
+2023-07-13 16:47:03,688:main.py:<module>:INFO:API service running:
+2023-07-13 16:47:04,657:main.py:<module>:INFO:API service running:
+2023-07-13 16:49:46,768:main.py:<module>:INFO:API service running:
+2023-07-13 16:49:46,860:main.py:<module>:INFO:API service running:
+2023-07-13 16:49:57,209:main.py:<module>:INFO:API service running:
+2023-07-13 16:49:57,304:main.py:<module>:INFO:API service running:
+2023-07-13 16:50:24,311:main.py:<module>:INFO:API service running:
+2023-07-13 16:50:24,455:main.py:<module>:INFO:API service running:
+2023-07-13 16:50:51,658:main.py:<module>:INFO:API service running:
+2023-07-13 16:50:51,769:main.py:<module>:INFO:API service running:
+2023-07-13 16:53:19,960:main.py:predict:INFO:prediction request received:
+2023-07-13 16:53:19,961:main.py:predict:INFO:detecting selected model:
+2023-07-13 16:53:19,961:main.py:predict:INFO:loading selected model:
+2023-07-13 16:53:19,961:main.py:predict:INFO:model loaded successfully:
+2023-07-13 16:53:19,961:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 16:53:20,087:main.py:predict:ERROR:Error preprocessing data:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3803, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'default.payment.next.month'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 74, in predict
+    data = preprocess_inference_input(data)
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 146, in preprocess_inference_input
+    undersampled_data_encoded = undersample_by_value_counts(data_encoded,
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 14, in undersample_by_value_counts
+    value_counts = data[label_column].value_counts()
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'default.payment.next.month'
+2023-07-13 16:53:20,103:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+UnboundLocalError: local variable 'model' referenced before assignment
+2023-07-13 16:54:12,721:main.py:<module>:INFO:API service running:
+2023-07-13 16:54:12,911:main.py:<module>:INFO:API service running:
+2023-07-13 16:57:20,380:main.py:predict:INFO:prediction request received:
+2023-07-13 16:57:20,380:main.py:predict:INFO:detecting selected model:
+2023-07-13 16:57:20,380:main.py:predict:INFO:loading selected model:
+2023-07-13 16:57:20,381:main.py:predict:INFO:model loaded successfully:
+2023-07-13 16:57:20,381:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 16:57:20,427:main.py:predict:ERROR:Error preprocessing data:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3803, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'default.payment.next.month'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 74, in predict
+    data = preprocess_inference_input(data)
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 146, in preprocess_inference_input
+    undersampled_data_encoded = undersample_by_value_counts(data_encoded,
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 14, in undersample_by_value_counts
+    value_counts = data[label_column].value_counts()
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'default.payment.next.month'
+2023-07-13 16:57:20,445:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+UnboundLocalError: local variable 'model' referenced before assignment
+2023-07-13 16:57:28,268:main.py:predict:INFO:prediction request received:
+2023-07-13 16:57:28,268:main.py:predict:INFO:detecting selected model:
+2023-07-13 16:57:28,268:main.py:predict:INFO:loading selected model:
+2023-07-13 16:57:28,268:main.py:predict:INFO:model loaded successfully:
+2023-07-13 16:57:28,268:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 16:57:28,290:main.py:predict:ERROR:Error preprocessing data:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3803, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'default.payment.next.month'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 74, in predict
+    data = preprocess_inference_input(data)
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 146, in preprocess_inference_input
+    undersampled_data_encoded = undersample_by_value_counts(data_encoded,
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 14, in undersample_by_value_counts
+    value_counts = data[label_column].value_counts()
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'default.payment.next.month'
+2023-07-13 16:57:28,291:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+UnboundLocalError: local variable 'model' referenced before assignment
+2023-07-13 16:57:38,726:main.py:predict:INFO:prediction request received:
+2023-07-13 16:57:38,727:main.py:predict:INFO:detecting selected model:
+2023-07-13 16:57:38,727:main.py:predict:INFO:loading selected model:
+2023-07-13 16:57:38,727:main.py:predict:INFO:model loaded successfully:
+2023-07-13 16:57:38,727:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 16:57:38,755:main.py:predict:ERROR:Error preprocessing data:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3803, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'default.payment.next.month'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 74, in predict
+    data = preprocess_inference_input(data)
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 146, in preprocess_inference_input
+    undersampled_data_encoded = undersample_by_value_counts(data_encoded,
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 14, in undersample_by_value_counts
+    value_counts = data[label_column].value_counts()
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'default.payment.next.month'
+2023-07-13 16:57:38,757:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+UnboundLocalError: local variable 'model' referenced before assignment
+2023-07-13 17:01:56,268:main.py:<module>:INFO:API service running:
+2023-07-13 17:01:56,366:main.py:<module>:INFO:API service running:
+2023-07-13 17:02:07,833:main.py:predict:INFO:prediction request received:
+2023-07-13 17:02:07,839:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:02:07,840:main.py:predict:INFO:loading selected model:
+2023-07-13 17:02:07,841:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:02:07,841:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:02:07,893:main.py:predict:ERROR:Error preprocessing data:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3803, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'default.payment.next.month'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 74, in predict
+    data = preprocess_inference_input(data)
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 147, in preprocess_inference_input
+    undersampled_data_encoded = undersample_by_value_counts(data_encoded,
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 14, in undersample_by_value_counts
+    value_counts = data[label_column].value_counts()
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'default.payment.next.month'
+2023-07-13 17:02:07,911:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+UnboundLocalError: local variable 'model' referenced before assignment
+2023-07-13 17:02:18,955:main.py:predict:INFO:prediction request received:
+2023-07-13 17:02:18,955:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:02:18,957:main.py:predict:INFO:loading selected model:
+2023-07-13 17:02:18,958:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:02:18,958:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:02:18,990:main.py:predict:ERROR:Error preprocessing data:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3803, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'default.payment.next.month'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 74, in predict
+    data = preprocess_inference_input(data)
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 147, in preprocess_inference_input
+    undersampled_data_encoded = undersample_by_value_counts(data_encoded,
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 14, in undersample_by_value_counts
+    value_counts = data[label_column].value_counts()
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'default.payment.next.month'
+2023-07-13 17:02:18,993:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+UnboundLocalError: local variable 'model' referenced before assignment
+2023-07-13 17:05:53,743:main.py:<module>:INFO:API service running:
+2023-07-13 17:05:53,843:main.py:<module>:INFO:API service running:
+2023-07-13 17:06:25,090:main.py:<module>:INFO:API service running:
+2023-07-13 17:06:25,203:main.py:<module>:INFO:API service running:
+2023-07-13 17:06:44,180:main.py:predict:INFO:prediction request received:
+2023-07-13 17:06:44,180:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:06:44,180:main.py:predict:INFO:loading selected model:
+2023-07-13 17:06:44,180:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:06:44,181:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:06:44,216:main.py:predict:ERROR:Error preprocessing data:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3803, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'default.payment.next.month'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 74, in predict
+    data = preprocess_inference_input(data)
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 146, in preprocess_inference_input
+    undersampled_data_encoded = undersample_by_value_counts(data_encoded,
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 14, in undersample_by_value_counts
+    value_counts = data[label_column].value_counts()
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'default.payment.next.month'
+2023-07-13 17:06:44,236:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+UnboundLocalError: local variable 'model' referenced before assignment
+2023-07-13 17:06:46,311:main.py:predict:INFO:prediction request received:
+2023-07-13 17:06:46,312:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:06:46,312:main.py:predict:INFO:loading selected model:
+2023-07-13 17:06:46,312:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:06:46,312:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:06:46,336:main.py:predict:ERROR:Error preprocessing data:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3803, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'default.payment.next.month'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 74, in predict
+    data = preprocess_inference_input(data)
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 146, in preprocess_inference_input
+    undersampled_data_encoded = undersample_by_value_counts(data_encoded,
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 14, in undersample_by_value_counts
+    value_counts = data[label_column].value_counts()
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'default.payment.next.month'
+2023-07-13 17:06:46,338:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+UnboundLocalError: local variable 'model' referenced before assignment
+2023-07-13 17:06:48,752:main.py:predict:INFO:prediction request received:
+2023-07-13 17:06:48,752:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:06:48,752:main.py:predict:INFO:loading selected model:
+2023-07-13 17:06:48,753:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:06:48,753:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:06:48,769:main.py:predict:ERROR:Error preprocessing data:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3803, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'default.payment.next.month'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 74, in predict
+    data = preprocess_inference_input(data)
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 146, in preprocess_inference_input
+    undersampled_data_encoded = undersample_by_value_counts(data_encoded,
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 14, in undersample_by_value_counts
+    value_counts = data[label_column].value_counts()
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'default.payment.next.month'
+2023-07-13 17:06:48,771:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+UnboundLocalError: local variable 'model' referenced before assignment
+2023-07-13 17:07:48,078:main.py:<module>:INFO:API service running:
+2023-07-13 17:07:48,182:main.py:<module>:INFO:API service running:
+2023-07-13 17:08:03,979:main.py:predict:INFO:prediction request received:
+2023-07-13 17:08:03,979:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:08:03,979:main.py:predict:INFO:loading selected model:
+2023-07-13 17:08:03,979:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:08:03,980:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:08:04,010:main.py:predict:ERROR:Error preprocessing data:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3803, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'default.payment.next.month'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 74, in predict
+    data = preprocess_inference_input(data)
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 146, in preprocess_inference_input
+    undersampled_data_encoded = undersample_by_value_counts(data_encoded,
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 14, in undersample_by_value_counts
+    value_counts = data[label_column].value_counts()
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'default.payment.next.month'
+2023-07-13 17:08:04,023:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+UnboundLocalError: local variable 'model' referenced before assignment
+2023-07-13 17:08:06,882:main.py:predict:INFO:prediction request received:
+2023-07-13 17:08:06,882:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:08:06,883:main.py:predict:INFO:loading selected model:
+2023-07-13 17:08:06,883:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:08:06,883:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:08:06,901:main.py:predict:ERROR:Error preprocessing data:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3803, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'default.payment.next.month'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 74, in predict
+    data = preprocess_inference_input(data)
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 146, in preprocess_inference_input
+    undersampled_data_encoded = undersample_by_value_counts(data_encoded,
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 14, in undersample_by_value_counts
+    value_counts = data[label_column].value_counts()
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'default.payment.next.month'
+2023-07-13 17:08:06,902:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+UnboundLocalError: local variable 'model' referenced before assignment
+2023-07-13 17:09:46,677:main.py:<module>:INFO:API service running:
+2023-07-13 17:09:46,780:main.py:<module>:INFO:API service running:
+2023-07-13 17:09:58,472:main.py:<module>:INFO:API service running:
+2023-07-13 17:09:58,577:main.py:<module>:INFO:API service running:
+2023-07-13 17:10:12,738:main.py:<module>:INFO:API service running:
+2023-07-13 17:10:12,862:main.py:<module>:INFO:API service running:
+2023-07-13 17:10:17,093:main.py:predict:INFO:prediction request received:
+2023-07-13 17:10:17,093:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:10:17,094:main.py:predict:INFO:loading selected model:
+2023-07-13 17:10:17,195:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:10:17,195:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:10:17,217:main.py:predict:ERROR:Error preprocessing data:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3803, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'default.payment.next.month'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 74, in predict
+    data = preprocess_inference_input(data)
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 146, in preprocess_inference_input
+    undersampled_data_encoded = undersample_by_value_counts(data_encoded,
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 14, in undersample_by_value_counts
+    value_counts = data[label_column].value_counts()
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'default.payment.next.month'
+2023-07-13 17:10:17,233:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_logistic.py", line 1372, in predict_proba
+    return super()._predict_proba_lr(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 435, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 401, in decision_function
+    X = self._validate_data(X, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 558, in _validate_data
+    self._check_n_features(X, reset=reset)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 359, in _check_n_features
+    raise ValueError(
+ValueError: X has 24 features, but LogisticRegression is expecting 82 features as input.
+2023-07-13 17:11:26,279:main.py:predict:INFO:prediction request received:
+2023-07-13 17:11:26,279:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:11:26,279:main.py:predict:INFO:loading selected model:
+2023-07-13 17:11:26,281:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:11:26,281:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:11:26,306:main.py:predict:ERROR:Error preprocessing data:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3803, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'default.payment.next.month'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 74, in predict
+    data = preprocess_inference_input(data)
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 146, in preprocess_inference_input
+    undersampled_data_encoded = undersample_by_value_counts(data_encoded,
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 14, in undersample_by_value_counts
+    value_counts = data[label_column].value_counts()
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'default.payment.next.month'
+2023-07-13 17:11:26,313:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_logistic.py", line 1372, in predict_proba
+    return super()._predict_proba_lr(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 435, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 401, in decision_function
+    X = self._validate_data(X, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 558, in _validate_data
+    self._check_n_features(X, reset=reset)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 359, in _check_n_features
+    raise ValueError(
+ValueError: X has 24 features, but LogisticRegression is expecting 82 features as input.
+2023-07-13 17:11:27,564:main.py:predict:INFO:prediction request received:
+2023-07-13 17:11:27,564:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:11:27,565:main.py:predict:INFO:loading selected model:
+2023-07-13 17:11:27,566:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:11:27,566:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:11:27,585:main.py:predict:ERROR:Error preprocessing data:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3803, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'default.payment.next.month'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 74, in predict
+    data = preprocess_inference_input(data)
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 146, in preprocess_inference_input
+    undersampled_data_encoded = undersample_by_value_counts(data_encoded,
+  File "C:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\utils\preprocess.py", line 14, in undersample_by_value_counts
+    value_counts = data[label_column].value_counts()
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'default.payment.next.month'
+2023-07-13 17:11:27,593:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_logistic.py", line 1372, in predict_proba
+    return super()._predict_proba_lr(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 435, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 401, in decision_function
+    X = self._validate_data(X, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 558, in _validate_data
+    self._check_n_features(X, reset=reset)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 359, in _check_n_features
+    raise ValueError(
+ValueError: X has 24 features, but LogisticRegression is expecting 82 features as input.
+2023-07-13 17:13:08,669:main.py:<module>:INFO:API service running:
+2023-07-13 17:13:08,800:main.py:<module>:INFO:API service running:
+2023-07-13 17:13:15,399:main.py:<module>:INFO:API service running:
+2023-07-13 17:13:15,520:main.py:<module>:INFO:API service running:
+2023-07-13 17:13:26,859:main.py:<module>:INFO:API service running:
+2023-07-13 17:13:26,960:main.py:<module>:INFO:API service running:
+2023-07-13 17:13:31,359:main.py:predict:INFO:prediction request received:
+2023-07-13 17:13:31,360:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:13:31,360:main.py:predict:INFO:loading selected model:
+2023-07-13 17:13:31,489:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:13:31,489:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:13:31,546:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_logistic.py", line 1372, in predict_proba
+    return super()._predict_proba_lr(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 435, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 401, in decision_function
+    X = self._validate_data(X, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 535, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 919, in check_array
+    _assert_all_finite(
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 161, in _assert_all_finite
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+LogisticRegression does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2023-07-13 17:13:33,537:main.py:predict:INFO:prediction request received:
+2023-07-13 17:13:33,537:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:13:33,537:main.py:predict:INFO:loading selected model:
+2023-07-13 17:13:33,539:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:13:33,539:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:13:33,566:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_logistic.py", line 1372, in predict_proba
+    return super()._predict_proba_lr(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 435, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 401, in decision_function
+    X = self._validate_data(X, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 535, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 919, in check_array
+    _assert_all_finite(
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 161, in _assert_all_finite
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+LogisticRegression does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2023-07-13 17:14:02,955:main.py:predict:INFO:prediction request received:
+2023-07-13 17:14:02,955:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:14:02,955:main.py:predict:INFO:loading selected model:
+2023-07-13 17:14:03,271:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:14:03,271:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:14:03,291:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 863, in predict_proba
+    X = self._validate_X_predict(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 603, in _validate_X_predict
+    X = self._validate_data(X, dtype=DTYPE, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 535, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 919, in check_array
+    _assert_all_finite(
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 161, in _assert_all_finite
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+RandomForestClassifier does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2023-07-13 17:14:09,602:main.py:predict:INFO:prediction request received:
+2023-07-13 17:14:09,602:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:14:09,603:main.py:predict:INFO:loading selected model:
+2023-07-13 17:14:09,837:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:14:09,837:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:14:09,863:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 863, in predict_proba
+    X = self._validate_X_predict(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 603, in _validate_X_predict
+    X = self._validate_data(X, dtype=DTYPE, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 535, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 919, in check_array
+    _assert_all_finite(
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 161, in _assert_all_finite
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+RandomForestClassifier does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2023-07-13 17:17:13,289:main.py:<module>:INFO:API service running:
+2023-07-13 17:17:13,382:main.py:<module>:INFO:API service running:
+2023-07-13 17:17:13,406:main.py:predict:INFO:prediction request received:
+2023-07-13 17:17:13,406:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:17:13,407:main.py:predict:INFO:loading selected model:
+2023-07-13 17:17:13,841:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:17:13,841:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:17:13,880:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 863, in predict_proba
+    X = self._validate_X_predict(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 603, in _validate_X_predict
+    X = self._validate_data(X, dtype=DTYPE, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 535, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 919, in check_array
+    _assert_all_finite(
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 161, in _assert_all_finite
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+RandomForestClassifier does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2023-07-13 17:18:21,677:main.py:<module>:INFO:API service running:
+2023-07-13 17:18:21,834:main.py:<module>:INFO:API service running:
+2023-07-13 17:18:44,599:main.py:<module>:INFO:API service running:
+2023-07-13 17:18:44,695:main.py:<module>:INFO:API service running:
+2023-07-13 17:19:13,142:main.py:<module>:INFO:API service running:
+2023-07-13 17:19:13,246:main.py:<module>:INFO:API service running:
+2023-07-13 17:19:39,142:main.py:<module>:INFO:API service running:
+2023-07-13 17:19:39,239:main.py:<module>:INFO:API service running:
+2023-07-13 17:20:07,570:main.py:<module>:INFO:API service running:
+2023-07-13 17:20:07,678:main.py:<module>:INFO:API service running:
+2023-07-13 17:20:25,152:main.py:<module>:INFO:API service running:
+2023-07-13 17:20:25,246:main.py:<module>:INFO:API service running:
+2023-07-13 17:20:48,325:main.py:<module>:INFO:API service running:
+2023-07-13 17:20:48,422:main.py:<module>:INFO:API service running:
+2023-07-13 17:27:03,473:main.py:<module>:INFO:API service running:
+2023-07-13 17:27:07,759:main.py:<module>:INFO:API service running:
+2023-07-13 17:27:07,863:main.py:<module>:INFO:API service running:
+2023-07-13 17:27:09,753:main.py:predict:INFO:prediction request received:
+2023-07-13 17:27:09,753:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:27:09,753:main.py:predict:INFO:loading selected model:
+2023-07-13 17:27:10,296:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:27:10,296:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:27:10,339:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 863, in predict_proba
+    X = self._validate_X_predict(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 603, in _validate_X_predict
+    X = self._validate_data(X, dtype=DTYPE, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 535, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 919, in check_array
+    _assert_all_finite(
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 161, in _assert_all_finite
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+RandomForestClassifier does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2023-07-13 17:27:13,401:main.py:predict:INFO:prediction request received:
+2023-07-13 17:27:13,401:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:27:13,401:main.py:predict:INFO:loading selected model:
+2023-07-13 17:27:13,577:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:27:13,577:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:27:13,609:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 863, in predict_proba
+    X = self._validate_X_predict(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 603, in _validate_X_predict
+    X = self._validate_data(X, dtype=DTYPE, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 535, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 919, in check_array
+    _assert_all_finite(
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 161, in _assert_all_finite
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+RandomForestClassifier does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2023-07-13 17:29:46,490:main.py:<module>:INFO:API service running:
+2023-07-13 17:29:46,597:main.py:<module>:INFO:API service running:
+2023-07-13 17:29:56,984:main.py:predict:INFO:prediction request received:
+2023-07-13 17:29:56,984:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:29:56,985:main.py:predict:INFO:loading selected model:
+2023-07-13 17:29:57,464:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:29:57,464:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:29:57,716:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 863, in predict_proba
+    X = self._validate_X_predict(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 603, in _validate_X_predict
+    X = self._validate_data(X, dtype=DTYPE, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 535, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 919, in check_array
+    _assert_all_finite(
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 161, in _assert_all_finite
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+RandomForestClassifier does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2023-07-13 17:30:21,159:main.py:predict:INFO:prediction request received:
+2023-07-13 17:30:21,160:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:30:21,160:main.py:predict:INFO:loading selected model:
+2023-07-13 17:30:21,475:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:30:21,476:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:30:21,728:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 863, in predict_proba
+    X = self._validate_X_predict(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 603, in _validate_X_predict
+    X = self._validate_data(X, dtype=DTYPE, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 535, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 919, in check_array
+    _assert_all_finite(
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 161, in _assert_all_finite
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+RandomForestClassifier does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2023-07-13 17:34:39,158:main.py:<module>:INFO:API service running:
+2023-07-13 17:34:39,270:main.py:<module>:INFO:API service running:
+2023-07-13 17:42:08,079:main.py:<module>:INFO:API service running:
+2023-07-13 17:42:08,223:main.py:<module>:INFO:API service running:
+2023-07-13 17:42:11,622:main.py:predict:INFO:prediction request received:
+2023-07-13 17:42:11,622:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:42:11,623:main.py:predict:INFO:loading selected model:
+2023-07-13 17:42:12,138:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:42:12,139:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:42:12,417:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 863, in predict_proba
+    X = self._validate_X_predict(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 603, in _validate_X_predict
+    X = self._validate_data(X, dtype=DTYPE, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 535, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 919, in check_array
+    _assert_all_finite(
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 161, in _assert_all_finite
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+RandomForestClassifier does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2023-07-13 17:42:38,451:main.py:predict:INFO:prediction request received:
+2023-07-13 17:42:38,451:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:42:38,451:main.py:predict:INFO:loading selected model:
+2023-07-13 17:42:38,711:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:42:38,712:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:42:38,970:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 863, in predict_proba
+    X = self._validate_X_predict(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 603, in _validate_X_predict
+    X = self._validate_data(X, dtype=DTYPE, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 535, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 919, in check_array
+    _assert_all_finite(
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 161, in _assert_all_finite
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+RandomForestClassifier does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2023-07-13 17:45:18,772:main.py:<module>:INFO:API service running:
+2023-07-13 17:45:18,882:main.py:<module>:INFO:API service running:
+2023-07-13 17:45:32,831:main.py:predict:INFO:prediction request received:
+2023-07-13 17:45:32,832:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:45:32,832:main.py:predict:INFO:loading selected model:
+2023-07-13 17:45:33,220:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:45:33,220:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:45:33,223:main.py:predict:ERROR:Error preprocessing data:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3803, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 74, in predict
+    data = preprocess_inference_input(data[0])
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 0
+2023-07-13 17:45:33,238:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 863, in predict_proba
+    X = self._validate_X_predict(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 603, in _validate_X_predict
+    X = self._validate_data(X, dtype=DTYPE, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 558, in _validate_data
+    self._check_n_features(X, reset=reset)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 359, in _check_n_features
+    raise ValueError(
+ValueError: X has 24 features, but RandomForestClassifier is expecting 82 features as input.
+2023-07-13 17:45:38,043:main.py:predict:INFO:prediction request received:
+2023-07-13 17:45:38,044:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:45:38,044:main.py:predict:INFO:loading selected model:
+2023-07-13 17:45:38,267:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:45:38,267:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:45:38,271:main.py:predict:ERROR:Error preprocessing data:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3803, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 74, in predict
+    data = preprocess_inference_input(data[0])
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 0
+2023-07-13 17:45:38,277:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 863, in predict_proba
+    X = self._validate_X_predict(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\ensemble\_forest.py", line 603, in _validate_X_predict
+    X = self._validate_data(X, dtype=DTYPE, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 558, in _validate_data
+    self._check_n_features(X, reset=reset)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 359, in _check_n_features
+    raise ValueError(
+ValueError: X has 24 features, but RandomForestClassifier is expecting 82 features as input.
+2023-07-13 17:48:30,333:main.py:predict:INFO:prediction request received:
+2023-07-13 17:48:30,333:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:48:30,333:main.py:predict:INFO:loading selected model:
+2023-07-13 17:48:30,336:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:48:30,336:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:48:30,340:main.py:predict:ERROR:Error preprocessing data:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3803, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 74, in predict
+    data = preprocess_inference_input(data[0])
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 0
+2023-07-13 17:48:30,348:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_logistic.py", line 1372, in predict_proba
+    return super()._predict_proba_lr(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 435, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 401, in decision_function
+    X = self._validate_data(X, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 558, in _validate_data
+    self._check_n_features(X, reset=reset)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 359, in _check_n_features
+    raise ValueError(
+ValueError: X has 24 features, but LogisticRegression is expecting 82 features as input.
+2023-07-13 17:49:38,808:main.py:predict:INFO:prediction request received:
+2023-07-13 17:49:38,808:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:49:38,811:main.py:predict:INFO:loading selected model:
+2023-07-13 17:49:38,814:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:49:38,814:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:49:38,819:main.py:predict:ERROR:Error preprocessing data:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3803, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 74, in predict
+    data = preprocess_inference_input(data[0])
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 0
+2023-07-13 17:49:38,829:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_logistic.py", line 1372, in predict_proba
+    return super()._predict_proba_lr(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 435, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 401, in decision_function
+    X = self._validate_data(X, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 558, in _validate_data
+    self._check_n_features(X, reset=reset)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 359, in _check_n_features
+    raise ValueError(
+ValueError: X has 24 features, but LogisticRegression is expecting 82 features as input.
+2023-07-13 17:50:22,136:main.py:<module>:INFO:API service running:
+2023-07-13 17:50:22,245:main.py:<module>:INFO:API service running:
+2023-07-13 17:50:26,286:main.py:predict:INFO:prediction request received:
+2023-07-13 17:50:26,287:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:50:26,287:main.py:predict:INFO:loading selected model:
+2023-07-13 17:50:26,389:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:50:26,390:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:50:26,642:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_logistic.py", line 1372, in predict_proba
+    return super()._predict_proba_lr(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 435, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 401, in decision_function
+    X = self._validate_data(X, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 535, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 919, in check_array
+    _assert_all_finite(
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 161, in _assert_all_finite
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+LogisticRegression does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2023-07-13 17:51:33,087:main.py:<module>:INFO:API service running:
+2023-07-13 17:51:33,190:main.py:<module>:INFO:API service running:
+2023-07-13 17:51:47,317:main.py:<module>:INFO:API service running:
+2023-07-13 17:51:47,468:main.py:<module>:INFO:API service running:
+2023-07-13 17:51:47,503:main.py:predict:INFO:prediction request received:
+2023-07-13 17:51:47,503:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:51:47,503:main.py:predict:INFO:loading selected model:
+2023-07-13 17:51:47,650:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:51:47,651:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:51:47,943:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_logistic.py", line 1372, in predict_proba
+    return super()._predict_proba_lr(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 435, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 401, in decision_function
+    X = self._validate_data(X, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 535, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 919, in check_array
+    _assert_all_finite(
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 161, in _assert_all_finite
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+LogisticRegression does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2023-07-13 17:58:40,579:main.py:<module>:INFO:API service running:
+2023-07-13 17:58:40,724:main.py:<module>:INFO:API service running:
+2023-07-13 17:58:49,166:main.py:<module>:INFO:API service running:
+2023-07-13 17:58:49,265:main.py:<module>:INFO:API service running:
+2023-07-13 17:58:56,047:main.py:predict:INFO:prediction request received:
+2023-07-13 17:58:56,048:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:58:56,048:main.py:predict:INFO:loading selected model:
+2023-07-13 17:58:56,156:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:58:56,157:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:58:56,368:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_logistic.py", line 1372, in predict_proba
+    return super()._predict_proba_lr(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 435, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 401, in decision_function
+    X = self._validate_data(X, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 535, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 919, in check_array
+    _assert_all_finite(
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 161, in _assert_all_finite
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+LogisticRegression does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2023-07-13 17:59:03,785:main.py:predict:INFO:prediction request received:
+2023-07-13 17:59:03,785:main.py:predict:INFO:detecting selected model:
+2023-07-13 17:59:03,786:main.py:predict:INFO:loading selected model:
+2023-07-13 17:59:03,789:main.py:predict:INFO:model loaded successfully:
+2023-07-13 17:59:03,792:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 17:59:04,053:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_logistic.py", line 1372, in predict_proba
+    return super()._predict_proba_lr(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 435, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 401, in decision_function
+    X = self._validate_data(X, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 535, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 919, in check_array
+    _assert_all_finite(
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 161, in _assert_all_finite
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+LogisticRegression does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2023-07-13 18:00:19,460:main.py:<module>:INFO:API service running:
+2023-07-13 18:00:19,557:main.py:<module>:INFO:API service running:
+2023-07-13 18:00:28,075:main.py:<module>:INFO:API service running:
+2023-07-13 18:00:28,204:main.py:<module>:INFO:API service running:
+2023-07-13 18:00:40,662:main.py:<module>:INFO:API service running:
+2023-07-13 18:00:40,781:main.py:<module>:INFO:API service running:
+2023-07-13 18:00:52,554:main.py:<module>:INFO:API service running:
+2023-07-13 18:00:52,655:main.py:<module>:INFO:API service running:
+2023-07-13 18:00:52,689:main.py:predict:INFO:prediction request received:
+2023-07-13 18:00:52,690:main.py:predict:INFO:detecting selected model:
+2023-07-13 18:00:52,690:main.py:predict:INFO:loading selected model:
+2023-07-13 18:00:52,792:main.py:predict:INFO:model loaded successfully:
+2023-07-13 18:00:52,792:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 18:00:52,983:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_logistic.py", line 1372, in predict_proba
+    return super()._predict_proba_lr(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 435, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 401, in decision_function
+    X = self._validate_data(X, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 535, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 919, in check_array
+    _assert_all_finite(
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 161, in _assert_all_finite
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+LogisticRegression does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2023-07-13 18:01:41,917:main.py:<module>:INFO:API service running:
+2023-07-13 18:01:42,012:main.py:<module>:INFO:API service running:
+2023-07-13 18:01:42,034:main.py:predict:INFO:prediction request received:
+2023-07-13 18:01:42,034:main.py:predict:INFO:detecting selected model:
+2023-07-13 18:01:42,034:main.py:predict:INFO:loading selected model:
+2023-07-13 18:01:42,133:main.py:predict:INFO:model loaded successfully:
+2023-07-13 18:01:42,134:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 18:01:42,348:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_logistic.py", line 1372, in predict_proba
+    return super()._predict_proba_lr(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 435, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 401, in decision_function
+    X = self._validate_data(X, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 535, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 919, in check_array
+    _assert_all_finite(
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 161, in _assert_all_finite
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+LogisticRegression does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2023-07-13 18:02:54,834:main.py:<module>:INFO:API service running:
+2023-07-13 18:02:54,941:main.py:<module>:INFO:API service running:
+2023-07-13 18:03:01,533:main.py:<module>:INFO:API service running:
+2023-07-13 18:03:01,625:main.py:<module>:INFO:API service running:
+2023-07-13 18:03:13,295:main.py:predict:INFO:prediction request received:
+2023-07-13 18:03:13,295:main.py:predict:INFO:detecting selected model:
+2023-07-13 18:03:13,296:main.py:predict:INFO:loading selected model:
+2023-07-13 18:03:13,421:main.py:predict:INFO:model loaded successfully:
+2023-07-13 18:03:13,421:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 18:03:13,731:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_logistic.py", line 1372, in predict_proba
+    return super()._predict_proba_lr(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 435, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 401, in decision_function
+    X = self._validate_data(X, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 535, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 919, in check_array
+    _assert_all_finite(
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 161, in _assert_all_finite
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+LogisticRegression does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2023-07-13 18:06:29,905:main.py:<module>:INFO:API service running:
+2023-07-13 18:06:30,000:main.py:<module>:INFO:API service running:
+2023-07-13 18:06:48,245:main.py:predict:INFO:prediction request received:
+2023-07-13 18:06:48,245:main.py:predict:INFO:detecting selected model:
+2023-07-13 18:06:48,245:main.py:predict:INFO:loading selected model:
+2023-07-13 18:06:48,352:main.py:predict:INFO:model loaded successfully:
+2023-07-13 18:06:48,352:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 18:06:48,722:main.py:predict:ERROR:Error generating prediction:
+Traceback (most recent call last):
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\src\main.py", line 86, in predict
+    result: float = float(model.predict_proba(data)[0][1] * 100)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_logistic.py", line 1372, in predict_proba
+    return super()._predict_proba_lr(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 435, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\linear_model\_base.py", line 401, in decision_function
+    X = self._validate_data(X, accept_sparse="csr", reset=False)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\base.py", line 535, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 919, in check_array
+    _assert_all_finite(
+  File "c:\Users\Abraham Audu\Documents\Py-Self-Learn\credit_card_default_prediction\venv\lib\site-packages\sklearn\utils\validation.py", line 161, in _assert_all_finite
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+LogisticRegression does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+2023-07-13 18:15:34,885:main.py:<module>:INFO:API service running:
+2023-07-13 18:15:34,993:main.py:<module>:INFO:API service running:
+2023-07-13 18:15:35,020:main.py:predict:INFO:prediction request received:
+2023-07-13 18:15:35,020:main.py:predict:INFO:detecting selected model:
+2023-07-13 18:15:35,021:main.py:predict:INFO:loading selected model:
+2023-07-13 18:15:35,128:main.py:predict:INFO:model loaded successfully:
+2023-07-13 18:15:35,129:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 18:15:35,519:main.py:predict:INFO:sending result to frontend:
+2023-07-13 18:15:58,380:main.py:predict:INFO:prediction request received:
+2023-07-13 18:15:58,380:main.py:predict:INFO:detecting selected model:
+2023-07-13 18:15:58,380:main.py:predict:INFO:loading selected model:
+2023-07-13 18:15:58,404:main.py:predict:INFO:model loaded successfully:
+2023-07-13 18:15:58,405:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 18:15:58,773:main.py:predict:INFO:sending result to frontend:
+2023-07-13 18:16:23,320:main.py:<module>:INFO:API service running:
+2023-07-13 18:16:23,464:main.py:<module>:INFO:API service running:
+2023-07-13 18:16:37,402:main.py:predict:INFO:prediction request received:
+2023-07-13 18:16:37,402:main.py:predict:INFO:detecting selected model:
+2023-07-13 18:16:37,403:main.py:predict:INFO:loading selected model:
+2023-07-13 18:16:37,849:main.py:predict:INFO:model loaded successfully:
+2023-07-13 18:16:37,849:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 18:16:37,900:main.py:predict:INFO:sending result to frontend:
+2023-07-13 18:16:52,817:main.py:predict:INFO:prediction request received:
+2023-07-13 18:16:52,817:main.py:predict:INFO:detecting selected model:
+2023-07-13 18:16:52,818:main.py:predict:INFO:loading selected model:
+2023-07-13 18:16:52,828:main.py:predict:INFO:model loaded successfully:
+2023-07-13 18:16:52,828:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 18:16:52,855:main.py:predict:INFO:sending result to frontend:
+2023-07-13 18:17:04,232:main.py:predict:INFO:prediction request received:
+2023-07-13 18:17:04,232:main.py:predict:INFO:detecting selected model:
+2023-07-13 18:17:04,232:main.py:predict:INFO:loading selected model:
+2023-07-13 18:17:04,234:main.py:predict:INFO:model loaded successfully:
+2023-07-13 18:17:04,234:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-07-13 18:17:04,256:main.py:predict:INFO:sending result to frontend:

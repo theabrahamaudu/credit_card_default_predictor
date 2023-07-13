@@ -7,7 +7,7 @@ def logger_pipeline():
 
     formatter = logging.Formatter('%(asctime)s:%(filename)s:%(funcName)s:%(levelname)s:%(message)s:')
 
-    pipeline_file_handler = logging.FileHandler('../logs/pipeline.log')
+    pipeline_file_handler = logging.FileHandler('./logs/pipeline.log')
     pipeline_file_handler.setLevel(logging.DEBUG)
     pipeline_file_handler.setFormatter(formatter)
 

@@ -7,7 +7,7 @@ def logger_backend():
 
     formatter = logging.Formatter('%(asctime)s:%(filename)s:%(funcName)s:%(levelname)s:%(message)s:')
 
-    backend_file_handler = logging.FileHandler('../logs/backend.log')
+    backend_file_handler = logging.FileHandler('./logs/backend.log')
     backend_file_handler.setLevel(logging.DEBUG)
     backend_file_handler.setFormatter(formatter)
 
