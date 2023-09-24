@@ -28,7 +28,7 @@ def run():
     """
     logger.info("Session started")
     st.set_page_config(page_title="Credit Card Default App",
-                        page_icon="💳")
+                       page_icon="💳")
     st.image("https://www.canstar.com.au/wp-content/uploads/2017/09/Credit-card-default-1.jpg")
     st.title(" Customer Credit Card Default Predictor")
     st.subheader("Predict the probability of a customer defaulting on Credit Card payment\n")
@@ -48,7 +48,7 @@ def run():
         try:
             msg = validate(customer_data)
 
-            if msg is "validated":
+            if msg == "validated":
                 logger.info("Uploaded data validated")
                 valid = True
             else:

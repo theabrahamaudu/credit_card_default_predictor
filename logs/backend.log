@@ -1387,3 +1387,57 @@ LogisticRegression does not accept missing values encoded as NaN natively. For s
 2023-09-24 16:06:29,683:main.py:predict:INFO:model loaded successfully:
 2023-09-24 16:06:29,683:main.py:predict:INFO:loading and preprocessing web UI data:
 2023-09-24 16:06:29,692:main.py:predict:INFO:sending result to frontend:
+2023-09-24 23:43:57,768:main.py:<module>:INFO:API service running:
+2023-09-24 23:43:58,900:main.py:<module>:INFO:API service running:
+2023-09-24 23:43:58,920:main.py:<module>:INFO:API service running:
+2023-09-24 23:46:58,321:main.py:<module>:INFO:API service running:
+2023-09-24 23:46:58,339:main.py:<module>:INFO:API service running:
+2023-09-24 23:47:16,768:main.py:<module>:INFO:API service running:
+2023-09-24 23:47:16,779:main.py:<module>:INFO:API service running:
+2023-09-24 23:47:59,404:main.py:<module>:INFO:API service running:
+2023-09-24 23:47:59,419:main.py:<module>:INFO:API service running:
+2023-09-24 23:48:02,298:main.py:<module>:INFO:API service running:
+2023-09-24 23:48:02,309:main.py:<module>:INFO:API service running:
+2023-09-24 23:48:06,654:main.py:<module>:INFO:API service running:
+2023-09-24 23:48:06,671:main.py:<module>:INFO:API service running:
+2023-09-24 23:49:08,590:main.py:<module>:INFO:API service running:
+2023-09-24 23:49:08,606:main.py:<module>:INFO:API service running:
+2023-09-24 23:49:39,627:main.py:<module>:INFO:API service running:
+2023-09-24 23:49:39,644:main.py:<module>:INFO:API service running:
+2023-09-24 23:49:53,505:main.py:<module>:INFO:API service running:
+2023-09-24 23:49:53,520:main.py:<module>:INFO:API service running:
+2023-09-24 23:50:36,843:main.py:<module>:INFO:API service running:
+2023-09-24 23:50:36,861:main.py:<module>:INFO:API service running:
+2023-09-24 23:50:52,849:main.py:<module>:INFO:API service running:
+2023-09-24 23:50:52,863:main.py:<module>:INFO:API service running:
+2023-09-24 23:51:04,346:main.py:<module>:INFO:API service running:
+2023-09-24 23:51:04,363:main.py:<module>:INFO:API service running:
+2023-09-24 23:52:01,657:main.py:<module>:INFO:API service running:
+2023-09-24 23:52:01,670:main.py:<module>:INFO:API service running:
+2023-09-24 23:52:17,116:main.py:<module>:INFO:API service running:
+2023-09-24 23:52:17,131:main.py:<module>:INFO:API service running:
+2023-09-24 23:54:57,108:main.py:<module>:INFO:API service running:
+2023-09-24 23:54:57,124:main.py:<module>:INFO:API service running:
+2023-09-25 00:01:25,509:main.py:<module>:INFO:API service running:
+2023-09-25 00:01:26,604:main.py:<module>:INFO:API service running:
+2023-09-25 00:01:26,616:main.py:<module>:INFO:API service running:
+2023-09-25 00:03:41,814:main.py:<module>:INFO:API service running:
+2023-09-25 00:03:41,826:main.py:<module>:INFO:API service running:
+2023-09-25 00:05:12,528:main.py:predict:INFO:prediction request received:
+2023-09-25 00:05:12,528:main.py:predict:INFO:detecting selected model:
+2023-09-25 00:05:12,528:main.py:predict:INFO:loading selected model:
+2023-09-25 00:05:12,569:main.py:predict:INFO:model loaded successfully:
+2023-09-25 00:05:12,569:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-09-25 00:05:12,589:main.py:predict:INFO:sending result to frontend:
+2023-09-25 00:05:49,609:main.py:predict:INFO:prediction request received:
+2023-09-25 00:05:49,609:main.py:predict:INFO:detecting selected model:
+2023-09-25 00:05:49,609:main.py:predict:INFO:loading selected model:
+2023-09-25 00:05:49,844:main.py:predict:INFO:model loaded successfully:
+2023-09-25 00:05:49,844:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-09-25 00:05:49,851:main.py:predict:INFO:sending result to frontend:
+2023-09-25 00:11:12,994:main.py:predict:INFO:prediction request received:
+2023-09-25 00:11:12,994:main.py:predict:INFO:detecting selected model:
+2023-09-25 00:11:12,994:main.py:predict:INFO:loading selected model:
+2023-09-25 00:11:13,012:main.py:predict:INFO:model loaded successfully:
+2023-09-25 00:11:13,012:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-09-25 00:11:13,019:main.py:predict:INFO:sending result to frontend:

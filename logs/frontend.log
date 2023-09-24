@@ -1246,3 +1246,85 @@ total run time: 0.0683112999995501:
 2023-09-24 23:30:19,262:upload_validator.py:validate:ERROR:Column 'IF' not expected in uploaded data:
 2023-09-24 23:30:19,263:upload_validator.py:validate:ERROR:No column 'AGE' in uploaded data:
 2023-09-24 23:30:19,264:upload_validator.py:validate:ERROR:'AGE' column data type does not match required data type. Expected int64:
+2023-09-24 23:44:26,939:streamlit_frontend.py:run:INFO:Session started:
+2023-09-24 23:46:59,169:streamlit_frontend.py:run:INFO:Session started:
+2023-09-24 23:53:49,404:streamlit_frontend.py:run:INFO:Session started:
+2023-09-24 23:54:24,073:streamlit_frontend.py:run:INFO:Session started:
+2023-09-24 23:54:28,203:streamlit_frontend.py:run:INFO:Session started:
+2023-09-24 23:55:01,885:streamlit_frontend.py:run:INFO:Session started:
+2023-09-24 23:55:32,907:streamlit_frontend.py:run:INFO:Session started:
+2023-09-24 23:56:24,741:streamlit_frontend.py:run:INFO:Session started:
+2023-09-24 23:56:46,012:streamlit_frontend.py:run:INFO:Session started:
+2023-09-24 23:58:21,529:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:01:37,797:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:02:46,661:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:03:05,028:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:03:05,028:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:03:13,757:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:03:49,977:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:04:29,301:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:04:29,301:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:04:32,742:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:04:35,744:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:05:06,228:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:05:06,230:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-25 00:05:06,236:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-25 00:05:12,511:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:05:12,513:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-25 00:05:12,515:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-25 00:05:12,517:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-25 00:05:12,592:streamlit_frontend.py:run:INFO:Prediction successful, 
+Model used: Logistic Regression, 
+Credit Card Default probability: 53.2873255815253, 
+Model pred time: 0.00021660000038536964, 
+total run time: 0.07315169999947102:
+2023-09-25 00:05:21,718:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:05:21,806:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:05:21,808:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-25 00:05:21,862:upload_validator.py:validate:ERROR:Column 'default.payment.next.month' not expected in uploaded data:
+2023-09-25 00:05:32,001:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:05:36,589:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:05:36,592:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-25 00:05:36,643:upload_validator.py:validate:ERROR:Column 'default.payment.next.month' not expected in uploaded data:
+2023-09-25 00:05:45,551:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:05:45,611:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:05:45,614:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-25 00:05:45,616:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-25 00:05:48,446:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:05:48,449:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-25 00:05:48,453:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-25 00:05:49,597:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:05:49,600:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-25 00:05:49,604:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-25 00:05:49,606:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-25 00:05:49,857:streamlit_frontend.py:run:INFO:Prediction successful, 
+Model used: Random Forest, 
+Credit Card Default probability: 89.0, 
+Model pred time: 0.003315800000564195, 
+total run time: 0.2491080999998303:
+2023-09-25 00:06:15,673:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:07:49,291:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:07:50,732:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:07:51,755:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:07:51,919:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:08:14,366:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:08:25,514:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:08:26,750:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:08:26,917:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:08:27,099:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:10:46,076:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:11:07,645:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:11:07,648:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-25 00:11:07,654:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-25 00:11:11,741:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:11:11,743:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-25 00:11:11,747:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-25 00:11:12,981:streamlit_frontend.py:run:INFO:Session started:
+2023-09-25 00:11:12,984:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-25 00:11:12,988:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-25 00:11:12,990:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-25 00:11:13,021:streamlit_frontend.py:run:INFO:Prediction successful, 
+Model used: Neural Network, 
+Credit Card Default probability: 91.9037520898361, 
+Model pred time: 0.0001376999998683459, 
+total run time: 0.03090509999947244:
