@@ -1115,3 +1115,134 @@ Model used: Logistic Regression,
 Credit Card Default probability: 53.2873255815253, 
 Model pred time: 0.000545599999895785, 
 total run time: 0.03909330000169575:
+2023-09-24 15:58:10,969:streamlit_frontend.py:run:INFO:Session started:
+2023-09-24 15:58:53,288:streamlit_frontend.py:run:INFO:Session started:
+2023-09-24 15:58:53,290:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-24 15:58:53,296:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-24 15:58:55,932:streamlit_frontend.py:run:INFO:Session started:
+2023-09-24 15:58:55,933:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-24 15:58:55,936:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-24 15:58:55,938:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-24 15:58:56,015:streamlit_frontend.py:run:INFO:Prediction successful, 
+Model used: Logistic Regression, 
+Credit Card Default probability: 53.2873255815253, 
+Model pred time: 0.00012460000107239466, 
+total run time: 0.07585250000011001:
+2023-09-24 15:59:08,994:streamlit_frontend.py:run:INFO:Session started:
+2023-09-24 15:59:08,995:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-24 15:59:08,999:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-24 15:59:10,353:streamlit_frontend.py:run:INFO:Session started:
+2023-09-24 15:59:10,355:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-24 15:59:10,359:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-24 15:59:10,360:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-24 15:59:10,389:streamlit_frontend.py:run:INFO:Prediction successful, 
+Model used: Neural Network, 
+Credit Card Default probability: 91.9037520898361, 
+Model pred time: 0.00013180000132706482, 
+total run time: 0.028071299999282928:
+2023-09-24 16:06:00,077:streamlit_frontend.py:run:INFO:Session started:
+2023-09-24 16:06:00,079:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-24 16:06:00,083:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-24 16:06:12,396:streamlit_frontend.py:run:INFO:Session started:
+2023-09-24 16:06:12,398:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-24 16:06:12,401:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-24 16:06:12,402:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-24 16:06:12,565:streamlit_frontend.py:run:ERROR:An error occurred whilst attempting to call API:
+Traceback (most recent call last):
+  File "E:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\src\streamlit_frontend.py", line 75, in run
+    st.success(f"Probability of Credit Card default: {float(prediction):.2f}%")
+  File "e:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\.venv\lib\site-packages\streamlit\runtime\metrics_util.py", line 311, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "e:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\.venv\lib\site-packages\streamlit\elements\alert.py", line 158, in success
+    return self.dg._enqueue("alert", alert_proto)
+  File "e:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\.venv\lib\site-packages\streamlit\delta_generator.py", line 531, in _enqueue
+    _enqueue_message(msg)
+  File "e:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\.venv\lib\site-packages\streamlit\delta_generator.py", line 962, in _enqueue_message
+    ctx.enqueue(msg)
+  File "e:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\.venv\lib\site-packages\streamlit\runtime\scriptrunner\script_run_context.py", line 107, in enqueue
+    self._enqueue(msg)
+  File "e:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\.venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 335, in _enqueue_forward_msg
+    self._maybe_handle_execution_control_request()
+  File "e:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\.venv\lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 371, in _maybe_handle_execution_control_request
+    raise RerunException(request.rerun_data)
+streamlit.runtime.scriptrunner.script_runner.RerunException: RerunData(query_string='', widget_states=widgets {
+  id: "$$GENERATED_WIDGET_KEY-d37199ff5feb1ea2be87759bb6043330-None"
+  file_uploader_state_value {
+    max_file_id: 1
+    uploaded_file_info {
+      id: 1
+      name: "sample_user_data.csv"
+      size: 303
+    }
+  }
+}
+widgets {
+  id: "$$GENERATED_WIDGET_KEY-137902d3ea22d09a462a2211e0c8f9ab-None"
+  int_value: 2
+}
+widgets {
+  id: "$$GENERATED_WIDGET_KEY-d9285e0110b7eafc094af9ac32648eea-None"
+  trigger_value: true
+}
+, page_script_hash='fea1a37f6bf522663b811347e6dd15eb', page_name='')
+2023-09-24 16:06:21,034:streamlit_frontend.py:run:INFO:Session started:
+2023-09-24 16:06:21,036:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-24 16:06:21,040:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-24 16:06:22,411:streamlit_frontend.py:run:INFO:Session started:
+2023-09-24 16:06:22,412:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-24 16:06:22,415:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-24 16:06:22,417:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-24 16:06:22,441:streamlit_frontend.py:run:INFO:Prediction successful, 
+Model used: Support Vector Machine, 
+Credit Card Default probability: 1.0, 
+Model pred time: 0.0008717000000615371, 
+total run time: 0.021329100000002654:
+2023-09-24 16:06:28,474:streamlit_frontend.py:run:INFO:Session started:
+2023-09-24 16:06:28,476:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-24 16:06:28,480:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-24 16:06:29,621:streamlit_frontend.py:run:INFO:Session started:
+2023-09-24 16:06:29,623:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-24 16:06:29,627:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-24 16:06:29,628:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-24 16:06:29,698:streamlit_frontend.py:run:INFO:Prediction successful, 
+Model used: Random Forest, 
+Credit Card Default probability: 89.0, 
+Model pred time: 0.003455699999904027, 
+total run time: 0.0683112999995501:
+2023-09-24 20:39:43,877:upload_validator.py:validate:ERROR:No column 'ID' in uploaded data:
+2023-09-24 21:05:58,729:upload_validator.py:validate:ERROR:'ID' column data type does not match required data type. Expected int64:
+2023-09-24 21:08:16,425:upload_validator.py:validate:ERROR:'ID' column data type does not match required data type. Expected int64:
+2023-09-24 21:14:24,513:upload_validator.py:validate:ERROR:'ID' column data type does not match required data type. Expected int64:
+2023-09-24 21:14:59,849:upload_validator.py:validate:ERROR:'ID' column data type does not match required data type. Expected int64:
+2023-09-24 21:15:53,491:upload_validator.py:validate:ERROR:'ID' column data type does not match required data type. Expected int64:
+2023-09-24 21:20:40,898:upload_validator.py:validate:ERROR:'ID' column data type does not match required data type. Expected int64:
+2023-09-24 20:40:42,878:upload_validator.py:validate:ERROR:Column 'IF' not expected in uploaded data:
+2023-09-24 20:41:44,005:upload_validator.py:validate:ERROR:Column 'IF' not expected in uploaded data:
+2023-09-24 20:43:00,515:upload_validator.py:validate:ERROR:Column 'IF' not expected in uploaded data:
+2023-09-24 21:24:35,805:upload_validator.py:validate:ERROR:Column 'IF' not expected in uploaded data:
+2023-09-24 21:26:06,210:upload_validator.py:validate:ERROR:Column 'IF' not expected in uploaded data:
+2023-09-24 21:30:33,438:upload_validator.py:validate:ERROR:Column 'IF' not expected in uploaded data:
+2023-09-24 21:30:33,497:upload_validator.py:validate:ERROR:Column 'IF' not expected in uploaded data:
+2023-09-24 21:31:51,377:upload_validator.py:validate:ERROR:Column 'IF' not expected in uploaded data:
+2023-09-24 21:34:17,931:upload_validator.py:validate:ERROR:Column 'IF' not expected in uploaded data:
+2023-09-24 21:38:23,207:upload_validator.py:validate:ERROR:No column 'ID' in uploaded data:
+2023-09-24 21:38:23,247:upload_validator.py:validate:ERROR:No column 'ID' in uploaded data:
+2023-09-24 21:38:35,953:upload_validator.py:validate:ERROR:Column 'IF' not expected in uploaded data:
+2023-09-24 21:38:35,955:upload_validator.py:validate:ERROR:No column 'ID' in uploaded data:
+2023-09-24 23:02:45,553:upload_validator.py:validate:ERROR:'ID' column data type does not match required data type. Expected 'int64':
+2023-09-24 23:03:33,260:upload_validator.py:validate:ERROR:'ID' column data type does not match required data type. Expected 'int64':
+2023-09-24 23:04:05,980:upload_validator.py:validate:ERROR:'ID' column data type does not match required data type. Expected ''int64'':
+2023-09-24 23:04:45,592:upload_validator.py:validate:ERROR:'ID' column data type does not match required data type. Expected int64:
+2023-09-24 23:05:19,778:upload_validator.py:validate:ERROR:'ID' column data type does not match required data type. Expected int64:
+2023-09-24 23:18:25,569:upload_validator.py:validate:ERROR:'ID' column data type does not match required data type. Expected int64:
+2023-09-24 23:18:25,613:upload_validator.py:validate:ERROR:'ID' column data type does not match required data type. Expected int64:
+2023-09-24 23:27:12,459:upload_validator.py:validate:ERROR:No column 'AGE' in uploaded data:
+2023-09-24 23:27:12,462:upload_validator.py:validate:ERROR:No column 'AGE' in uploaded data:
+2023-09-24 23:27:29,585:upload_validator.py:validate:ERROR:'AGE' column data type does not match required data type. Expected int64:
+2023-09-24 23:27:29,642:upload_validator.py:validate:ERROR:'AGE' column data type does not match required data type. Expected int64:
+2023-09-24 23:29:30,837:upload_validator.py:validate:ERROR:Column 'IF' not expected in uploaded data:
+2023-09-24 23:29:30,839:upload_validator.py:validate:ERROR:No column 'AGE' in uploaded data:
+2023-09-24 23:29:30,841:upload_validator.py:validate:ERROR:'AGE' column data type does not match required data type. Expected int64:
+2023-09-24 23:30:19,262:upload_validator.py:validate:ERROR:Column 'IF' not expected in uploaded data:
+2023-09-24 23:30:19,263:upload_validator.py:validate:ERROR:No column 'AGE' in uploaded data:
+2023-09-24 23:30:19,264:upload_validator.py:validate:ERROR:'AGE' column data type does not match required data type. Expected int64:

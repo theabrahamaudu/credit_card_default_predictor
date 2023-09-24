@@ -44,11 +44,15 @@ def run():
         customer_data = pd.read_csv(file)
 
         try:
-            validate(customer_data)
-            logger.info("Uploaded data validated")
-            valid = True
+            msg = validate(customer_data)
+
+            if msg is "validated":
+                logger.info("Uploaded data validated")
+                valid = True
+            else:
+                st.error(f"Invalid data: {msg}")
         except Exception as e:
-            st.error(f"Invalid data: {e}")
+            st.error(f"Error validating data: {e}")
 
     if valid:
         customer_data = customer_data.to_dict()

@@ -1351,3 +1351,39 @@ LogisticRegression does not accept missing values encoded as NaN natively. For s
 2023-07-13 18:17:04,234:main.py:predict:INFO:model loaded successfully:
 2023-07-13 18:17:04,234:main.py:predict:INFO:loading and preprocessing web UI data:
 2023-07-13 18:17:04,256:main.py:predict:INFO:sending result to frontend:
+2023-09-24 15:53:15,291:main.py:<module>:INFO:API service running:
+2023-09-24 15:53:16,545:main.py:<module>:INFO:API service running:
+2023-09-24 15:53:16,567:main.py:<module>:INFO:API service running:
+2023-09-24 15:57:12,536:main.py:<module>:INFO:API service running:
+2023-09-24 15:57:13,556:main.py:<module>:INFO:API service running:
+2023-09-24 15:57:13,574:main.py:<module>:INFO:API service running:
+2023-09-24 15:58:55,949:main.py:predict:INFO:prediction request received:
+2023-09-24 15:58:55,949:main.py:predict:INFO:detecting selected model:
+2023-09-24 15:58:55,950:main.py:predict:INFO:loading selected model:
+2023-09-24 15:58:55,992:main.py:predict:INFO:model loaded successfully:
+2023-09-24 15:58:55,992:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-09-24 15:58:56,012:main.py:predict:INFO:sending result to frontend:
+2023-09-24 15:59:10,363:main.py:predict:INFO:prediction request received:
+2023-09-24 15:59:10,365:main.py:predict:INFO:detecting selected model:
+2023-09-24 15:59:10,365:main.py:predict:INFO:loading selected model:
+2023-09-24 15:59:10,379:main.py:predict:INFO:model loaded successfully:
+2023-09-24 15:59:10,379:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-09-24 15:59:10,387:main.py:predict:INFO:sending result to frontend:
+2023-09-24 16:06:12,406:main.py:predict:INFO:prediction request received:
+2023-09-24 16:06:12,406:main.py:predict:INFO:detecting selected model:
+2023-09-24 16:06:12,406:main.py:predict:INFO:loading selected model:
+2023-09-24 16:06:12,550:main.py:predict:INFO:model loaded successfully:
+2023-09-24 16:06:12,550:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-09-24 16:06:12,559:main.py:predict:INFO:sending result to frontend:
+2023-09-24 16:06:22,421:main.py:predict:INFO:prediction request received:
+2023-09-24 16:06:22,421:main.py:predict:INFO:detecting selected model:
+2023-09-24 16:06:22,421:main.py:predict:INFO:loading selected model:
+2023-09-24 16:06:22,431:main.py:predict:INFO:model loaded successfully:
+2023-09-24 16:06:22,431:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-09-24 16:06:22,438:main.py:predict:INFO:sending result to frontend:
+2023-09-24 16:06:29,631:main.py:predict:INFO:prediction request received:
+2023-09-24 16:06:29,631:main.py:predict:INFO:detecting selected model:
+2023-09-24 16:06:29,631:main.py:predict:INFO:loading selected model:
+2023-09-24 16:06:29,683:main.py:predict:INFO:model loaded successfully:
+2023-09-24 16:06:29,683:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-09-24 16:06:29,692:main.py:predict:INFO:sending result to frontend:

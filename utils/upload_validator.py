@@ -50,15 +50,25 @@ def validate(df: DataFrame):
     for df_column in df.columns:
         if df_column not in types_dict.keys():
             logger.error(f"Column '{df_column}' not expected in uploaded data")
-            raise KeyError(f"Column '{df_column}' not expected in uploaded data")
+            msg = f"Column '{df_column}' not expected in uploaded data"
+            return msg
+
+        else:
+            msg = "validated"
 
     for column, expected_dtype in zip(types_dict.keys(), types_dict.values()):
         if column not in df.columns:
             logger.error(f"No column '{column}' in uploaded data")
-            raise KeyError(f"No column '{column}' in uploaded data")
+            msg = f"No column '{column}' in uploaded data"
+            return msg
 
-        if expected_dtype != str(df[column].dtype):
+        elif str(expected_dtype) not in str(df[column].dtype):
             logger.error(f"'{column}' column data type does not match required data type. Expected {expected_dtype}")
-            raise KeyError(f"'{column}' column data type does not match required data type. Expected {expected_dtype}")
+            msg = f"'{column}' column data type does not match required data type. Expected {expected_dtype}"
+            return msg
+        else:
+            msg = "validated"
+    
+    return msg
 
-    return str("validated")
+    
