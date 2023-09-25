@@ -10,7 +10,142 @@ from sklearn.model_selection import train_test_split
 from utils.pipeline_log_config import pipeline as logger
 
 
-def undersample_by_value_counts(data, label_column):
+def get_categotical_features(data: DataFrame, train: bool):
+    """_summary_
+
+    Args:
+        data (DataFrame): _description_
+        train (bool): _description_
+
+    Returns:
+        _type_: _description_
+    """
+
+    cat_featutes_path = "./models/cat_features.pkl"
+
+    if train:
+        # Get categorical features
+        categorical_features = [feature for feature in data.columns if data[feature].nunique() < 20\
+                                and feature != 'default.payment.next.month']
+        # Save categorical features
+        joblib.dump(categorical_features, cat_featutes_path)
+
+    else:
+        # Load categorical features
+        categorical_features = joblib.load(cat_featutes_path)
+
+    return categorical_features
+
+
+def fit_encoder(data: DataFrame, categorical_features: list, train: bool):
+    """_summary_
+
+    Args:
+        data (DataFrame): _description_
+        categorical_features (list): _description_
+        train (bool): _description_
+
+    Returns:
+        _type_: _description_
+    """
+
+    # Set encoder path
+    encoder_path = "./models/encoder.pkl"
+
+    # Get categotical features
+    data_to_transform = data[categorical_features]
+
+    if train:
+        # Initialize and fit encoder 
+        encoder = OneHotEncoder(sparse_output=False, drop='first')
+        encoder.fit(data_to_transform)
+
+        # Save encoder
+        joblib.dump(encoder, encoder_path)
+        logger.info("Encoder saved successfully")
+
+    return data_to_transform   
+
+
+def transform_data(data: DataFrame,
+                   data_to_transform: DataFrame,
+                   categorical_features: list):
+    """_summary_
+
+    Args:
+        data (DataFrame): _description_
+        data_to_encode (DataFrame): _description_
+        categorical_features (list): _description_
+
+    Returns:
+        _type_: _description_
+    """
+
+    # Set encoder path
+    encoder_path = "./models/encoder.pkl"
+
+    # Load encoder
+    encoder = joblib.load(encoder_path)
+
+    # Transform data with encoder
+    encoded_columns = encoder.transform(data_to_transform)
+    encoded_df = pd.DataFrame(encoded_columns, 
+                            columns=encoder.get_feature_names_out(categorical_features))
+    # Remove old versions of encoded columns
+    data.drop(categorical_features, axis=1, inplace=True)
+    data_transformed = pd.concat([data, encoded_df], axis=1)
+
+    return data_transformed
+
+
+def scale_data(features: DataFrame, train: bool):
+    """_summary_
+
+    Args:
+        features (DataFrame): _description_
+        train (bool): _description_
+
+    Returns:
+        _type_: _description_
+    """
+
+    # Set scaler path
+    scaler_path = f"./models/scaler.pkl"
+
+    if train:
+        # Fit scaler to features
+        scaler = StandardScaler().fit(features)
+
+        # Save scaler
+        joblib.dump(scaler, scaler_path)
+        logger.info("Scaler saved successfully")
+
+        # Scale train features
+        features_scaled = scaler.transform(features)
+        logger.info("features scaled successfully")
+
+    else:
+        # Load scaler
+        scaler = joblib.load(scaler_path)
+
+        # Scale inference features
+        features_scaled = scaler.transform(features)
+        logger.info("features scaled successfully")
+
+    return features_scaled
+
+
+def undersample_by_value_counts(data: DataFrame, label_column: str):
+    """_summary_
+
+    Args:
+        data (DataFrame): _description_
+        label_column (str): _description_
+
+    Returns:
+        _type_: _description_
+    """
+
     value_counts = data[label_column].value_counts()
     mean_count = value_counts.mean()
 
@@ -28,7 +163,10 @@ def undersample_by_value_counts(data, label_column):
     # Randomize the undersampled data
     randomized_data = undersampled_data.sample(frac=1, random_state=42)
 
-    return randomized_data.astype('int64')
+    # Typecast label column to int64
+    randomized_data[label_column] = randomized_data[label_column].astype('int64')
+
+    return randomized_data
 
 
 def preprocess_train_input(raw_data: DataFrame):
@@ -50,62 +188,43 @@ def preprocess_train_input(raw_data: DataFrame):
     """
     data = raw_data.copy()
 
-    # Drop ID
-    data = data.drop('ID', axis=1)
+    logger.info("Starting train data preprocess")
+    try:
+        # Drop ID
+        data = data.drop('ID', axis=1)
 
-    # Get categorical features
-    categorical_features = [feature for feature in data.columns if data[feature].nunique() < 20\
-                             and feature != 'default.payment.next.month']
-    # Save categorical features
-    cat_featutes_path = "./models/cat_features.pkl"
-    joblib.dump(categorical_features, cat_featutes_path)
+        # Get categorical features
+        categorical_features = get_categotical_features(data=data, train=True)
 
-    # Perform one-hot encoding
-    data_temp = data.copy()
-    data_to_encode = data_temp[categorical_features]
+        # Perform one-hot encoding
+        data_to_transform = fit_encoder(data=data,
+                                        categorical_features=categorical_features,
+                                        train=True)
 
-    # Initialize and fit encoder 
-    encoder = OneHotEncoder(sparse_output=False, drop='first')
-    encoder.fit(data_to_encode)
+        # Transform data
+        transformed_data = transform_data(data=data,
+                                        data_to_transform=data_to_transform,
+                                        categorical_features=categorical_features)
 
-    # Save encoder
-    encoder_path = "./models/encoder.pkl"
-    joblib.dump(encoder, encoder_path)
-    logger.info("Encoder saved successfully")
+        # Undersample the data
+        undersampled_data_encoded = undersample_by_value_counts(transformed_data,
+                                                                'default.payment.next.month')
 
-    # Transform data
-    encoder = joblib.load(encoder_path)
-    encoded_columns = encoder.transform(data_to_encode)
-    encoded_df = pd.DataFrame(encoded_columns, 
-                              columns=encoder.get_feature_names_out(categorical_features))
+        # Split data into into features and target
+        X = undersampled_data_encoded.drop('default.payment.next.month', axis=1) # Inputs
+        y = undersampled_data_encoded['default.payment.next.month'] # Target
 
-    data_temp.drop(categorical_features, axis=1, inplace=True)
-    data_encoded = pd.concat([data_temp, encoded_df], axis=1)
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, 
+                                                            random_state=42, 
+                                                            stratify=y,
+                                                            shuffle=True)
 
-    # Undersample the data
-    undersampled_data_encoded = undersample_by_value_counts(data_encoded,
-                                                            'default.payment.next.month')
-
-    # split df into x,y
-    X = undersampled_data_encoded.drop('default.payment.next.month', axis=1) # Inputs
-    y = undersampled_data_encoded['default.payment.next.month'] # Target
-
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, 
-                                                        random_state=42, 
-                                                        stratify=y,
-                                                        shuffle=True)
-
-    # Fit StandardScaler
-    scaler = StandardScaler().fit(X_train)
-    scaler_path = f"./models/scaler.pkl"
-    joblib.dump(scaler, scaler_path)
-    logger.info("Scaler saved successfully")
-
-    # Scale input data
-    scaler = joblib.load(scaler_path)
-    X_train_scaled = scaler.transform(X_train)
-    X_test_scaled = scaler.transform(X_test)
-
+        # Scale input data
+        X_train_scaled = scale_data(features=X_train, train=True)
+        X_test_scaled = scale_data(features=X_test, train=False)
+        logger.info('Train data preprocessed succesfully')
+    except Exception as e:
+        logger.error(f"Error preprocessing train data: {e}")
     return X_train_scaled, X_test_scaled, y_train, y_test
 
 
@@ -125,32 +244,29 @@ def preprocess_inference_input(raw_data: DataFrame):
     """
     data = raw_data.copy()
 
-    # Drop ID
-    data = data.drop('ID', axis=1)
+    logger.info("Starting web user data preprocessing")
+    try:
+        # Drop ID
+        data = data.drop('ID', axis=1)
 
-    # Load categorical features
-    cat_featutes_path = "./models/cat_features.pkl"
-    categorical_features = joblib.load(cat_featutes_path)
+        # Get categorical features
+        categorical_features = get_categotical_features(data=data, train=False)
+        
+        # Perform one-hot encoding
+        data_to_transform = fit_encoder(data=data,
+                                        categorical_features=categorical_features,
+                                        train=False)
+
+        # Transform data
+        transformed_data = transform_data(data=data,
+                                        data_to_transform=data_to_transform,
+                                        categorical_features=categorical_features)
     
-    # Perform one-hot encoding
-    data_temp = data.copy()
-    data_to_encode = data_temp[categorical_features]
-
-    # Transform data
-    encoder_path = "./models/encoder.pkl"
-    encoder = joblib.load(encoder_path)
-    encoded_columns = encoder.transform(data_to_encode)
-    encoded_df = pd.DataFrame(encoded_columns, 
-                              columns=encoder.get_feature_names_out(categorical_features))
-
-    data_temp.drop(categorical_features, axis=1, inplace=True)
-    data_encoded = pd.concat([data_temp.reset_index(drop=True), encoded_df], axis=1)
-  
-    # Scale inpputs with a StandardScaler
-    scaler_path = f"./models/scaler.pkl"
-    scaler = joblib.load(scaler_path)
-    scaled_data = scaler.transform(data_encoded)
-    logger.info("Web user data processed successfully")
+        # Scale inputs with a StandardScaler
+        scaled_data = scale_data(features=transformed_data, train=False)
+        logger.info("Web user data preprocessed successfully")
+    except Exception as e:
+        logger.error(f"Error preprocessing web user data: {e}")
 
     return scaled_data
 

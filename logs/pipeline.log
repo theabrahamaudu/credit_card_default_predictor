@@ -430,3 +430,44 @@ f1_score --> 0.7010060362173037
 2023-09-25 00:05:12,589:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
 2023-09-25 00:05:49,849:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
 2023-09-25 00:11:13,019:preprocess.py:preprocess_inference_input:INFO:Web user data processed successfully:
+2023-09-25 16:24:33,670:preprocess.py:preprocess_train_input:INFO:Starting train data preprocess:
+2023-09-25 16:24:33,689:preprocess.py:fit_encoder:INFO:Encoder saved successfully:
+2023-09-25 16:24:33,713:preprocess.py:preprocess_train_input:ERROR:Error preprocessing train data: name 'data_temp' is not defined:
+2023-09-25 16:27:55,466:preprocess.py:preprocess_train_input:INFO:Starting train data preprocess:
+2023-09-25 16:27:55,490:preprocess.py:fit_encoder:INFO:Encoder saved successfully:
+2023-09-25 16:27:55,598:preprocess.py:scale_data:INFO:Scaler saved successfully:
+2023-09-25 16:27:55,643:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-25 16:27:55,657:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-25 16:27:55,657:preprocess.py:preprocess_train_input:INFO:Train data preprocessed succesfully:
+2023-09-25 16:27:56,051:models.py:train_models:INFO:Logistic_Regression trained and saved:
+2023-09-25 16:28:27,075:preprocess.py:preprocess_train_input:INFO:Starting train data preprocess:
+2023-09-25 16:28:27,093:preprocess.py:fit_encoder:INFO:Encoder saved successfully:
+2023-09-25 16:28:27,207:preprocess.py:scale_data:INFO:Scaler saved successfully:
+2023-09-25 16:28:27,260:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-25 16:28:27,273:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-25 16:28:27,273:preprocess.py:preprocess_train_input:INFO:Train data preprocessed succesfully:
+2023-09-25 16:28:27,694:models.py:train_models:INFO:Logistic_Regression trained and saved:
+2023-09-25 16:28:30,595:models.py:train_models:INFO:C_Support_Vector_Classification trained and saved:
+2023-09-25 16:28:40,816:models.py:train_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier) trained and saved:
+2023-09-25 16:28:42,694:models.py:train_models:INFO:Random_Forest trained and saved:
+2023-09-25 16:28:42,694:models.py:train_models:INFO:All models trained and saved successfully:
+2023-09-25 16:28:42,701:models.py:test_models:INFO:Logistic_Regression: 
+accuracy --> 0.6923076923076923 
+MCC --> 0.40260152462276916 
+f1_score --> 0.6745762711864408
+:
+2023-09-25 16:28:44,714:models.py:test_models:INFO:C_Support_Vector_Classification: 
+accuracy --> 0.6963141025641025 
+MCC --> 0.41053255003272965 
+f1_score --> 0.6790855207451312
+:
+2023-09-25 16:28:44,726:models.py:test_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier): 
+accuracy --> 0.6846955128205128 
+MCC --> 0.3762832104817841 
+f1_score --> 0.6825332795482049
+:
+2023-09-25 16:28:44,846:models.py:test_models:INFO:Random_Forest: 
+accuracy --> 0.7051282051282052 
+MCC --> 0.41636962039822367 
+f1_score --> 0.7046548956661316
+:

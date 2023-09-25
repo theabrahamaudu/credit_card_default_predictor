@@ -52,7 +52,7 @@ def test_models(models: dict, X_test, y_test):
     Takes dictionary of initialized models, test features and outcomes as input and prints prediction scores to console.
 
     - Loads saved models using models dictionary for reference purpose
-    - Prints test score for each model to console
+    - Logs test score for each model to file
 
     Args:
         models:
