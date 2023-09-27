@@ -37,9 +37,12 @@ def run():
                     "1. Upload customer data\n"
                     "2. Choosel ML model\n"
                     "3. Get prediction")
-
-    file = st.file_uploader("Upload customer data (CSV)", type=['csv'])
-    valid = False
+    
+    try:
+        file = st.file_uploader("Upload customer data (CSV)", type=['csv'])
+        valid = False
+    except Exception as e:
+        st.error(f"Error uploading data: {e}")
 
     if file is not None:
         logger.info("User data uploaded")
@@ -53,8 +56,10 @@ def run():
                 valid = True
             else:
                 st.error(f"Invalid data: {msg}")
+                logger.info(f"Uploaded data invalid: {msg}")
         except Exception as e:
             st.error(f"Error validating data: {e}")
+            logger.error(f"Error validating data: {e}")
 
     if valid:
         customer_data = customer_data.to_dict()
@@ -87,9 +92,9 @@ def run():
                             f"Credit Card Default probability: {prediction}, \n"
                             f"Model pred time: {pred_time}, \n"
                             f"total run time: {elapsed_time}")
-            except:
+            except Exception as e:
                 st.error("Error: Please check the file or your network connection")
-                logger.exception("An error occurred whilst attempting to call API")
+                logger.exception(f"An error occurred whilst attempting to call API: {e}")
 
 
 if __name__ == "__main__":

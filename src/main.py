@@ -9,6 +9,7 @@ import joblib
 from fastapi import FastAPI
 import uvicorn
 import pandas as pd
+import numpy as np
 from pydantic import BaseModel
 import time
 from utils.preprocess import preprocess_inference_input
@@ -55,25 +56,27 @@ def predict(data: dict):
     logger.info("prediction request received")
     logger.info("detecting selected model")
     model_str = data['model']
-
-    logger.info("loading selected model")
-    if model_str == 'Logistic Regression':
-        model = joblib.load('./models/Logistic_Regression.pkl')
-    elif model_str == 'Support Vector Machine':
-        model = joblib.load('./models/C_Support_Vector_Classification.pkl')
-    elif model_str == 'Neural Network':
-        model = joblib.load('./models/Neural_Network_(Multi_layer_Perceptron_classifier).pkl')
-    elif model_str == 'Random Forest':
-        model = joblib.load('./models/Random_Forest.pkl')
-    logger.info("model loaded successfully")
+    try:
+        logger.info("loading selected model")
+        if model_str == 'Logistic Regression':
+            model = joblib.load('./models/Logistic_Regression.pkl')
+        elif model_str == 'Support Vector Machine':
+            model = joblib.load('./models/C_Support_Vector_Classification.pkl')
+        elif model_str == 'Neural Network':
+            model = joblib.load('./models/Neural_Network_(Multi_layer_Perceptron_classifier).pkl')
+        elif model_str == 'Random Forest':
+            model = joblib.load('./models/Random_Forest.pkl')
+        logger.info("model loaded successfully")
+    except Exception as e:
+        logger.error(f"error loading model: {e}")
 
     logger.info("loading and preprocessing web UI data")
 
     try:
         data = pd.DataFrame(data["customer_data"])
         data = preprocess_inference_input(data)
-    except:
-        logger.exception("Error preprocessing data")
+    except Exception as e:
+        logger.error(f"Error preprocessing data: {e}")
 
     try:
         if model_str == 'Support Vector Machine':
@@ -88,9 +91,10 @@ def predict(data: dict):
             packet = {"result": result, "time": elapsed_time}
 
         logger.info("sending result to frontend")
-    except:
-        logger.exception("Error generating prediction")
-    return packet
+        return packet
+    except Exception as e:
+        logger.exception(f"Error generating prediction: {e}")
+        return {"result": None, "time": None}
 
 
 if __name__ == '__main__':

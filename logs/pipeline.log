@@ -471,3 +471,391 @@ accuracy --> 0.7051282051282052
 MCC --> 0.41636962039822367 
 f1_score --> 0.7046548956661316
 :
+2023-09-27 12:23:14,422:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 12:23:14,442:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 12:23:14,442:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 12:23:23,744:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 12:23:23,751:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 12:23:23,751:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 12:23:29,249:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 12:23:29,257:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 12:23:29,257:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 12:26:23,551:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 12:26:23,556:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 12:26:23,556:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 12:31:25,872:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 12:31:25,883:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 12:31:25,885:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 12:39:18,480:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 12:39:18,488:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 12:39:18,492:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 12:41:16,717:preprocess.py:preprocess_train_input:INFO:Starting train data preprocess:
+2023-09-27 12:41:16,739:preprocess.py:fit_encoder:INFO:Encoder saved successfully:
+2023-09-27 12:41:16,867:preprocess.py:scale_data:INFO:Scaler saved successfully:
+2023-09-27 12:41:16,921:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 12:41:16,937:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 12:41:16,937:preprocess.py:preprocess_train_input:INFO:Train data preprocessed succesfully:
+2023-09-27 12:41:17,470:models.py:train_models:INFO:Logistic_Regression trained and saved:
+2023-09-27 12:41:20,488:models.py:train_models:INFO:C_Support_Vector_Classification trained and saved:
+2023-09-27 12:41:31,778:models.py:train_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier) trained and saved:
+2023-09-27 12:41:33,689:models.py:train_models:INFO:Random_Forest trained and saved:
+2023-09-27 12:41:33,689:models.py:train_models:INFO:All models trained and saved successfully:
+2023-09-27 12:41:33,694:models.py:test_models:INFO:Logistic_Regression: 
+accuracy --> 0.6923076923076923 
+MCC --> 0.40260152462276916 
+f1_score --> 0.6745762711864408
+:
+2023-09-27 12:41:35,782:models.py:test_models:INFO:C_Support_Vector_Classification: 
+accuracy --> 0.6963141025641025 
+MCC --> 0.41053255003272965 
+f1_score --> 0.6790855207451312
+:
+2023-09-27 12:41:35,796:models.py:test_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier): 
+accuracy --> 0.6706730769230769 
+MCC --> 0.3397489178876408 
+f1_score --> 0.6869763899466869
+:
+2023-09-27 12:41:35,925:models.py:test_models:INFO:Random_Forest: 
+accuracy --> 0.7011217948717948 
+MCC --> 0.4098510455307988 
+f1_score --> 0.698220064724919
+:
+2023-09-27 12:43:49,822:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 12:43:49,832:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 12:43:49,834:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 12:44:19,594:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 12:44:19,600:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 12:44:19,602:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 13:22:20,401:preprocess.py:preprocess_train_input:INFO:Starting train data preprocess:
+2023-09-27 13:22:20,420:preprocess.py:fit_encoder:INFO:Encoder saved successfully:
+2023-09-27 13:22:20,522:preprocess.py:scale_data:INFO:Scaler saved successfully:
+2023-09-27 13:22:20,569:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 13:22:20,581:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 13:22:20,581:preprocess.py:preprocess_train_input:INFO:Train data preprocessed succesfully:
+2023-09-27 13:22:21,007:models.py:train_models:INFO:Logistic_Regression trained and saved:
+2023-09-27 13:22:23,980:models.py:train_models:INFO:C_Support_Vector_Classification trained and saved:
+2023-09-27 13:22:34,236:models.py:train_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier) trained and saved:
+2023-09-27 13:22:36,101:models.py:train_models:INFO:Random_Forest trained and saved:
+2023-09-27 13:22:36,101:models.py:train_models:INFO:All models trained and saved successfully:
+2023-09-27 13:22:36,105:models.py:test_models:INFO:Logistic_Regression: 
+accuracy --> 0.6923076923076923 
+MCC --> 0.40260152462276916 
+f1_score --> 0.6745762711864408
+:
+2023-09-27 13:22:38,164:models.py:test_models:INFO:C_Support_Vector_Classification: 
+accuracy --> 0.6963141025641025 
+MCC --> 0.41053255003272965 
+f1_score --> 0.6790855207451312
+:
+2023-09-27 13:22:38,176:models.py:test_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier): 
+accuracy --> 0.6706730769230769 
+MCC --> 0.3407853827885683 
+f1_score --> 0.6840891621829363
+:
+2023-09-27 13:22:38,307:models.py:test_models:INFO:Random_Forest: 
+accuracy --> 0.702323717948718 
+MCC --> 0.4121890221839814 
+f1_score --> 0.6995551961180753
+:
+2023-09-27 13:23:15,366:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 13:23:15,373:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 13:23:15,376:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 13:24:08,060:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 13:24:08,066:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 13:24:08,069:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 13:25:03,162:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 13:25:03,169:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 13:25:03,172:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 13:25:04,722:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 13:25:04,727:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 13:25:04,730:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 13:29:21,823:preprocess.py:preprocess_train_input:INFO:Starting train data preprocess:
+2023-09-27 13:29:21,846:preprocess.py:fit_encoder:INFO:Encoder saved successfully:
+2023-09-27 13:29:21,953:preprocess.py:scale_data:INFO:Scaler saved successfully:
+2023-09-27 13:29:22,003:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 13:29:22,017:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 13:29:22,019:preprocess.py:preprocess_train_input:INFO:Train data preprocessed succesfully:
+2023-09-27 13:29:22,462:models.py:train_models:INFO:Logistic_Regression trained and saved:
+2023-09-27 13:29:25,500:models.py:train_models:INFO:C_Support_Vector_Classification trained and saved:
+2023-09-27 13:29:35,985:models.py:train_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier) trained and saved:
+2023-09-27 13:29:37,913:models.py:train_models:INFO:Random_Forest trained and saved:
+2023-09-27 13:29:37,914:models.py:train_models:INFO:All models trained and saved successfully:
+2023-09-27 13:29:37,917:models.py:test_models:INFO:Logistic_Regression: 
+accuracy --> 0.6923076923076923 
+MCC --> 0.40260152462276916 
+f1_score --> 0.6745762711864408
+:
+2023-09-27 13:29:39,960:models.py:test_models:INFO:C_Support_Vector_Classification: 
+accuracy --> 0.6963141025641025 
+MCC --> 0.41053255003272965 
+f1_score --> 0.6790855207451312
+:
+2023-09-27 13:29:39,972:models.py:test_models:INFO:Neural_Network_(Multi_layer_Perceptron_classifier): 
+accuracy --> 0.6642628205128205 
+MCC --> 0.3304991079320758 
+f1_score --> 0.6716300940438871
+:
+2023-09-27 13:29:40,096:models.py:test_models:INFO:Random_Forest: 
+accuracy --> 0.7007211538461539 
+MCC --> 0.4099328207283172 
+f1_score --> 0.6964648516863063
+:
+2023-09-27 13:46:36,793:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 13:46:36,800:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 13:46:36,803:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 13:47:21,054:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 13:47:21,060:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 13:47:21,063:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 13:50:00,736:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 13:50:00,743:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 13:50:00,746:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 13:50:36,406:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 13:50:36,414:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 13:50:36,418:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 13:51:06,086:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 13:51:06,091:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 13:51:06,094:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 13:51:23,190:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 13:51:23,196:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 13:51:23,199:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 14:01:39,252:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:01:39,252:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: "['ID'] not found in axis":
+2023-09-27 14:06:02,759:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:06:02,759:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: "['ID'] not found in axis":
+2023-09-27 14:09:25,760:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:09:25,766:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 14:09:25,769:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 14:10:57,158:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:10:57,166:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 14:10:57,169:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 14:10:57,322:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:10:57,326:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 14:10:57,328:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 14:11:44,888:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:11:44,895:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 14:11:44,898:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 14:12:01,999:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:12:02,005:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 14:12:02,007:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 14:13:26,620:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:13:26,627:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 14:13:26,631:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 14:14:08,114:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:14:08,122:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 14:14:08,124:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 14:23:12,626:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:23:12,632:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: name 'tr' is not defined:
+2023-09-27 14:24:33,629:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:24:33,634:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 14:24:37,239:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:24:37,242:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 14:24:38,588:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:24:38,592:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 14:24:39,611:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:24:39,615:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 14:24:40,645:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:24:40,648:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 14:24:41,834:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:24:41,838:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 14:24:43,144:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:24:43,148:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 14:27:13,542:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:27:13,547:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 14:32:14,645:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:32:14,690:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 14:32:14,690:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 14:33:48,405:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:33:48,413:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 14:33:48,413:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 14:38:31,644:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:38:31,650:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: data type 'float6' not understood:
+2023-09-27 14:39:19,294:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:39:19,345:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 14:39:19,345:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 14:39:19,477:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:39:19,531:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 14:39:19,531:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 14:39:42,954:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:39:43,001:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 14:39:43,001:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 14:43:51,022:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:43:51,029:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: module 'pandas' has no attribute 'join':
+2023-09-27 14:43:59,248:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:43:59,251:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: module 'pandas' has no attribute 'join':
+2023-09-27 14:44:01,918:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:44:01,921:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: module 'pandas' has no attribute 'join':
+2023-09-27 14:52:20,756:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:52:20,764:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 14:52:20,764:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 14:57:37,852:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:57:37,859:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 14:57:37,859:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 14:58:23,201:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:58:23,209:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 14:58:23,209:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 14:59:24,037:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 14:59:24,059:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 14:59:24,059:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 15:00:47,026:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:00:47,027:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: name 'ca' is not defined:
+2023-09-27 15:01:05,127:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:01:05,127:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: name 'ca' is not defined:
+2023-09-27 15:02:56,993:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:02:57,006:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 15:02:57,006:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 15:03:07,908:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:03:07,919:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 15:03:07,919:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 15:05:52,447:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:05:52,457:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 15:05:52,457:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 15:09:08,658:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:09:08,666:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 15:09:08,666:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 15:12:28,518:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:12:28,525:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 15:12:28,525:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 15:19:42,853:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:19:42,861:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 15:19:42,861:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 15:19:57,793:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:19:57,801:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 15:19:57,801:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 15:24:25,396:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:24:25,403:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 15:24:25,403:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 15:25:08,127:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:25:08,135:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 15:25:08,135:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 15:25:13,684:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:25:13,690:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 15:25:13,690:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 15:25:45,918:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:25:45,926:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 15:25:45,929:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 15:26:16,955:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:26:16,962:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 15:26:16,965:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 15:27:17,719:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:27:17,727:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 15:27:17,729:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 15:27:32,864:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:27:32,876:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 15:27:32,880:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 15:28:08,605:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:28:08,613:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 15:28:08,616:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 15:28:34,905:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:28:34,922:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 15:28:34,922:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 15:30:20,314:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:30:20,368:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 15:30:20,368:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 15:31:04,651:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:31:04,697:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: 0:
+2023-09-27 15:31:55,480:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:31:55,525:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: 0:
+2023-09-27 15:32:02,729:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:32:02,771:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: 0:
+2023-09-27 15:32:30,204:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:32:30,254:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: 0:
+2023-09-27 15:32:58,128:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:32:58,143:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: 0:
+2023-09-27 15:33:08,688:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:33:08,693:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: 0:
+2023-09-27 15:33:14,728:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:33:14,731:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: 0:
+2023-09-27 15:33:48,682:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:33:48,687:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: 0:
+2023-09-27 15:33:51,496:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:33:51,499:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: 0:
+2023-09-27 15:33:52,519:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:33:52,522:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: 0:
+2023-09-27 15:33:52,688:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:33:52,691:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: 0:
+2023-09-27 15:33:52,888:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:33:52,891:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: 0:
+2023-09-27 15:33:53,060:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:33:53,064:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: 0:
+2023-09-27 15:33:53,190:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:33:53,193:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: 0:
+2023-09-27 15:33:53,367:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:33:53,370:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: 0:
+2023-09-27 15:35:06,358:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:35:06,362:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: 0:
+2023-09-27 15:35:10,084:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:35:10,089:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: 0:
+2023-09-27 15:35:46,237:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:35:46,242:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: 0:
+2023-09-27 15:35:48,243:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:35:48,249:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: 0:
+2023-09-27 15:35:49,260:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:35:49,263:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: 0:
+2023-09-27 15:36:27,954:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:36:27,969:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: single positional indexer is out-of-bounds:
+2023-09-27 15:36:59,992:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:36:59,998:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: single positional indexer is out-of-bounds:
+2023-09-27 15:37:02,694:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:37:02,699:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: single positional indexer is out-of-bounds:
+2023-09-27 15:37:23,229:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:37:23,240:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: Feature names are only supported if all input features have string names, but your input has ['int', 'str'] as feature name / column name types. If you want feature names to be stored and validated, you must convert them all to strings, by using X.columns = X.columns.astype(str) for example. Otherwise you can remove feature / column names from your input data, or convert them all to a non-string data type.:
+2023-09-27 15:37:24,816:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:37:24,824:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: Feature names are only supported if all input features have string names, but your input has ['int', 'str'] as feature name / column name types. If you want feature names to be stored and validated, you must convert them all to strings, by using X.columns = X.columns.astype(str) for example. Otherwise you can remove feature / column names from your input data, or convert them all to a non-string data type.:
+2023-09-27 15:38:26,497:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:38:26,508:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: Feature names are only supported if all input features have string names, but your input has ['int', 'str'] as feature name / column name types. If you want feature names to be stored and validated, you must convert them all to strings, by using X.columns = X.columns.astype(str) for example. Otherwise you can remove feature / column names from your input data, or convert them all to a non-string data type.:
+2023-09-27 15:39:30,399:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:39:30,410:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: Feature names are only supported if all input features have string names, but your input has ['int', 'str'] as feature name / column name types. If you want feature names to be stored and validated, you must convert them all to strings, by using X.columns = X.columns.astype(str) for example. Otherwise you can remove feature / column names from your input data, or convert them all to a non-string data type.:
+2023-09-27 15:39:37,419:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:39:37,437:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: Feature names are only supported if all input features have string names, but your input has ['int', 'str'] as feature name / column name types. If you want feature names to be stored and validated, you must convert them all to strings, by using X.columns = X.columns.astype(str) for example. Otherwise you can remove feature / column names from your input data, or convert them all to a non-string data type.:
+2023-09-27 15:40:25,288:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:40:25,294:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: module 'pandas' has no attribute 'join':
+2023-09-27 15:40:29,065:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:40:29,069:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: module 'pandas' has no attribute 'join':
+2023-09-27 15:42:43,889:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:42:43,894:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: merge() got an unexpected keyword argument 'axis':
+2023-09-27 15:42:45,922:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:42:45,926:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: merge() got an unexpected keyword argument 'axis':
+2023-09-27 15:52:49,695:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:52:49,696:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: [Errno 22] Invalid argument: './models/cat_features.pkl':
+2023-09-27 15:53:25,659:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:53:25,691:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: name 'data_transformed' is not defined:
+2023-09-27 15:54:09,357:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:54:09,441:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 15:54:09,441:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 15:56:48,994:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:56:49,056:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 15:56:49,057:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 15:57:19,848:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:57:19,894:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 15:57:19,894:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 15:57:25,056:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:57:25,100:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 15:57:25,100:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 15:58:05,851:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:58:05,863:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: Expected 2D array, got 1D array instead:
+array=[1.200e+05 2.600e+01 2.682e+03 1.725e+03 2.682e+03 3.272e+03 3.455e+03
+ 3.261e+03 0.000e+00 1.000e+03 1.000e+03 1.000e+03 0.000e+00 2.000e+03
+ 1.000e+00 0.000e+00 1.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00
+ 0.000e+00 1.000e+00 0.000e+00 1.000e+00 0.000e+00 0.000e+00 0.000e+00
+ 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00
+ 0.000e+00 0.000e+00 1.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00
+ 0.000e+00 0.000e+00 0.000e+00 1.000e+00 0.000e+00 0.000e+00 0.000e+00
+ 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 1.000e+00
+ 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00
+ 0.000e+00 0.000e+00 1.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00
+ 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 1.000e+00 0.000e+00
+ 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.:
+2023-09-27 15:58:50,795:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 15:58:50,812:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 15:58:50,812:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 16:02:24,713:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 16:02:24,715:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: [Errno 22] Invalid argument: './models/cat_features.pkl':
+2023-09-27 16:02:33,669:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 16:02:33,669:preprocess.py:preprocess_inference_input:ERROR:Error preprocessing web user data: [Errno 22] Invalid argument: './models/cat_features.pkl':
+2023-09-27 16:02:58,698:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 16:02:58,721:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 16:02:58,721:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-27 16:03:04,026:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-27 16:03:04,037:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-27 16:03:04,037:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:

@@ -3,6 +3,7 @@ This module is used to preprocess raw input data and user data uploaded on the w
 """
 
 import pandas as pd
+import numpy as np
 from pandas import DataFrame
 import joblib
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
@@ -91,9 +92,14 @@ def transform_data(data: DataFrame,
     encoded_columns = encoder.transform(data_to_transform)
     encoded_df = pd.DataFrame(encoded_columns, 
                             columns=encoder.get_feature_names_out(categorical_features))
-    # Remove old versions of encoded columns
-    data.drop(categorical_features, axis=1, inplace=True)
-    data_transformed = pd.concat([data, encoded_df], axis=1)
+    # Remove old versions of transformed columns
+    data_transformed = data
+    data_transformed.drop(categorical_features, axis=1, inplace=True)
+
+    # Add transformed columns to the dataframe
+    data_transformed[encoder.get_feature_names_out(categorical_features)] = \
+        encoded_df [encoder.get_feature_names_out(categorical_features)].iloc[0]
+    
 
     return data_transformed
 
@@ -121,6 +127,7 @@ def scale_data(features: DataFrame, train: bool):
         logger.info("Scaler saved successfully")
 
         # Scale train features
+        scaler = joblib.load(scaler_path)
         features_scaled = scaler.transform(features)
         logger.info("features scaled successfully")
 
@@ -223,10 +230,11 @@ def preprocess_train_input(raw_data: DataFrame):
         X_train_scaled = scale_data(features=X_train, train=True)
         X_test_scaled = scale_data(features=X_test, train=False)
         logger.info('Train data preprocessed succesfully')
+        return X_train_scaled, X_test_scaled, y_train, y_test
     except Exception as e:
         logger.error(f"Error preprocessing train data: {e}")
-    return X_train_scaled, X_test_scaled, y_train, y_test
-
+        raise e
+    
 
 def preprocess_inference_input(raw_data: DataFrame):
     """
@@ -265,9 +273,9 @@ def preprocess_inference_input(raw_data: DataFrame):
         # Scale inputs with a StandardScaler
         scaled_data = scale_data(features=transformed_data, train=False)
         logger.info("Web user data preprocessed successfully")
+        return scaled_data
     except Exception as e:
         logger.error(f"Error preprocessing web user data: {e}")
 
-    return scaled_data
 
 

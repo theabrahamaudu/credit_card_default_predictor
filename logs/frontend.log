@@ -1328,3 +1328,173 @@ Model used: Neural Network,
 Credit Card Default probability: 91.9037520898361, 
 Model pred time: 0.0001376999998683459, 
 total run time: 0.03090509999947244:
+2023-09-26 03:54:49,291:upload_validator.py:validate:ERROR:Column 'IF' not expected in uploaded data:
+2023-09-26 03:54:49,297:upload_validator.py:validate:ERROR:No column 'AGE' in uploaded data:
+2023-09-26 03:54:49,299:upload_validator.py:validate:ERROR:'AGE' column data type does not match required data type. Expected int64:
+2023-09-27 11:42:04,174:streamlit_frontend.py:run:INFO:Session started:
+2023-09-27 11:42:04,175:streamlit_frontend.py:run:INFO:Session started:
+2023-09-27 12:04:39,427:streamlit_frontend.py:run:INFO:Session started:
+2023-09-27 12:04:39,430:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-27 12:04:39,435:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-27 12:23:14,340:streamlit_frontend.py:run:INFO:Session started:
+2023-09-27 12:23:14,342:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-27 12:23:14,347:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-27 12:23:14,349:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-27 12:23:14,474:streamlit_frontend.py:run:ERROR:An error occurred whilst attempting to call API: float() argument must be a string or a real number, not 'NoneType':
+Traceback (most recent call last):
+  File "E:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\src\streamlit_frontend.py", line 86, in run
+    st.success(f"Probability of Credit Card default: {float(prediction):.2f}%")
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+2023-09-27 12:23:23,732:streamlit_frontend.py:run:INFO:Session started:
+2023-09-27 12:23:23,734:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-27 12:23:23,736:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-27 12:23:23,738:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-27 12:23:23,754:streamlit_frontend.py:run:ERROR:An error occurred whilst attempting to call API: float() argument must be a string or a real number, not 'NoneType':
+Traceback (most recent call last):
+  File "E:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\src\streamlit_frontend.py", line 86, in run
+    st.success(f"Probability of Credit Card default: {float(prediction):.2f}%")
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+2023-09-27 12:23:26,666:streamlit_frontend.py:run:INFO:Session started:
+2023-09-27 12:23:26,668:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-27 12:23:26,671:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-27 12:23:29,235:streamlit_frontend.py:run:INFO:Session started:
+2023-09-27 12:23:29,238:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-27 12:23:29,243:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-27 12:23:29,245:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-27 12:23:29,260:streamlit_frontend.py:run:ERROR:An error occurred whilst attempting to call API: float() argument must be a string or a real number, not 'NoneType':
+Traceback (most recent call last):
+  File "E:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\src\streamlit_frontend.py", line 86, in run
+    st.success(f"Probability of Credit Card default: {float(prediction):.2f}%")
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+2023-09-27 12:26:22,332:streamlit_frontend.py:run:INFO:Session started:
+2023-09-27 12:26:22,335:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-27 12:26:22,339:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-27 12:26:23,369:streamlit_frontend.py:run:INFO:Session started:
+2023-09-27 12:26:23,372:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-27 12:26:23,375:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-27 12:26:23,377:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-27 12:26:23,568:streamlit_frontend.py:run:ERROR:An error occurred whilst attempting to call API: float() argument must be a string or a real number, not 'NoneType':
+Traceback (most recent call last):
+  File "E:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\src\streamlit_frontend.py", line 86, in run
+    st.success(f"Probability of Credit Card default: {float(prediction):.2f}%")
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+2023-09-27 12:31:25,845:streamlit_frontend.py:run:INFO:Session started:
+2023-09-27 12:31:25,847:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-27 12:31:25,850:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-27 12:31:25,853:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-27 12:31:25,889:streamlit_frontend.py:run:ERROR:An error occurred whilst attempting to call API: float() argument must be a string or a real number, not 'NoneType':
+Traceback (most recent call last):
+  File "E:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\src\streamlit_frontend.py", line 86, in run
+    st.success(f"Probability of Credit Card default: {float(prediction):.2f}%")
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+2023-09-27 12:35:26,056:streamlit_frontend.py:run:INFO:Session started:
+2023-09-27 12:35:26,058:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-27 12:35:26,062:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-27 12:35:26,064:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-27 12:35:26,087:streamlit_frontend.py:run:ERROR:An error occurred whilst attempting to call API: float() argument must be a string or a real number, not 'NoneType':
+Traceback (most recent call last):
+  File "E:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\src\streamlit_frontend.py", line 86, in run
+    st.success(f"Probability of Credit Card default: {float(prediction):.2f}%")
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+2023-09-27 12:35:29,385:streamlit_frontend.py:run:INFO:Session started:
+2023-09-27 12:35:29,388:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-27 12:35:29,392:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-27 12:35:29,394:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-27 12:35:29,402:streamlit_frontend.py:run:ERROR:An error occurred whilst attempting to call API: float() argument must be a string or a real number, not 'NoneType':
+Traceback (most recent call last):
+  File "E:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\src\streamlit_frontend.py", line 86, in run
+    st.success(f"Probability of Credit Card default: {float(prediction):.2f}%")
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+2023-09-27 12:35:51,637:streamlit_frontend.py:run:INFO:Session started:
+2023-09-27 12:35:51,639:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-27 12:35:51,642:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-27 12:35:51,643:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-27 12:35:51,651:streamlit_frontend.py:run:ERROR:An error occurred whilst attempting to call API: float() argument must be a string or a real number, not 'NoneType':
+Traceback (most recent call last):
+  File "E:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\src\streamlit_frontend.py", line 86, in run
+    st.success(f"Probability of Credit Card default: {float(prediction):.2f}%")
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+2023-09-27 12:37:09,530:streamlit_frontend.py:run:INFO:Session started:
+2023-09-27 12:37:09,532:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-27 12:37:09,535:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-27 12:37:09,537:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-27 12:37:09,556:streamlit_frontend.py:run:ERROR:An error occurred whilst attempting to call API: float() argument must be a string or a real number, not 'NoneType':
+Traceback (most recent call last):
+  File "E:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\src\streamlit_frontend.py", line 86, in run
+    st.success(f"Probability of Credit Card default: {float(prediction):.2f}%")
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+2023-09-27 12:37:23,258:streamlit_frontend.py:run:INFO:Session started:
+2023-09-27 12:37:23,260:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-27 12:37:23,265:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-27 12:37:23,266:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-27 12:37:23,275:streamlit_frontend.py:run:ERROR:An error occurred whilst attempting to call API: float() argument must be a string or a real number, not 'NoneType':
+Traceback (most recent call last):
+  File "E:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\src\streamlit_frontend.py", line 86, in run
+    st.success(f"Probability of Credit Card default: {float(prediction):.2f}%")
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+2023-09-27 12:38:29,135:streamlit_frontend.py:run:INFO:Session started:
+2023-09-27 12:38:29,137:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-27 12:38:29,140:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-27 12:38:29,141:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-27 12:38:29,150:streamlit_frontend.py:run:ERROR:An error occurred whilst attempting to call API: float() argument must be a string or a real number, not 'NoneType':
+Traceback (most recent call last):
+  File "E:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\src\streamlit_frontend.py", line 86, in run
+    st.success(f"Probability of Credit Card default: {float(prediction):.2f}%")
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+2023-09-27 12:39:18,455:streamlit_frontend.py:run:INFO:Session started:
+2023-09-27 12:39:18,458:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-27 12:39:18,462:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-27 12:39:18,464:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-27 12:39:18,495:streamlit_frontend.py:run:ERROR:An error occurred whilst attempting to call API: float() argument must be a string or a real number, not 'NoneType':
+Traceback (most recent call last):
+  File "E:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\src\streamlit_frontend.py", line 86, in run
+    st.success(f"Probability of Credit Card default: {float(prediction):.2f}%")
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+2023-09-27 12:39:40,251:streamlit_frontend.py:run:INFO:Session started:
+2023-09-27 12:39:40,252:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-27 12:39:40,255:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-27 12:39:40,257:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-27 12:39:40,287:streamlit_frontend.py:run:ERROR:An error occurred whilst attempting to call API: float() argument must be a string or a real number, not 'NoneType':
+Traceback (most recent call last):
+  File "E:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\src\streamlit_frontend.py", line 86, in run
+    st.success(f"Probability of Credit Card default: {float(prediction):.2f}%")
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+2023-09-27 12:42:01,788:streamlit_frontend.py:run:INFO:Session started:
+2023-09-27 12:42:01,791:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-27 12:42:01,794:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-27 12:42:01,795:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-27 12:42:01,809:streamlit_frontend.py:run:ERROR:An error occurred whilst attempting to call API: float() argument must be a string or a real number, not 'NoneType':
+Traceback (most recent call last):
+  File "E:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\src\streamlit_frontend.py", line 86, in run
+    st.success(f"Probability of Credit Card default: {float(prediction):.2f}%")
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+2023-09-27 12:42:19,529:streamlit_frontend.py:run:INFO:Session started:
+2023-09-27 12:42:19,531:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-27 12:42:19,534:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-27 12:42:20,831:streamlit_frontend.py:run:INFO:Session started:
+2023-09-27 12:42:20,834:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-27 12:42:20,838:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-27 12:42:20,840:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-27 12:42:21,023:streamlit_frontend.py:run:ERROR:An error occurred whilst attempting to call API: float() argument must be a string or a real number, not 'NoneType':
+Traceback (most recent call last):
+  File "E:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\src\streamlit_frontend.py", line 86, in run
+    st.success(f"Probability of Credit Card default: {float(prediction):.2f}%")
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+2023-09-27 12:43:49,631:streamlit_frontend.py:run:INFO:Session started:
+2023-09-27 12:43:49,633:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-27 12:43:49,635:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-27 12:43:49,638:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-27 12:43:49,841:streamlit_frontend.py:run:ERROR:An error occurred whilst attempting to call API: float() argument must be a string or a real number, not 'NoneType':
+Traceback (most recent call last):
+  File "E:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\src\streamlit_frontend.py", line 86, in run
+    st.success(f"Probability of Credit Card default: {float(prediction):.2f}%")
+TypeError: float() argument must be a string or a real number, not 'NoneType'
+2023-09-27 12:44:19,526:streamlit_frontend.py:run:INFO:Session started:
+2023-09-27 12:44:19,528:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-27 12:44:19,531:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-27 12:44:19,532:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-27 12:44:19,608:streamlit_frontend.py:run:ERROR:An error occurred whilst attempting to call API: float() argument must be a string or a real number, not 'NoneType':
+Traceback (most recent call last):
+  File "E:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\src\streamlit_frontend.py", line 86, in run
+    st.success(f"Probability of Credit Card default: {float(prediction):.2f}%")
+TypeError: float() argument must be a string or a real number, not 'NoneType'
