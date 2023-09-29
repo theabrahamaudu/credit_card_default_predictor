@@ -859,3 +859,12 @@ Reshape your data either using array.reshape(-1, 1) if your data has a single fe
 2023-09-27 16:03:04,026:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
 2023-09-27 16:03:04,037:preprocess.py:scale_data:INFO:features scaled successfully:
 2023-09-27 16:03:04,037:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-28 23:44:55,587:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-28 23:44:55,619:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-28 23:44:55,619:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-28 23:59:33,671:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-28 23:59:33,696:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-28 23:59:33,696:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:
+2023-09-29 00:30:58,578:preprocess.py:preprocess_inference_input:INFO:Starting web user data preprocessing:
+2023-09-29 00:30:58,591:preprocess.py:scale_data:INFO:features scaled successfully:
+2023-09-29 00:30:58,591:preprocess.py:preprocess_inference_input:INFO:Web user data preprocessed successfully:

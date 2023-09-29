@@ -1498,3 +1498,46 @@ Traceback (most recent call last):
   File "E:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\src\streamlit_frontend.py", line 86, in run
     st.success(f"Probability of Credit Card default: {float(prediction):.2f}%")
 TypeError: float() argument must be a string or a real number, not 'NoneType'
+2023-09-28 23:43:48,000:streamlit_frontend.py:run:INFO:Session started:
+2023-09-28 23:44:25,226:streamlit_frontend.py:run:INFO:Session started:
+2023-09-28 23:44:25,228:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-28 23:44:25,236:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-28 23:44:54,384:streamlit_frontend.py:run:INFO:Session started:
+2023-09-28 23:44:54,388:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-28 23:44:54,391:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-28 23:44:55,546:streamlit_frontend.py:run:INFO:Session started:
+2023-09-28 23:44:55,549:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-28 23:44:55,555:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-28 23:44:55,556:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-28 23:44:55,622:streamlit_frontend.py:run:INFO:Prediction successful, 
+Model used: Neural Network, 
+Credit Card Default probability: 94.20636037704519, 
+Model pred time: 0.00013499998021870852, 
+total run time: 0.06476729997666553:
+2023-09-28 23:59:33,655:streamlit_frontend.py:run:INFO:Session started:
+2023-09-28 23:59:33,657:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-28 23:59:33,662:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-28 23:59:33,663:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-28 23:59:33,698:streamlit_frontend.py:run:INFO:Prediction successful, 
+Model used: Neural Network, 
+Credit Card Default probability: 94.20636037704519, 
+Model pred time: 0.00014939997345209122, 
+total run time: 0.033671799988951534:
+2023-09-28 23:59:36,767:streamlit_frontend.py:run:INFO:Session started:
+2023-09-29 00:30:02,314:streamlit_frontend.py:run:INFO:Session started:
+2023-09-29 00:30:08,533:streamlit_frontend.py:run:INFO:Session started:
+2023-09-29 00:30:46,453:streamlit_frontend.py:run:INFO:Session started:
+2023-09-29 00:30:46,457:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-29 00:30:46,461:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-29 00:30:54,175:streamlit_frontend.py:run:INFO:Session started:
+2023-09-29 00:30:54,177:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-29 00:30:54,181:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-29 00:30:58,277:streamlit_frontend.py:run:INFO:Session started:
+2023-09-29 00:30:58,280:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-09-29 00:30:58,283:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-09-29 00:30:58,285:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-09-29 00:30:58,603:streamlit_frontend.py:run:INFO:Prediction successful, 
+Model used: Random Forest, 
+Credit Card Default probability: 90.0, 
+Model pred time: 0.005673700012266636, 
+total run time: 0.31692560005467385:

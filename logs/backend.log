@@ -4943,3 +4943,27 @@ Reshape your data either using array.reshape(-1, 1) if your data has a single fe
 2023-09-27 16:03:04,025:main.py:predict:INFO:model loaded successfully:
 2023-09-27 16:03:04,025:main.py:predict:INFO:loading and preprocessing web UI data:
 2023-09-27 16:03:04,038:main.py:predict:INFO:sending result to frontend:
+2023-09-28 23:43:15,416:main.py:<module>:INFO:API service running:
+2023-09-28 23:43:16,598:main.py:<module>:INFO:API service running:
+2023-09-28 23:43:16,625:main.py:<module>:INFO:API service running:
+2023-09-28 23:44:55,571:main.py:predict:INFO:prediction request received:
+2023-09-28 23:44:55,571:main.py:predict:INFO:detecting selected model:
+2023-09-28 23:44:55,571:main.py:predict:INFO:loading selected model:
+2023-09-28 23:44:55,586:main.py:predict:INFO:model loaded successfully:
+2023-09-28 23:44:55,586:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-09-28 23:44:55,619:main.py:predict:INFO:sending result to frontend:
+2023-09-28 23:59:33,667:main.py:predict:INFO:prediction request received:
+2023-09-28 23:59:33,667:main.py:predict:INFO:detecting selected model:
+2023-09-28 23:59:33,667:main.py:predict:INFO:loading selected model:
+2023-09-28 23:59:33,669:main.py:predict:INFO:model loaded successfully:
+2023-09-28 23:59:33,669:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-09-28 23:59:33,696:main.py:predict:INFO:sending result to frontend:
+2023-09-29 00:29:34,801:main.py:<module>:INFO:API service running:
+2023-09-29 00:29:36,231:main.py:<module>:INFO:API service running:
+2023-09-29 00:29:36,250:main.py:<module>:INFO:API service running:
+2023-09-29 00:30:58,295:main.py:predict:INFO:prediction request received:
+2023-09-29 00:30:58,295:main.py:predict:INFO:detecting selected model:
+2023-09-29 00:30:58,295:main.py:predict:INFO:loading selected model:
+2023-09-29 00:30:58,577:main.py:predict:INFO:model loaded successfully:
+2023-09-29 00:30:58,577:main.py:predict:INFO:loading and preprocessing web UI data:
+2023-09-29 00:30:58,597:main.py:predict:INFO:sending result to frontend:
