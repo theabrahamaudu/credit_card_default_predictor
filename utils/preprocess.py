@@ -12,14 +12,17 @@ from utils.pipeline_log_config import pipeline as logger
 
 
 def get_categotical_features(data: DataFrame, train: bool):
-    """_summary_
+    """Extracts list of categorical columns by filtering for columns with
+    less than 20 unique values.
+
+    Saves the list to pickle and loads the list for inference preprocessing.
 
     Args:
-        data (DataFrame): _description_
-        train (bool): _description_
+        data (DataFrame): full dataset
+        train (bool): train/inference toggle
 
     Returns:
-        _type_: _description_
+        list: List of columns with categorical data
     """
 
     cat_featutes_path = "./models/cat_features.pkl"
@@ -39,15 +42,17 @@ def get_categotical_features(data: DataFrame, train: bool):
 
 
 def fit_encoder(data: DataFrame, categorical_features: list, train: bool):
-    """_summary_
+    """Fits encoder to sub-dataset with categorical features if train is true.
+
+    Saves encoder to pickle.
 
     Args:
-        data (DataFrame): _description_
-        categorical_features (list): _description_
-        train (bool): _description_
+        data (DataFrame): full dataset
+        categorical_features (list): names of categorical features
+        train (bool): train/inference toggle
 
     Returns:
-        _type_: _description_
+        DataFrame: sub-dataset with categorical features
     """
 
     # Set encoder path
@@ -71,15 +76,15 @@ def fit_encoder(data: DataFrame, categorical_features: list, train: bool):
 def transform_data(data: DataFrame,
                    data_to_transform: DataFrame,
                    categorical_features: list):
-    """_summary_
+    """Transforms categorical features with pre-fit encoder from memory.
 
     Args:
-        data (DataFrame): _description_
-        data_to_encode (DataFrame): _description_
-        categorical_features (list): _description_
+        data (DataFrame): full dataset
+        data_to_encode (DataFrame): sub-dataset with categorical features
+        categorical_features (list): categorical feature names
 
     Returns:
-        _type_: _description_
+        DataFrame: Full dataset with numerical and transformed categorical features
     """
 
     # Set encoder path
@@ -105,14 +110,16 @@ def transform_data(data: DataFrame,
 
 
 def scale_data(features: DataFrame, train: bool):
-    """_summary_
+    """Fits scaler to train set and saves scaler to memory if train is True.
+
+    Loads scaler from memory to scale inference data.
 
     Args:
-        features (DataFrame): _description_
-        train (bool): _description_
+        features (DataFrame): full dataset without targets column
+        train (bool): train/inference toggle
 
     Returns:
-        _type_: _description_
+        DataFrame: scaled features
     """
 
     # Set scaler path
@@ -143,15 +150,22 @@ def scale_data(features: DataFrame, train: bool):
 
 
 def undersample_by_value_counts(data: DataFrame, label_column: str):
-    """_summary_
+    """Undersample data points with label count greater than the mean label count of the dataset.
+
+    Undersampling Strategy:
+        `(label count / total label count) * mean label count`
+
+    This ensures that the overpopulated labels are trimmed proportionally, as opposed to 
+    trimming all oversampled points to a fixed number, thus retaining the underlying
+    difference in frequency, but still preventing excessive skew in distribution.
 
     Args:
-        data (DataFrame): _description_
-        label_column (str): _description_
+        data (DataFrame): DataFrame to be undersampled
+        label_column (str): Column holding the labels
 
     Returns:
-        _type_: _description_
-    """
+        DataFrame: Undersampled DataFrame
+    """    
 
     value_counts = data[label_column].value_counts()
     mean_count = value_counts.mean()
@@ -178,20 +192,34 @@ def undersample_by_value_counts(data: DataFrame, label_column: str):
 
 def preprocess_train_input(raw_data: DataFrame):
     """
-    Takes raw dataset in Pandas dataframe format as input and returns preprocessed features and expected outcomes
-    as X and y respectively.
+    Preprocesses raw training data for machine learning models.
 
-    - The ID column is dropped for simplicity
-    - 'EDUCATION' and 'MARRIAGE' columns are one-hot encoded and the encoder is saved.
-    - The dataset is split into X and y
-    - The X dataset is scaled using StandardScaler and the scaler object is saved
-    - X and y dataframes are returned
     Args:
-        df: Dataset dataframe
+        raw_data (DataFrame): The raw training data as a Pandas DataFrame.
 
     Returns:
-        X (DataFrame): DataFrame
-        y (DataFrame): DataFrame
+        tuple: A tuple containing the following elements:
+            - X_train_scaled (DataFrame): Scaled and preprocessed features for training.
+            - X_test_scaled (DataFrame): Scaled and preprocessed features for testing.
+            - y_train (pd.Series): Target labels for training.
+            - y_test (pd.Series): Target labels for testing.
+
+    Raises:
+        Exception: If any error occurs during the preprocessing process.
+
+    This function performs the following preprocessing steps:
+    1. Drops the 'ID' column from the raw data.
+    2. Identifies categorical features using the `get_categotical_features` function.
+    3. Performs one-hot encoding on the categorical features using the `fit_encoder` function.
+    4. Transforms the data using the `transform_data` function.
+    5. Undersamples the data based on the 'default.payment.next.month' column using
+       `undersample_by_value_counts` function.
+    6. Splits the data into training and testing sets using stratified sampling.
+    7. Scales the input features using the `scale_data` function.
+
+    Note:
+    - The 'default.payment.next.month' column is assumed to be the target variable.
+    - The `logger` is used to log informational and error messages during the process.
     """
     data = raw_data.copy()
 
@@ -238,17 +266,26 @@ def preprocess_train_input(raw_data: DataFrame):
 
 def preprocess_inference_input(raw_data: DataFrame):
     """
-    Takes raw single user credit card data in Pandas dataframe format as input and returns preprocessed features as X.
+    Preprocesses raw web user data for further analysis or predictions.
 
-    - The ID column is dropped for simplicity
-    - 'EDUCATION' and 'MARRIAGE' columns are one-hot encoded using previously saved encoder
-    - The dataset is scaled using previously saved scaler
-    - Preprocessed dataframe is returned
     Args:
-        df (DataFrame): Single user credit card data
+        raw_data (pd.DataFrame): The raw web user data as a Pandas DataFrame.
 
     Returns:
-        df (DataFrame): Preprocessed data
+        pd.DataFrame: Preprocessed and scaled web user data.
+
+    Raises:
+        Exception: If any error occurs during the preprocessing process.
+
+    This function performs the following preprocessing steps:
+    1. Drops the 'ID' column from the raw data.
+    2. Identifies categorical features using the `get_categotical_features` function.
+    3. Performs one-hot encoding on the categorical features using the `fit_encoder` function.
+    4. Transforms the data using the `transform_data` function.
+    5. Scales the transformed data using a StandardScaler.
+
+    Note:
+    - The `logger` is used to log informational and error messages during the process.
     """
     data = raw_data.copy()
 

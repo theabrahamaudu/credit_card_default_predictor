@@ -21,7 +21,7 @@ def validate(df: DataFrame):
         df(DataFrame): credit card user data
 
     Returns:
-        str: returns string "validated" if successful, else, only logs relevant information
+        str: validation message as "validated" or the specific error based on the checks.
     """
     types_dict = {'ID': 'int64',
                   'LIMIT_BAL': 'float64',

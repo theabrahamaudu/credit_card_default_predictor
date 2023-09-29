@@ -27,16 +27,19 @@ models_dict = {
 
 def train_models(models: dict, X_train, y_train):
     """
-    Takes dictionary of initialized models, training features and outcomes as input and saves the trained models.
+    Train machine learning models and save them to disk.
 
-    Within a for loop, each model is fitted to X-train and y_train, with the resulting model being saved to memory
     Args:
-        models:
-        X_train:
-        y_train:
+        models (dict): A dictionary of machine learning models with model names as keys and model objects as values.
+        X_train (pd.DataFrame): Features of the training dataset.
+        y_train (pd.Series): Target labels of the training dataset.
 
-    Returns:
+    This function trains each model in the provided dictionary using the training data and saves the trained models to
+    disk as joblib files.
 
+    Note:
+    - The `logger` is used to log the training and saving process.
+    - The `models` dictionary should have model names as keys and corresponding model objects that support the `fit` method as values.
     """
 
     for model, name in models.items():
@@ -49,18 +52,21 @@ def train_models(models: dict, X_train, y_train):
 
 def test_models(models: dict, X_test, y_test):
     """
-    Takes dictionary of initialized models, test features and outcomes as input and prints prediction scores to console.
-
-    - Loads saved models using models dictionary for reference purpose
-    - Logs test score for each model to file
+    Test machine learning models and calculate evaluation metrics for each model.
 
     Args:
-        models:
-        X_test:
-        y_test:
+        models (dict): A dictionary of trained models with model names as keys and model objects as values.
+        X_test (pd.DataFrame): Features of the test dataset.
+        y_test (pd.Series): Target labels of the test dataset.
 
-    Returns:
+    This function tests each model in the provided dictionary using the test data and logs the following metrics:
+    - Accuracy
+    - Matthews Correlation Coefficient (MCC)
+    - F1 Score
 
+    Note:
+    - The `logger` is used to log the evaluation metrics for each model.
+    - The `models` dictionary should have model names as keys and corresponding trained model objects as values.
     """
     # Test models
     for mdl, name in models.items():
