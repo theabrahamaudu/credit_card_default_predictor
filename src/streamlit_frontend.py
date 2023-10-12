@@ -71,7 +71,7 @@ def run():
             "customer_data": customer_data,
             "model": model
             }
-        st.warning("Note: Server may throw error if service hasn't been used recently. Give time for server to reboot and try again.")
+        st.warning("Note: Prediction may delay or throw error if service hasn't been used recently. Give time for server to reboot (~2 minutes) and try again.")
         if st.button("Predict default probability"):
             try:
                 logger.info("Attempting API call")
