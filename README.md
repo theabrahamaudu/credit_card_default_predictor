@@ -4,6 +4,11 @@ This app is able to take user credit card data and make a prediction on whether 
 on their next credit card payment or not.
 It can be used by interacting with the web UI.
 
+Try it here: https://creditcarddefaultapp.streamlit.app/ [Not always up]
+
+
+Backend server deployed here: https://credit-card-predictor-api.onrender.com [Not always up]
+
 ## Description
 
 The prediction infrastructure of this project was built using a [credit card dataset](https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset) from kaggle.
