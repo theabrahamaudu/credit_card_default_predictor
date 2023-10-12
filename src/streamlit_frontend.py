@@ -75,8 +75,9 @@ def run():
                 logger.info("Attempting API call")
                 import time
                 start_time = time.perf_counter()
-
-                response = requests.post("http://127.0.0.1:8000/predict", json=data).json()
+                local_server = "http://127.0.0.1:8000"
+                deployment_server = "https://credit-card-predictor-api.onrender.com"
+                response = requests.post(f"{deployment_server}/predict", json=data).json()
 
                 prediction = response["result"]
                 pred_time = response["time"]
