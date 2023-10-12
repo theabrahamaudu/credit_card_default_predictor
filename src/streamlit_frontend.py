@@ -39,6 +39,8 @@ def run():
                     "3. Get prediction")
     
     try:
+        st.info("Use `sample_user_data.csv` from `data` directory in project Github repository: \n https://github.com/theabrahamaudu/credit_card_default_predictor/blob/main/data/sample_user_data.csv")
+        st.info("Server deployed at: https://credit-card-predictor-api.onrender.com")
         file = st.file_uploader("Upload customer data (CSV)", type=['csv'])
         valid = False
     except Exception as e:

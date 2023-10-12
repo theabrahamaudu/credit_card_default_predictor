@@ -1542,3 +1542,77 @@ Credit Card Default probability: 90.0,
 Model pred time: 0.005673700012266636, 
 total run time: 0.31692560005467385:
 2023-10-12 15:53:46,100:streamlit_frontend.py:run:INFO:Session started:
+2023-10-12 17:31:30,611:streamlit_frontend.py:run:INFO:Session started:
+2023-10-12 17:32:01,951:streamlit_frontend.py:run:INFO:Session started:
+2023-10-12 17:32:01,953:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-10-12 17:32:01,961:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-10-12 17:32:05,721:streamlit_frontend.py:run:INFO:Session started:
+2023-10-12 17:32:05,724:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-10-12 17:32:05,729:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-10-12 17:32:05,730:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-10-12 17:32:50,537:streamlit_frontend.py:run:ERROR:An error occurred whilst attempting to call API: HTTPSConnectionPool(host='credit-card-predictor-api.onrender.com', port=443): Max retries exceeded with url: /predict (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021EF218E260>, 'Connection to credit-card-predictor-api.onrender.com timed out. (connect timeout=None)')):
+Traceback (most recent call last):
+  File "e:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\.venv\lib\site-packages\urllib3\connection.py", line 203, in _new_conn
+    sock = connection.create_connection(
+  File "e:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\.venv\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "e:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\.venv\lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "e:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\.venv\lib\site-packages\urllib3\connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "e:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\.venv\lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "e:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\.venv\lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "e:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\.venv\lib\site-packages\urllib3\connectionpool.py", line 1092, in _validate_conn
+    conn.connect()
+  File "e:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\.venv\lib\site-packages\urllib3\connection.py", line 611, in connect
+    self.sock = sock = self._new_conn()
+  File "e:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\.venv\lib\site-packages\urllib3\connection.py", line 212, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x0000021EF218E260>, 'Connection to credit-card-predictor-api.onrender.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "e:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\.venv\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "e:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\.venv\lib\site-packages\urllib3\connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+  File "e:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\.venv\lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='credit-card-predictor-api.onrender.com', port=443): Max retries exceeded with url: /predict (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021EF218E260>, 'Connection to credit-card-predictor-api.onrender.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\src\streamlit_frontend.py", line 80, in run
+    response = requests.post(f"{deployment_server}/predict", json=data).json()
+  File "e:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\.venv\lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "e:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\.venv\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "e:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\.venv\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "e:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\.venv\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "e:\Legacy Files\Documents\Py-Self-Learn\credit_card_default_prediction\.venv\lib\site-packages\requests\adapters.py", line 507, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='credit-card-predictor-api.onrender.com', port=443): Max retries exceeded with url: /predict (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000021EF218E260>, 'Connection to credit-card-predictor-api.onrender.com timed out. (connect timeout=None)'))
+2023-10-12 17:33:46,799:streamlit_frontend.py:run:INFO:Session started:
+2023-10-12 17:33:46,801:streamlit_frontend.py:run:INFO:User data uploaded:
+2023-10-12 17:33:46,804:streamlit_frontend.py:run:INFO:Uploaded data validated:
+2023-10-12 17:33:46,806:streamlit_frontend.py:run:INFO:Attempting API call:
+2023-10-12 17:33:50,031:streamlit_frontend.py:run:INFO:Prediction successful, 
+Model used: Logistic Regression, 
+Credit Card Default probability: 53.2873255815253, 
+Model pred time: 0.00039571200068166945, 
+total run time: 3.2233273000019835:
+2023-10-12 17:54:36,164:streamlit_frontend.py:run:INFO:Session started:
+2023-10-12 17:57:23,365:streamlit_frontend.py:run:INFO:Session started:
+2023-10-12 18:01:21,825:streamlit_frontend.py:run:INFO:Session started:
