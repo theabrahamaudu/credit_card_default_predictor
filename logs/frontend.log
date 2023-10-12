@@ -1541,3 +1541,4 @@ Model used: Random Forest,
 Credit Card Default probability: 90.0, 
 Model pred time: 0.005673700012266636, 
 total run time: 0.31692560005467385:
+2023-10-12 15:53:46,100:streamlit_frontend.py:run:INFO:Session started:

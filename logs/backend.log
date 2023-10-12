@@ -4967,3 +4967,9 @@ Reshape your data either using array.reshape(-1, 1) if your data has a single fe
 2023-09-29 00:30:58,577:main.py:predict:INFO:model loaded successfully:
 2023-09-29 00:30:58,577:main.py:predict:INFO:loading and preprocessing web UI data:
 2023-09-29 00:30:58,597:main.py:predict:INFO:sending result to frontend:
+2023-10-12 15:51:30,907:main.py:<module>:INFO:API service running:
+2023-10-12 15:51:32,125:main.py:<module>:INFO:API service running:
+2023-10-12 15:51:32,142:main.py:<module>:INFO:API service running:
+2023-10-12 16:57:01,373:main.py:<module>:INFO:API service running:
+2023-10-12 16:57:02,504:main.py:<module>:INFO:API service running:
+2023-10-12 16:57:02,526:main.py:<module>:INFO:API service running:
